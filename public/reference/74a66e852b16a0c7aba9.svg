@@ -1,0 +1,377 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 636 812" width="636" height="812">
+<!-- Peptide Chain: IGF-1 LR3 | Mode: dark -->
+<defs>
+
+<filter id="bond-glow" x="-20%" y="-20%" width="140%" height="140%">
+  <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur"/>
+  <feFlood flood-color="#7CCAE8" flood-opacity="0.35"/>
+  <feComposite in2="blur" operator="in"/>
+  <feMerge>
+    <feMergeNode/>
+    <feMergeNode in="SourceGraphic"/>
+  </feMerge>
+</filter>
+
+</defs>
+<style>
+@keyframes connectorPulse {
+  0%, 100% { stroke-opacity: 0.25; }
+  50% { stroke-opacity: 1; }
+}
+@keyframes residueGlow {
+  0%, 100% { filter: drop-shadow(0 0 2px rgba(124, 202, 232, 0.2)); }
+  50% { filter: drop-shadow(0 0 14px rgba(180, 225, 248, 0.85)); }
+}
+@keyframes textBreath {
+  0%, 100% { opacity: 0.75; }
+  50% { opacity: 1; }
+}
+line {
+  animation: connectorPulse 5s ease-in-out infinite;
+}
+rect[rx] {
+  animation: residueGlow 5s ease-in-out infinite;
+  animation-delay: 0.3s;
+}
+text[font-size="11"], text[font-size="16"] {
+  animation: textBreath 5s ease-in-out infinite;
+  animation-delay: 0.6s;
+}
+</style>
+<rect width="636" height="812" fill="none"/>
+<text x="318.0" y="44" text-anchor="middle" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#FFFFFF">IGF-1 LR3</text>
+<text x="318.0" y="62" text-anchor="middle" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="10" font-weight="400" fill="rgba(255,255,255,0.55)">Long R3 IGF-1, modified insulin-like growth factor, 83 amino acids</text>
+<line x1="86.0" y1="108.0" x2="106.0" y2="108.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="160.0" y1="108.0" x2="180.0" y2="108.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="234.0" y1="108.0" x2="254.0" y2="108.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="308.0" y1="108.0" x2="328.0" y2="108.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="382.0" y1="108.0" x2="402.0" y2="108.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="456.0" y1="108.0" x2="476.0" y2="108.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="530.0" y1="108.0" x2="550.0" y2="108.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="86.0" y1="170.0" x2="106.0" y2="170.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="160.0" y1="170.0" x2="180.0" y2="170.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="234.0" y1="170.0" x2="254.0" y2="170.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="308.0" y1="170.0" x2="328.0" y2="170.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="382.0" y1="170.0" x2="402.0" y2="170.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="456.0" y1="170.0" x2="476.0" y2="170.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="530.0" y1="170.0" x2="550.0" y2="170.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="86.0" y1="232.0" x2="106.0" y2="232.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="160.0" y1="232.0" x2="180.0" y2="232.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="234.0" y1="232.0" x2="254.0" y2="232.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="308.0" y1="232.0" x2="328.0" y2="232.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="382.0" y1="232.0" x2="402.0" y2="232.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="456.0" y1="232.0" x2="476.0" y2="232.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="530.0" y1="232.0" x2="550.0" y2="232.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="86.0" y1="294.0" x2="106.0" y2="294.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="160.0" y1="294.0" x2="180.0" y2="294.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="234.0" y1="294.0" x2="254.0" y2="294.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="308.0" y1="294.0" x2="328.0" y2="294.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="382.0" y1="294.0" x2="402.0" y2="294.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="456.0" y1="294.0" x2="476.0" y2="294.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="530.0" y1="294.0" x2="550.0" y2="294.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="86.0" y1="356.0" x2="106.0" y2="356.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="160.0" y1="356.0" x2="180.0" y2="356.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="234.0" y1="356.0" x2="254.0" y2="356.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="308.0" y1="356.0" x2="328.0" y2="356.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="382.0" y1="356.0" x2="402.0" y2="356.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="456.0" y1="356.0" x2="476.0" y2="356.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="530.0" y1="356.0" x2="550.0" y2="356.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="86.0" y1="418.0" x2="106.0" y2="418.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="160.0" y1="418.0" x2="180.0" y2="418.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="234.0" y1="418.0" x2="254.0" y2="418.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="308.0" y1="418.0" x2="328.0" y2="418.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="382.0" y1="418.0" x2="402.0" y2="418.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="456.0" y1="418.0" x2="476.0" y2="418.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="530.0" y1="418.0" x2="550.0" y2="418.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="123.0" y1="480.0" x2="143.0" y2="480.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="197.0" y1="480.0" x2="217.0" y2="480.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="271.0" y1="480.0" x2="291.0" y2="480.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="345.0" y1="480.0" x2="365.0" y2="480.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="419.0" y1="480.0" x2="439.0" y2="480.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="493.0" y1="480.0" x2="513.0" y2="480.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="123.0" y1="542.0" x2="143.0" y2="542.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="197.0" y1="542.0" x2="217.0" y2="542.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="271.0" y1="542.0" x2="291.0" y2="542.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="345.0" y1="542.0" x2="365.0" y2="542.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="419.0" y1="542.0" x2="439.0" y2="542.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="493.0" y1="542.0" x2="513.0" y2="542.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="123.0" y1="604.0" x2="143.0" y2="604.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="197.0" y1="604.0" x2="217.0" y2="604.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="271.0" y1="604.0" x2="291.0" y2="604.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="345.0" y1="604.0" x2="365.0" y2="604.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="419.0" y1="604.0" x2="439.0" y2="604.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="493.0" y1="604.0" x2="513.0" y2="604.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="123.0" y1="666.0" x2="143.0" y2="666.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="197.0" y1="666.0" x2="217.0" y2="666.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="271.0" y1="666.0" x2="291.0" y2="666.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="345.0" y1="666.0" x2="365.0" y2="666.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="419.0" y1="666.0" x2="439.0" y2="666.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="493.0" y1="666.0" x2="513.0" y2="666.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="123.0" y1="728.0" x2="143.0" y2="728.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="197.0" y1="728.0" x2="217.0" y2="728.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="271.0" y1="728.0" x2="291.0" y2="728.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="345.0" y1="728.0" x2="365.0" y2="728.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="419.0" y1="728.0" x2="439.0" y2="728.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="493.0" y1="728.0" x2="513.0" y2="728.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<rect x="32.0" y="94.0" width="54" height="28" rx="8" fill="rgba(90,173,224,0.1)" stroke="#5AADE0" stroke-width="0.8"/>
+<text x="59.0" y="112.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#5AADE0">Met</text>
+<text x="59.0" y="133.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">1</text>
+<rect x="106.0" y="94.0" width="54" height="28" rx="8" fill="rgba(90,173,224,0.1)" stroke="#5AADE0" stroke-width="0.8"/>
+<text x="133.0" y="112.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#5AADE0">Phe</text>
+<text x="133.0" y="133.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">2</text>
+<rect x="180.0" y="94.0" width="54" height="28" rx="8" fill="rgba(251,191,36,0.1)" stroke="#FBBF24" stroke-width="0.8"/>
+<text x="207.0" y="112.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#FBBF24">Pro</text>
+<text x="207.0" y="133.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">3</text>
+<rect x="254.0" y="94.0" width="54" height="28" rx="8" fill="rgba(90,173,224,0.1)" stroke="#5AADE0" stroke-width="0.8"/>
+<text x="281.0" y="112.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#5AADE0">Ala</text>
+<text x="281.0" y="133.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">4</text>
+<rect x="328.0" y="94.0" width="54" height="28" rx="8" fill="rgba(90,173,224,0.1)" stroke="#5AADE0" stroke-width="0.8"/>
+<text x="355.0" y="112.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#5AADE0">Met</text>
+<text x="355.0" y="133.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">5</text>
+<rect x="402.0" y="94.0" width="54" height="28" rx="8" fill="rgba(251,191,36,0.1)" stroke="#FBBF24" stroke-width="0.8"/>
+<text x="429.0" y="112.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#FBBF24">Pro</text>
+<text x="429.0" y="133.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">6</text>
+<rect x="476.0" y="94.0" width="54" height="28" rx="8" fill="rgba(90,173,224,0.1)" stroke="#5AADE0" stroke-width="0.8"/>
+<text x="503.0" y="112.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#5AADE0">Leu</text>
+<text x="503.0" y="133.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">7</text>
+<rect x="550.0" y="94.0" width="54" height="28" rx="8" fill="rgba(78,205,196,0.1)" stroke="#4ECDC4" stroke-width="0.8"/>
+<text x="577.0" y="112.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#4ECDC4">Ser</text>
+<text x="577.0" y="133.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">8</text>
+<rect x="32.0" y="156.0" width="54" height="28" rx="8" fill="rgba(78,205,196,0.1)" stroke="#4ECDC4" stroke-width="0.8"/>
+<text x="59.0" y="174.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#4ECDC4">Ser</text>
+<text x="59.0" y="195.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">9</text>
+<rect x="106.0" y="156.0" width="54" height="28" rx="8" fill="rgba(90,173,224,0.1)" stroke="#5AADE0" stroke-width="0.8"/>
+<text x="133.0" y="174.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#5AADE0">Leu</text>
+<text x="133.0" y="195.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">10</text>
+<rect x="180.0" y="156.0" width="54" height="28" rx="8" fill="rgba(90,173,224,0.1)" stroke="#5AADE0" stroke-width="0.8"/>
+<text x="207.0" y="174.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#5AADE0">Phe</text>
+<text x="207.0" y="195.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">11</text>
+<rect x="254.0" y="156.0" width="54" height="28" rx="8" fill="rgba(90,173,224,0.1)" stroke="#5AADE0" stroke-width="0.8"/>
+<text x="281.0" y="174.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#5AADE0">Val</text>
+<text x="281.0" y="195.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">12</text>
+<rect x="328.0" y="156.0" width="54" height="28" rx="8" fill="rgba(78,205,196,0.1)" stroke="#4ECDC4" stroke-width="0.8"/>
+<text x="355.0" y="174.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#4ECDC4">Asn</text>
+<text x="355.0" y="195.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">13</text>
+<rect x="402.0" y="156.0" width="54" height="28" rx="8" fill="rgba(251,191,36,0.1)" stroke="#FBBF24" stroke-width="0.8"/>
+<text x="429.0" y="174.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#FBBF24">Gly</text>
+<text x="429.0" y="195.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">14</text>
+<rect x="476.0" y="156.0" width="54" height="28" rx="8" fill="rgba(251,191,36,0.1)" stroke="#FBBF24" stroke-width="0.8"/>
+<text x="503.0" y="174.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#FBBF24">Pro</text>
+<text x="503.0" y="195.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">15</text>
+<rect x="550.0" y="156.0" width="54" height="28" rx="8" fill="rgba(167,139,250,0.1)" stroke="#A78BFA" stroke-width="0.8"/>
+<text x="577.0" y="174.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#A78BFA">Arg</text>
+<text x="577.0" y="195.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">16</text>
+<rect x="32.0" y="218.0" width="54" height="28" rx="8" fill="rgba(78,205,196,0.1)" stroke="#4ECDC4" stroke-width="0.8"/>
+<text x="59.0" y="236.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#4ECDC4">Thr</text>
+<text x="59.0" y="257.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">17</text>
+<rect x="106.0" y="218.0" width="54" height="28" rx="8" fill="rgba(90,173,224,0.1)" stroke="#5AADE0" stroke-width="0.8"/>
+<text x="133.0" y="236.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#5AADE0">Leu</text>
+<text x="133.0" y="257.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">18</text>
+<rect x="180.0" y="218.0" width="54" height="28" rx="8" fill="rgba(78,205,196,0.1)" stroke="#4ECDC4" stroke-width="0.8"/>
+<text x="207.0" y="236.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#4ECDC4">Cys</text>
+<text x="207.0" y="257.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">19</text>
+<rect x="254.0" y="218.0" width="54" height="28" rx="8" fill="rgba(251,191,36,0.1)" stroke="#FBBF24" stroke-width="0.8"/>
+<text x="281.0" y="236.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#FBBF24">Gly</text>
+<text x="281.0" y="257.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">20</text>
+<rect x="328.0" y="218.0" width="54" height="28" rx="8" fill="rgba(90,173,224,0.1)" stroke="#5AADE0" stroke-width="0.8"/>
+<text x="355.0" y="236.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#5AADE0">Ala</text>
+<text x="355.0" y="257.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">21</text>
+<rect x="402.0" y="218.0" width="54" height="28" rx="8" fill="rgba(244,114,182,0.1)" stroke="#F472B6" stroke-width="0.8"/>
+<text x="429.0" y="236.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#F472B6">Glu</text>
+<text x="429.0" y="257.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">22</text>
+<rect x="476.0" y="218.0" width="54" height="28" rx="8" fill="rgba(90,173,224,0.1)" stroke="#5AADE0" stroke-width="0.8"/>
+<text x="503.0" y="236.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#5AADE0">Leu</text>
+<text x="503.0" y="257.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">23</text>
+<rect x="550.0" y="218.0" width="54" height="28" rx="8" fill="rgba(90,173,224,0.1)" stroke="#5AADE0" stroke-width="0.8"/>
+<text x="577.0" y="236.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#5AADE0">Val</text>
+<text x="577.0" y="257.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">24</text>
+<rect x="32.0" y="280.0" width="54" height="28" rx="8" fill="rgba(244,114,182,0.1)" stroke="#F472B6" stroke-width="0.8"/>
+<text x="59.0" y="298.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#F472B6">Asp</text>
+<text x="59.0" y="319.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">25</text>
+<rect x="106.0" y="280.0" width="54" height="28" rx="8" fill="rgba(90,173,224,0.1)" stroke="#5AADE0" stroke-width="0.8"/>
+<text x="133.0" y="298.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#5AADE0">Ala</text>
+<text x="133.0" y="319.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">26</text>
+<rect x="180.0" y="280.0" width="54" height="28" rx="8" fill="rgba(90,173,224,0.1)" stroke="#5AADE0" stroke-width="0.8"/>
+<text x="207.0" y="298.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#5AADE0">Leu</text>
+<text x="207.0" y="319.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">27</text>
+<rect x="254.0" y="280.0" width="54" height="28" rx="8" fill="rgba(78,205,196,0.1)" stroke="#4ECDC4" stroke-width="0.8"/>
+<text x="281.0" y="298.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#4ECDC4">Gln</text>
+<text x="281.0" y="319.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">28</text>
+<rect x="328.0" y="280.0" width="54" height="28" rx="8" fill="rgba(90,173,224,0.1)" stroke="#5AADE0" stroke-width="0.8"/>
+<text x="355.0" y="298.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#5AADE0">Phe</text>
+<text x="355.0" y="319.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">29</text>
+<rect x="402.0" y="280.0" width="54" height="28" rx="8" fill="rgba(90,173,224,0.1)" stroke="#5AADE0" stroke-width="0.8"/>
+<text x="429.0" y="298.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#5AADE0">Val</text>
+<text x="429.0" y="319.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">30</text>
+<rect x="476.0" y="280.0" width="54" height="28" rx="8" fill="rgba(78,205,196,0.1)" stroke="#4ECDC4" stroke-width="0.8"/>
+<text x="503.0" y="298.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#4ECDC4">Cys</text>
+<text x="503.0" y="319.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">31</text>
+<rect x="550.0" y="280.0" width="54" height="28" rx="8" fill="rgba(251,191,36,0.1)" stroke="#FBBF24" stroke-width="0.8"/>
+<text x="577.0" y="298.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#FBBF24">Gly</text>
+<text x="577.0" y="319.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">32</text>
+<rect x="32.0" y="342.0" width="54" height="28" rx="8" fill="rgba(244,114,182,0.1)" stroke="#F472B6" stroke-width="0.8"/>
+<text x="59.0" y="360.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#F472B6">Asp</text>
+<text x="59.0" y="381.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">33</text>
+<rect x="106.0" y="342.0" width="54" height="28" rx="8" fill="rgba(167,139,250,0.1)" stroke="#A78BFA" stroke-width="0.8"/>
+<text x="133.0" y="360.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#A78BFA">Arg</text>
+<text x="133.0" y="381.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">34</text>
+<rect x="180.0" y="342.0" width="54" height="28" rx="8" fill="rgba(251,191,36,0.1)" stroke="#FBBF24" stroke-width="0.8"/>
+<text x="207.0" y="360.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#FBBF24">Gly</text>
+<text x="207.0" y="381.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">35</text>
+<rect x="254.0" y="342.0" width="54" height="28" rx="8" fill="rgba(90,173,224,0.1)" stroke="#5AADE0" stroke-width="0.8"/>
+<text x="281.0" y="360.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#5AADE0">Phe</text>
+<text x="281.0" y="381.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">36</text>
+<rect x="328.0" y="342.0" width="54" height="28" rx="8" fill="rgba(78,205,196,0.1)" stroke="#4ECDC4" stroke-width="0.8"/>
+<text x="355.0" y="360.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#4ECDC4">Tyr</text>
+<text x="355.0" y="381.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">37</text>
+<rect x="402.0" y="342.0" width="54" height="28" rx="8" fill="rgba(90,173,224,0.1)" stroke="#5AADE0" stroke-width="0.8"/>
+<text x="429.0" y="360.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#5AADE0">Phe</text>
+<text x="429.0" y="381.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">38</text>
+<rect x="476.0" y="342.0" width="54" height="28" rx="8" fill="rgba(78,205,196,0.1)" stroke="#4ECDC4" stroke-width="0.8"/>
+<text x="503.0" y="360.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#4ECDC4">Asn</text>
+<text x="503.0" y="381.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">39</text>
+<rect x="550.0" y="342.0" width="54" height="28" rx="8" fill="rgba(167,139,250,0.1)" stroke="#A78BFA" stroke-width="0.8"/>
+<text x="577.0" y="360.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#A78BFA">Lys</text>
+<text x="577.0" y="381.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">40</text>
+<rect x="32.0" y="404.0" width="54" height="28" rx="8" fill="rgba(251,191,36,0.1)" stroke="#FBBF24" stroke-width="0.8"/>
+<text x="59.0" y="422.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#FBBF24">Pro</text>
+<text x="59.0" y="443.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">41</text>
+<rect x="106.0" y="404.0" width="54" height="28" rx="8" fill="rgba(78,205,196,0.1)" stroke="#4ECDC4" stroke-width="0.8"/>
+<text x="133.0" y="422.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#4ECDC4">Thr</text>
+<text x="133.0" y="443.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">42</text>
+<rect x="180.0" y="404.0" width="54" height="28" rx="8" fill="rgba(251,191,36,0.1)" stroke="#FBBF24" stroke-width="0.8"/>
+<text x="207.0" y="422.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#FBBF24">Gly</text>
+<text x="207.0" y="443.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">43</text>
+<rect x="254.0" y="404.0" width="54" height="28" rx="8" fill="rgba(78,205,196,0.1)" stroke="#4ECDC4" stroke-width="0.8"/>
+<text x="281.0" y="422.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#4ECDC4">Tyr</text>
+<text x="281.0" y="443.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">44</text>
+<rect x="328.0" y="404.0" width="54" height="28" rx="8" fill="rgba(251,191,36,0.1)" stroke="#FBBF24" stroke-width="0.8"/>
+<text x="355.0" y="422.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#FBBF24">Gly</text>
+<text x="355.0" y="443.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">45</text>
+<rect x="402.0" y="404.0" width="54" height="28" rx="8" fill="rgba(78,205,196,0.1)" stroke="#4ECDC4" stroke-width="0.8"/>
+<text x="429.0" y="422.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#4ECDC4">Ser</text>
+<text x="429.0" y="443.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">46</text>
+<rect x="476.0" y="404.0" width="54" height="28" rx="8" fill="rgba(78,205,196,0.1)" stroke="#4ECDC4" stroke-width="0.8"/>
+<text x="503.0" y="422.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#4ECDC4">Ser</text>
+<text x="503.0" y="443.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">47</text>
+<rect x="550.0" y="404.0" width="54" height="28" rx="8" fill="rgba(78,205,196,0.1)" stroke="#4ECDC4" stroke-width="0.8"/>
+<text x="577.0" y="422.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#4ECDC4">Ser</text>
+<text x="577.0" y="443.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">48</text>
+<rect x="69.0" y="466.0" width="54" height="28" rx="8" fill="rgba(167,139,250,0.1)" stroke="#A78BFA" stroke-width="0.8"/>
+<text x="96.0" y="484.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#A78BFA">Arg</text>
+<text x="96.0" y="505.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">49</text>
+<rect x="143.0" y="466.0" width="54" height="28" rx="8" fill="rgba(167,139,250,0.1)" stroke="#A78BFA" stroke-width="0.8"/>
+<text x="170.0" y="484.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#A78BFA">Arg</text>
+<text x="170.0" y="505.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">50</text>
+<rect x="217.0" y="466.0" width="54" height="28" rx="8" fill="rgba(90,173,224,0.1)" stroke="#5AADE0" stroke-width="0.8"/>
+<text x="244.0" y="484.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#5AADE0">Ala</text>
+<text x="244.0" y="505.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">51</text>
+<rect x="291.0" y="466.0" width="54" height="28" rx="8" fill="rgba(251,191,36,0.1)" stroke="#FBBF24" stroke-width="0.8"/>
+<text x="318.0" y="484.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#FBBF24">Pro</text>
+<text x="318.0" y="505.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">52</text>
+<rect x="365.0" y="466.0" width="54" height="28" rx="8" fill="rgba(78,205,196,0.1)" stroke="#4ECDC4" stroke-width="0.8"/>
+<text x="392.0" y="484.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#4ECDC4">Gln</text>
+<text x="392.0" y="505.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">53</text>
+<rect x="439.0" y="466.0" width="54" height="28" rx="8" fill="rgba(78,205,196,0.1)" stroke="#4ECDC4" stroke-width="0.8"/>
+<text x="466.0" y="484.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#4ECDC4">Thr</text>
+<text x="466.0" y="505.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">54</text>
+<rect x="513.0" y="466.0" width="54" height="28" rx="8" fill="rgba(251,191,36,0.1)" stroke="#FBBF24" stroke-width="0.8"/>
+<text x="540.0" y="484.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#FBBF24">Gly</text>
+<text x="540.0" y="505.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">55</text>
+<rect x="69.0" y="528.0" width="54" height="28" rx="8" fill="rgba(90,173,224,0.1)" stroke="#5AADE0" stroke-width="0.8"/>
+<text x="96.0" y="546.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#5AADE0">Ile</text>
+<text x="96.0" y="567.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">56</text>
+<rect x="143.0" y="528.0" width="54" height="28" rx="8" fill="rgba(90,173,224,0.1)" stroke="#5AADE0" stroke-width="0.8"/>
+<text x="170.0" y="546.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#5AADE0">Val</text>
+<text x="170.0" y="567.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">57</text>
+<rect x="217.0" y="528.0" width="54" height="28" rx="8" fill="rgba(244,114,182,0.1)" stroke="#F472B6" stroke-width="0.8"/>
+<text x="244.0" y="546.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#F472B6">Asp</text>
+<text x="244.0" y="567.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">58</text>
+<rect x="291.0" y="528.0" width="54" height="28" rx="8" fill="rgba(244,114,182,0.1)" stroke="#F472B6" stroke-width="0.8"/>
+<text x="318.0" y="546.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#F472B6">Glu</text>
+<text x="318.0" y="567.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">59</text>
+<rect x="365.0" y="528.0" width="54" height="28" rx="8" fill="rgba(78,205,196,0.1)" stroke="#4ECDC4" stroke-width="0.8"/>
+<text x="392.0" y="546.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#4ECDC4">Cys</text>
+<text x="392.0" y="567.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">60</text>
+<rect x="439.0" y="528.0" width="54" height="28" rx="8" fill="rgba(78,205,196,0.1)" stroke="#4ECDC4" stroke-width="0.8"/>
+<text x="466.0" y="546.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#4ECDC4">Cys</text>
+<text x="466.0" y="567.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">61</text>
+<rect x="513.0" y="528.0" width="54" height="28" rx="8" fill="rgba(90,173,224,0.1)" stroke="#5AADE0" stroke-width="0.8"/>
+<text x="540.0" y="546.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#5AADE0">Phe</text>
+<text x="540.0" y="567.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">62</text>
+<rect x="69.0" y="590.0" width="54" height="28" rx="8" fill="rgba(167,139,250,0.1)" stroke="#A78BFA" stroke-width="0.8"/>
+<text x="96.0" y="608.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#A78BFA">Arg</text>
+<text x="96.0" y="629.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">63</text>
+<rect x="143.0" y="590.0" width="54" height="28" rx="8" fill="rgba(78,205,196,0.1)" stroke="#4ECDC4" stroke-width="0.8"/>
+<text x="170.0" y="608.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#4ECDC4">Ser</text>
+<text x="170.0" y="629.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">64</text>
+<rect x="217.0" y="590.0" width="54" height="28" rx="8" fill="rgba(78,205,196,0.1)" stroke="#4ECDC4" stroke-width="0.8"/>
+<text x="244.0" y="608.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#4ECDC4">Cys</text>
+<text x="244.0" y="629.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">65</text>
+<rect x="291.0" y="590.0" width="54" height="28" rx="8" fill="rgba(244,114,182,0.1)" stroke="#F472B6" stroke-width="0.8"/>
+<text x="318.0" y="608.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#F472B6">Asp</text>
+<text x="318.0" y="629.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">66</text>
+<rect x="365.0" y="590.0" width="54" height="28" rx="8" fill="rgba(90,173,224,0.1)" stroke="#5AADE0" stroke-width="0.8"/>
+<text x="392.0" y="608.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#5AADE0">Leu</text>
+<text x="392.0" y="629.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">67</text>
+<rect x="439.0" y="590.0" width="54" height="28" rx="8" fill="rgba(167,139,250,0.1)" stroke="#A78BFA" stroke-width="0.8"/>
+<text x="466.0" y="608.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#A78BFA">Arg</text>
+<text x="466.0" y="629.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">68</text>
+<rect x="513.0" y="590.0" width="54" height="28" rx="8" fill="rgba(167,139,250,0.1)" stroke="#A78BFA" stroke-width="0.8"/>
+<text x="540.0" y="608.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#A78BFA">Arg</text>
+<text x="540.0" y="629.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">69</text>
+<rect x="69.0" y="652.0" width="54" height="28" rx="8" fill="rgba(90,173,224,0.1)" stroke="#5AADE0" stroke-width="0.8"/>
+<text x="96.0" y="670.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#5AADE0">Leu</text>
+<text x="96.0" y="691.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">70</text>
+<rect x="143.0" y="652.0" width="54" height="28" rx="8" fill="rgba(244,114,182,0.1)" stroke="#F472B6" stroke-width="0.8"/>
+<text x="170.0" y="670.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#F472B6">Glu</text>
+<text x="170.0" y="691.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">71</text>
+<rect x="217.0" y="652.0" width="54" height="28" rx="8" fill="rgba(90,173,224,0.1)" stroke="#5AADE0" stroke-width="0.8"/>
+<text x="244.0" y="670.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#5AADE0">Met</text>
+<text x="244.0" y="691.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">72</text>
+<rect x="291.0" y="652.0" width="54" height="28" rx="8" fill="rgba(78,205,196,0.1)" stroke="#4ECDC4" stroke-width="0.8"/>
+<text x="318.0" y="670.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#4ECDC4">Tyr</text>
+<text x="318.0" y="691.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">73</text>
+<rect x="365.0" y="652.0" width="54" height="28" rx="8" fill="rgba(78,205,196,0.1)" stroke="#4ECDC4" stroke-width="0.8"/>
+<text x="392.0" y="670.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#4ECDC4">Cys</text>
+<text x="392.0" y="691.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">74</text>
+<rect x="439.0" y="652.0" width="54" height="28" rx="8" fill="rgba(90,173,224,0.1)" stroke="#5AADE0" stroke-width="0.8"/>
+<text x="466.0" y="670.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#5AADE0">Ala</text>
+<text x="466.0" y="691.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">75</text>
+<rect x="513.0" y="652.0" width="54" height="28" rx="8" fill="rgba(251,191,36,0.1)" stroke="#FBBF24" stroke-width="0.8"/>
+<text x="540.0" y="670.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#FBBF24">Pro</text>
+<text x="540.0" y="691.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">76</text>
+<rect x="69.0" y="714.0" width="54" height="28" rx="8" fill="rgba(90,173,224,0.1)" stroke="#5AADE0" stroke-width="0.8"/>
+<text x="96.0" y="732.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#5AADE0">Leu</text>
+<text x="96.0" y="753.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">77</text>
+<rect x="143.0" y="714.0" width="54" height="28" rx="8" fill="rgba(167,139,250,0.1)" stroke="#A78BFA" stroke-width="0.8"/>
+<text x="170.0" y="732.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#A78BFA">Lys</text>
+<text x="170.0" y="753.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">78</text>
+<rect x="217.0" y="714.0" width="54" height="28" rx="8" fill="rgba(251,191,36,0.1)" stroke="#FBBF24" stroke-width="0.8"/>
+<text x="244.0" y="732.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#FBBF24">Pro</text>
+<text x="244.0" y="753.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">79</text>
+<rect x="291.0" y="714.0" width="54" height="28" rx="8" fill="rgba(90,173,224,0.1)" stroke="#5AADE0" stroke-width="0.8"/>
+<text x="318.0" y="732.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#5AADE0">Ala</text>
+<text x="318.0" y="753.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">80</text>
+<rect x="365.0" y="714.0" width="54" height="28" rx="8" fill="rgba(167,139,250,0.1)" stroke="#A78BFA" stroke-width="0.8"/>
+<text x="392.0" y="732.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#A78BFA">Lys</text>
+<text x="392.0" y="753.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">81</text>
+<rect x="439.0" y="714.0" width="54" height="28" rx="8" fill="rgba(78,205,196,0.1)" stroke="#4ECDC4" stroke-width="0.8"/>
+<text x="466.0" y="732.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#4ECDC4">Ser</text>
+<text x="466.0" y="753.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">82</text>
+<rect x="513.0" y="714.0" width="54" height="28" rx="8" fill="rgba(90,173,224,0.1)" stroke="#5AADE0" stroke-width="0.8"/>
+<text x="540.0" y="732.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#5AADE0">Ala</text>
+<text x="540.0" y="753.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">83</text>
+<circle cx="123.0" cy="774" r="3.5" fill="#5AADE0" opacity="0.7"/>
+<text x="131.0" y="777" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="8" font-weight="400" fill="rgba(255,255,255,0.55)">Hydrophobic</text>
+<circle cx="203.0" cy="774" r="3.5" fill="#4ECDC4" opacity="0.7"/>
+<text x="211.0" y="777" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="8" font-weight="400" fill="rgba(255,255,255,0.55)">Polar</text>
+<circle cx="283.0" cy="774" r="3.5" fill="#A78BFA" opacity="0.7"/>
+<text x="291.0" y="777" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="8" font-weight="400" fill="rgba(255,255,255,0.55)">Positive</text>
+<circle cx="363.0" cy="774" r="3.5" fill="#F472B6" opacity="0.7"/>
+<text x="371.0" y="777" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="8" font-weight="400" fill="rgba(255,255,255,0.55)">Negative</text>
+<circle cx="443.0" cy="774" r="3.5" fill="#FBBF24" opacity="0.7"/>
+<text x="451.0" y="777" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="8" font-weight="400" fill="rgba(255,255,255,0.55)">Special</text>
+<text x="318.0" y="804" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-weight="400" fill="rgba(255,255,255,0.55)"><tspan font-size="10">C</tspan><tspan font-size="7" dy="3">400</tspan><tspan font-size="10" dy="-3">H</tspan><tspan font-size="7" dy="3">625</tspan><tspan font-size="10" dy="-3">N</tspan><tspan font-size="7" dy="3">111</tspan><tspan font-size="10" dy="-3">O</tspan><tspan font-size="7" dy="3">115</tspan><tspan font-size="10" dy="-3">S</tspan><tspan font-size="7" dy="3">9</tspan></text>
+<text x="401.0" y="804" text-anchor="start" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="10" font-weight="400" fill="rgba(255,255,255,0.55)">|  9111.40 Da</text>
+</svg>

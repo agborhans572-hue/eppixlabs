@@ -1,0 +1,385 @@
+{
+  "updated": [
+    {
+      "route": "/products/5-amino-1mq",
+      "subtitle": "5-Amino-1MQ USA — 10 mg, 50 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/5-amino-1mq"
+    },
+    {
+      "route": "/products/5-amino-1mq-capsules",
+      "subtitle": "5-Amino-1MQ Capsules USA — Capsules",
+      "source": "https://www.eppixlabs.com/products/5-amino-1mq-capsules"
+    },
+    {
+      "route": "/products/ahk-cu",
+      "subtitle": "AHK-cu USA — Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/ahk-cu"
+    },
+    {
+      "route": "/products/adamax",
+      "subtitle": "Adamax USA — 14 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/adamax"
+    },
+    {
+      "route": "/products/aod-9604-5mg",
+      "subtitle": "AOD-9604 USA — 5 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/aod-9604-5mg"
+    },
+    {
+      "route": "/products/ara-290-16mg",
+      "subtitle": "ARA-290 USA — 20 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/ara-290-16mg"
+    },
+    {
+      "route": "/products/bpc-157",
+      "subtitle": "BPC-157 USA — 10 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/bpc-157"
+    },
+    {
+      "route": "/products/bpc-157-capsules",
+      "subtitle": "BPC-157 Capsules USA — Capsules",
+      "source": "https://www.eppixlabs.com/products/bpc-157-capsules"
+    },
+    {
+      "route": "/products/cagrilintide",
+      "subtitle": "Cagrilintide USA — 10 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/cagrilintide"
+    },
+    {
+      "route": "/products/bronchogen",
+      "subtitle": "Bronchogen USA — 20 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/bronchogen"
+    },
+    {
+      "route": "/products/cartalax",
+      "subtitle": "Cartalax USA — 20 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/cartalax"
+    },
+    {
+      "route": "/products/cardiogen",
+      "subtitle": "Cardiogen USA — 20 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/cardiogen"
+    },
+    {
+      "route": "/products/chonluten",
+      "subtitle": "Chonluten USA — 20 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/chonluten"
+    },
+    {
+      "route": "/products/cjc-1295-ipamorelin",
+      "subtitle": "CJC-1295 / Ipamorelin Blend USA — 10 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/cjc-1295-ipamorelin"
+    },
+    {
+      "route": "/products/cerebrolysin",
+      "subtitle": "Cerebrolysin USA — 30 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/cerebrolysin"
+    },
+    {
+      "route": "/products/cjc-1295-no-dac",
+      "subtitle": "CJC-1295 (No DAC) USA — 10 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/cjc-1295-no-dac"
+    },
+    {
+      "route": "/products/coremend-tb-500-bpc-157-kpv-blend",
+      "subtitle": "Coremend Blend USA — 45 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/coremend-tb-500-bpc-157-kpv-blend"
+    },
+    {
+      "route": "/products/crystagen",
+      "subtitle": "Crystagen USA — 20 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/crystagen"
+    },
+    {
+      "route": "/products/cortagen",
+      "subtitle": "Cortagen USA — 20 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/cortagen"
+    },
+    {
+      "route": "/products/deadpool",
+      "subtitle": "Deadpool Blend USA — 20 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/deadpool"
+    },
+    {
+      "route": "/products/dihexa-capsules",
+      "subtitle": "Dihexa Capsules USA — Capsules",
+      "source": "https://www.eppixlabs.com/products/dihexa-capsules"
+    },
+    {
+      "route": "/products/dsip",
+      "subtitle": "DSIP USA — 10 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/dsip"
+    },
+    {
+      "route": "/products/epitalon",
+      "subtitle": "Epitalon USA — 10 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/epitalon"
+    },
+    {
+      "route": "/products/eloralintide",
+      "subtitle": "Eloralintide USA — 10 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/eloralintide"
+    },
+    {
+      "route": "/products/ghk-cu",
+      "subtitle": "GHK-Cu USA — 50 mg, 100 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/ghk-cu"
+    },
+    {
+      "route": "/products/foxo4-dri",
+      "subtitle": "FOXO4-DRI USA — 10 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/foxo4-dri"
+    },
+    {
+      "route": "/products/glow",
+      "subtitle": "GLOW Blend USA — 70 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/glow"
+    },
+    {
+      "route": "/products/goralatide-ac-sdkp-tb-500-tb4",
+      "subtitle": "Goralatide (Ac-SDKP) USA — Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/goralatide-ac-sdkp-tb-500-tb4"
+    },
+    {
+      "route": "/products/ipamorelin",
+      "subtitle": "Ipamorelin USA — 10 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/ipamorelin"
+    },
+    {
+      "route": "/products/humanin",
+      "subtitle": "Humanin USA — 10 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/humanin"
+    },
+    {
+      "route": "/products/igf-1-lr3",
+      "subtitle": "IGF-1 LR3 USA — 1 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/igf-1-lr3"
+    },
+    {
+      "route": "/products/kisspeptin-10",
+      "subtitle": "Kisspeptin-10 USA — 10 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/kisspeptin-10"
+    },
+    {
+      "route": "/products/kpv-capsules",
+      "subtitle": "KPV Capsules USA — Capsules",
+      "source": "https://www.eppixlabs.com/products/kpv-capsules"
+    },
+    {
+      "route": "/products/klow",
+      "subtitle": "KLOW Blend USA — 80 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/klow"
+    },
+    {
+      "route": "/products/livagen",
+      "subtitle": "Livagen USA — 20 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/livagen"
+    },
+    {
+      "route": "/products/kpv",
+      "subtitle": "KPV USA — 10 mg, 30 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/kpv"
+    },
+    {
+      "route": "/products/ll-37",
+      "subtitle": "LL-37 USA — 5 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/ll-37"
+    },
+    {
+      "route": "/products/mito-genesis",
+      "subtitle": "Mito-Genesis Blend USA — 120 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/mito-genesis"
+    },
+    {
+      "route": "/products/melanotan-1",
+      "subtitle": "Melanotan-1 USA — 10 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/melanotan-1"
+    },
+    {
+      "route": "/products/melanotan-ii",
+      "subtitle": "Melanotan II USA — 10 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/melanotan-ii"
+    },
+    {
+      "route": "/products/mots-c",
+      "subtitle": "MOTS-c USA — 10 mg, 20 mg, 40 mg, 45 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/mots-c"
+    },
+    {
+      "route": "/products/n-acetyl-semax",
+      "subtitle": "N-Acetyl Semax USA — 10 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/n-acetyl-semax"
+    },
+    {
+      "route": "/products/n-acetyl-selank",
+      "subtitle": "N-Acetyl Selank USA — 10 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/n-acetyl-selank"
+    },
+    {
+      "route": "/products/n-acetyl-epitalon",
+      "subtitle": "N-Acetyl Epitalon USA — 20 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/n-acetyl-epitalon"
+    },
+    {
+      "route": "/products/nad",
+      "subtitle": "NAD+ USA — 500 mg, 1000 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/nad"
+    },
+    {
+      "route": "/products/orforglipron",
+      "subtitle": "Orforglipron Capsules USA — Capsules",
+      "source": "https://www.eppixlabs.com/products/orforglipron"
+    },
+    {
+      "route": "/products/pancragen",
+      "subtitle": "Pancragen USA — 20 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/pancragen"
+    },
+    {
+      "route": "/products/ovagen",
+      "subtitle": "Ovagen USA — 20 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/ovagen"
+    },
+    {
+      "route": "/products/pe-22-28",
+      "subtitle": "PE-22-28 USA — 10 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/pe-22-28"
+    },
+    {
+      "route": "/products/pinealon",
+      "subtitle": "Pinealon USA — 20 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/pinealon"
+    },
+    {
+      "route": "/products/pnc-27",
+      "subtitle": "PNC-27 USA — 30 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/pnc-27"
+    },
+    {
+      "route": "/products/prostamax",
+      "subtitle": "Prostamax USA — 20 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/prostamax"
+    },
+    {
+      "route": "/products/selank",
+      "subtitle": "Selank USA — 10 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/selank"
+    },
+    {
+      "route": "/products/pt-141",
+      "subtitle": "PT-141 USA — 10 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/pt-141"
+    },
+    {
+      "route": "/products/retatrutide",
+      "subtitle": "Retatrutide USA — 10 mg, 20 mg, 40 mg, 120 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/retatrutide"
+    },
+    {
+      "route": "/products/semaglutide",
+      "subtitle": "Semaglutide USA — 10 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/semaglutide"
+    },
+    {
+      "route": "/products/semax",
+      "subtitle": "Semax USA — 10 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/semax"
+    },
+    {
+      "route": "/products/sermorelin",
+      "subtitle": "Sermorelin USA — 5 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/sermorelin"
+    },
+    {
+      "route": "/products/slu-pp-332-capsules",
+      "subtitle": "SLU-PP-332 Capsules USA — 500 mcg Capsules",
+      "source": "https://www.eppixlabs.com/products/slu-pp-332-capsules"
+    },
+    {
+      "route": "/products/ss-31",
+      "subtitle": "SS-31 USA — 50 mg, 100 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/ss-31"
+    },
+    {
+      "route": "/products/tb-500",
+      "subtitle": "TB-500 USA — 10 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/tb-500"
+    },
+    {
+      "route": "/products/tak-653-capsules",
+      "subtitle": "TAK-653 Capsules USA — Capsules",
+      "source": "https://www.eppixlabs.com/products/tak-653-capsules"
+    },
+    {
+      "route": "/products/tb-500-fragment-17-23",
+      "subtitle": "TB-500 Fragment 17-23 USA — 10 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/tb-500-fragment-17-23"
+    },
+    {
+      "route": "/products/tesamorelin",
+      "subtitle": "Tesamorelin USA — 10 mg, 20 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/tesamorelin"
+    },
+    {
+      "route": "/products/tesamorelin-ipamorelin-blend",
+      "subtitle": "Tesamorelin / Ipamorelin Blend USA — 13 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/tesamorelin-ipamorelin-blend"
+    },
+    {
+      "route": "/products/testagen",
+      "subtitle": "Testagen USA — 20 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/testagen"
+    },
+    {
+      "route": "/products/thymogen",
+      "subtitle": "Thymogen USA — 20 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/thymogen"
+    },
+    {
+      "route": "/products/thymosin-alpha-1",
+      "subtitle": "Thymosin Alpha-1 USA — 10 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/thymosin-alpha-1"
+    },
+    {
+      "route": "/products/tirzepatide",
+      "subtitle": "Tirzepatide USA — 10 mg, 30 mg, 65 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/tirzepatide"
+    },
+    {
+      "route": "/products/thymulin",
+      "subtitle": "Thymulin USA — 20 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/thymulin"
+    },
+    {
+      "route": "/products/triad-gh",
+      "subtitle": "Triad-GH Blend USA — 12 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/triad-gh"
+    },
+    {
+      "route": "/products/vesilute",
+      "subtitle": "Vesilute USA — 20 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/vesilute"
+    },
+    {
+      "route": "/products/vilon",
+      "subtitle": "Vilon USA — 20 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/vilon"
+    },
+    {
+      "route": "/products/vesugen",
+      "subtitle": "Vesugen USA — 20 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/vesugen"
+    },
+    {
+      "route": "/products/vip",
+      "subtitle": "VIP USA — 10 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/vip"
+    },
+    {
+      "route": "/products/wolverine",
+      "subtitle": "Wolverine Stack USA — 10 mg, 20 mg, 70 mg Lyophilized Vials",
+      "source": "https://www.eppixlabs.com/products/wolverine"
+    }
+  ],
+  "limitations": []
+}

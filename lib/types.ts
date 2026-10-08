@@ -1,0 +1,8 @@
+export interface Variant { id:string; title:string; sku:string; strength:string; packSize:number; priceCents:number; available:boolean; stock:number; image:string; }
+export interface Certificate { batch:string; strength:string; productName:string; purity:string; mass:string; laboratory:string; date:string; reportUrl:string; image:string; dateAdded?:string; heavyMetals?:string; screenUrl?:string; }
+export interface Product { id:string; slug:string; name:string; description:string; image:string; images:string[]; categories:string[]; comingSoon:boolean; variants:Variant[]; certificates:Certificate[]; coaLinks?:Record<string,string>; coaImages?:Record<string,string>; displayName?:string; searchBatchNumbers?:Record<string,string>; searchCoaStrengths?:string[]; searchTags?:string[]; }
+export interface CapturedPage { route:string; title:string; description:string; html:string; bodyClass:string; htmlClass:string; styles:string[]; source:string; capturedAt:string; records:Record<string,unknown>[]; }
+export interface CartItem { variantId:string; quantity:number; }
+export interface CartLine extends CartItem { product:string; slug:string; variant:string; image:string; priceCents:number; packSize:number; available:boolean; }
+export interface Cart { items:CartLine[]; vialCount:number; subtotalCents:number; discountPercent:number; discountCents:number; totalCents:number; freeShipping:boolean; checkoutAvailable:false; }
+export interface SearchResult { title:string; url:string; type:'Product'|'Certificate'|'Research'|'Page'; image?:string; subtitle?:string; }

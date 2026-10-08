@@ -1,0 +1,37 @@
+# Public behavior audit
+
+Reference: https://www.eppixlabs.com/. Local routes and public assets are indexed in `reference/manifest.json`. This audit distinguishes implementation, exercised sequences, and outstanding verification; binding a control is not proof of complete behavior fidelity.
+
+## Implemented interaction contracts
+
+| Surface | Trigger and result | Persistence / keyboard / responsive behavior |
+| --- | --- | --- |
+| Catalog | Filter opens an anchored category panel; selections combine with OR; removable chips and Clear all reset results; availability and sorting use typed catalog values. | Category routes start with their category. Reset can restore all 76 products. Native buttons support Enter/Space; Escape and outside click dismiss the panel. Three filter columns become two on mobile. |
+| Search | Typing searches products, certificates, research and pages; grouped links preserve COA variant queries; clear removes the query. | Debounced requests are cancelled when superseded. Links work with Tab/Enter. Search is anchored to the header field; Canadian store remains external. |
+| Product | Strength and pack update prices, availability, images, headings, report metadata and verification links; quantity updates vial discounts; gallery buttons and swipes change slides. Product-card image hover flips 180 degrees in 500 ms to the selected certificate and reverses on pointer leave; variants without reports keep the vial face and hide stale certificate controls. | Strength/pack/COA query parameters restore on direct load, reload and history navigation. Quantity cannot fall below one. Image controls support keyboard activation. |
+| Certificates | Library query uses all captured pagination rows; category selection, pagination, batch lookup, report links and original downloads remain available. | Expanded documents use a white scrollable viewer, variant title and laboratory link. Escape/outside click dismiss; focus is contained and returned to the trigger. Latest-result cards and image reports retain independent laboratory links. |
+| Research | Query, multiple subjects and publication month combine; Curated/Newest/Oldest update ordering; counts and empty states respond; Reset clears selections. | Subject selections use OR. Search form preserves native GET navigation. Native controls support keyboard input. |
+| Calculator | Stock preparation, forward/reverse molarity, single/serial dilution, aliquots and sequence analysis calculate from validated inputs; presets, custom values and units update outputs. | Serial series includes the starting stock tube. Invalid values produce honest errors. Sequence graph, buffer pH and absorbance update; sliders work from the keyboard. |
+| Cart | Server loads and changes cart lines; packs contribute vial counts; 3/5/10 vials apply 5/10/20 percent discounts. | Signed HttpOnly guest cookie restores across routes/reload. Server rejects supplied prices and invalid variants. Drawer traps focus and makes the background inert. Checkout remains disabled. |
+| Global | Theme toggles and persists; announcements rotate every five seconds, pause on hover/focus, and defer automatic rotation for fourteen seconds after manual navigation. | Theme icons follow current mode including reload. Molecular background adapts to rendering performance and reduced motion. Navigation and dialogs respond to mobile layouts. |
+| Forms / accounts | Newsletter, support and affiliate requests validate and persist; duplicate subscriptions are idempotent. Supabase signup/login/reset/OAuth and protected account flows are implemented. | Pending actions disable duplicate submission; failures are surfaced. Missing service configuration is reported honestly. Saved submissions do not promise email delivery. |
+
+## Verification evidence
+
+- `artifacts/behavior-journeys.json`: 47 passing distinct browser assertions covering catalog/search, research, calculator modes, variant queries, packs, gallery, cart recovery, back/forward, reload, Escape, modal focus and inert background.
+- `artifacts/api-report.json`: 15 passing local server checks, including discount boundaries at 2/3, 4/5 and 9/10 vials, price tampering, origin enforcement, duplicate submissions and unconfigured authentication.
+- Unit suite: 24 passing tests for calculations, variants, filters, discounts and server pricing.
+- `artifacts/route-report.json`: 304 routes checked with no failures.
+- `artifacts/content-report.json`: 288 captured states, 504 assets, no missing routes/assets, empty pages or executable source scripts.
+- `artifacts/interaction-coverage.json`: all 8,761 captured buttons have a binding, native outcome or disabled state. This is static coverage, not 8,761 browser executions.
+- `artifacts/visual-matrix/report.json`: 168 paired captures across 14 representative templates, three widths (390, 768 and 1440), and both themes. Records retain actual viewport, overflow and broken-image observations; screenshot theme checks were used to identify and recapture stale compositor frames. `artifacts/visual-surfaces` adds 68 captures of open filters, region selectors, search, responsive menus, carts and certificate viewers. Earlier local responsive checks across 15 templates are in `artifacts/browser-report.json`.
+
+## Remaining verification and fidelity gaps
+
+Representative template and open-surface captures have been completed. These comparisons do not establish pixel-identical fidelity for every route, full-page section, animation or possible interaction sequence. Molecular animation phases and announcement timing are independent; some open-state captures contain transitional compositor frames. Cart screenshots include differing test contents. Mobile announcements and sequence residue names, colors and native hover tooltips were matched to observed reference behavior. Exact long-tail search ranking, physical touch-device behavior and all animation timing remain fidelity gaps requiring further exhaustive comparison. The static button inventory is not a browser execution of every control.
+
+Search display names, strength metadata and batch labels come from the reference public `/api/search/catalog` response saved in `reference/behavior/search-catalog.json`. Product subtitle refresh evidence is recorded in `reference/behavior/product-subtitles.json`.
+
+Sixteen reference batch-detail URLs return 404. Independent local views use their published documents and laboratory links; original inaccessible layouts cannot be verified. The exact URLs and statuses are in `artifacts/certificate-source-report.json`.
+
+Live signup confirmation, password reset delivery, Google callbacks, two-account isolation, Supabase database/storage integration and Vercel deployment remain unverified because service configuration is absent. See `README.md` for setup instructions. Checkout, marketing/transactional delivery, fulfillment and private customer migration remain intentionally deferred.

@@ -1,0 +1,5 @@
+import {readFile,writeFile} from 'node:fs/promises';import {createHash} from 'node:crypto';import {load} from 'cheerio';
+const id=createHash('sha256').update('/peptide-calculator').digest('hex').slice(0,20);const p=JSON.parse(await readFile('reference/pages/'+id+'.json','utf8'));const $=load(p.html);
+for(const id of ['reconstitution','molarity','dilution','aliquots','sequence']){const s=$('#'+id);console.log(id,s.find('input,select,textarea').toArray().map(e=>({tag:e.name,attr:e.attribs,text:$(e).text().slice(0,40)})));console.log('METRICS',s.find('p').toArray().slice(-20).map(e=>$(e).text()).join(' | '));}
+const raw=await readFile('reference/raw/'+id+'.html','utf8'),r=load(raw);
+for(const e of r('script[src]').toArray()){const src=new URL(r(e).attr('src'),'https://www.eppixlabs.com').href;try{const js=await(await fetch(src)).text();if(js.includes('GRAVY')||js.includes('hydropathy')){await writeFile('reference/raw/calculator-source.js',js);for(const term of ['GRAVY','8.6','hydropathy','Sequence MW','molarity']){const i=js.indexOf(term);console.log(term,js.slice(Math.max(0,i-600),i+1000));}}}catch{}}

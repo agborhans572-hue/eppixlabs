@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 140" width="400" height="140">
+<rect width="400" height="140" fill="none"/>
+<rect x="20" y="16" width="360" height="108" rx="8"
+      fill="rgba(43,104,148,0.08)" stroke="#2B6894" stroke-width="0.5" stroke-dasharray="4 3"/>
+<text x="200.0" y="48" text-anchor="middle"
+      font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" font-weight="600"
+      fill="#000000">IGF-1 LR3</text>
+<text x="200.0" y="68" text-anchor="middle"
+      font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="10" font-weight="400"
+      fill="rgba(0,0,0,0.45)">83 amino acids — structure too large for diagram</text>
+<text x="200.0" y="88" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-weight="400" fill="rgba(0,0,0,0.45)"><tspan font-size="10">C</tspan><tspan font-size="7" dy="3">400</tspan><tspan font-size="10" dy="-3">H</tspan><tspan font-size="7" dy="3">625</tspan><tspan font-size="10" dy="-3">N</tspan><tspan font-size="7" dy="3">111</tspan><tspan font-size="10" dy="-3">O</tspan><tspan font-size="7" dy="3">115</tspan><tspan font-size="10" dy="-3">S</tspan><tspan font-size="7" dy="3">9</tspan></text>
+<text x="278.0" y="88" text-anchor="start" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="10" font-weight="400" fill="rgba(0,0,0,0.45)">|  9111 Da</text>
+<text x="200.0" y="108" text-anchor="middle"
+      font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="9" font-weight="400"
+      fill="#2B6894">Long R3 IGF-1, modified insulin-like growth factor, 83 amino acids</text>
+</svg>

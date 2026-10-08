@@ -1,0 +1,3 @@
+import type { NextConfig } from 'next';
+const config: NextConfig = { poweredByHeader: false, devIndicators:false, serverExternalPackages: ['cheerio'], outputFileTracingIncludes:{'/*':['./reference/pages/**/*.json','./reference/catalog.json','./reference/certificates.json','./reference/manifest.json','./reference/behavior/*.html','./reference/background-rendered.html','./reference/background-dark-rendered.html']}, async headers() { return [{source:'/(.*)',headers:[{key:'X-Content-Type-Options',value:'nosniff'},{key:'Referrer-Policy',value:'strict-origin-when-cross-origin'},{key:'X-Frame-Options',value:'SAMEORIGIN'}]}]; } };
+export default config;

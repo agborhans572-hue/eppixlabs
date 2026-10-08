@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 192" width="340" height="192">
+<!-- Peptide Chain: N-Acetyl Epitalon | Mode: dark -->
+<defs>
+
+<filter id="bond-glow" x="-20%" y="-20%" width="140%" height="140%">
+  <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur"/>
+  <feFlood flood-color="#7CCAE8" flood-opacity="0.35"/>
+  <feComposite in2="blur" operator="in"/>
+  <feMerge>
+    <feMergeNode/>
+    <feMergeNode in="SourceGraphic"/>
+  </feMerge>
+</filter>
+
+</defs>
+<style>
+@keyframes connectorPulse {
+  0%, 100% { stroke-opacity: 0.25; }
+  50% { stroke-opacity: 1; }
+}
+@keyframes residueGlow {
+  0%, 100% { filter: drop-shadow(0 0 2px rgba(124, 202, 232, 0.2)); }
+  50% { filter: drop-shadow(0 0 14px rgba(180, 225, 248, 0.85)); }
+}
+@keyframes textBreath {
+  0%, 100% { opacity: 0.75; }
+  50% { opacity: 1; }
+}
+line {
+  animation: connectorPulse 5s ease-in-out infinite;
+}
+rect[rx] {
+  animation: residueGlow 5s ease-in-out infinite;
+  animation-delay: 0.3s;
+}
+text[font-size="11"], text[font-size="16"] {
+  animation: textBreath 5s ease-in-out infinite;
+  animation-delay: 0.6s;
+}
+</style>
+<rect width="340" height="192" fill="none"/>
+<text x="170.0" y="44" text-anchor="middle" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#FFFFFF">N-Acetyl Epitalon</text>
+<text x="170.0" y="62" text-anchor="middle" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="10" font-weight="400" fill="rgba(255,255,255,0.55)">N-terminally acetylated Epitalon tetrapeptide</text>
+<line x1="86.0" y1="108.0" x2="106.0" y2="108.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="160.0" y1="108.0" x2="180.0" y2="108.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<line x1="234.0" y1="108.0" x2="254.0" y2="108.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<rect x="32.0" y="94.0" width="54" height="28" rx="8" fill="rgba(90,173,224,0.1)" stroke="#5AADE0" stroke-width="0.8"/>
+<text x="59.0" y="112.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#5AADE0">Ala</text>
+<text x="59.0" y="133.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">1</text>
+<rect x="106.0" y="94.0" width="54" height="28" rx="8" fill="rgba(244,114,182,0.1)" stroke="#F472B6" stroke-width="0.8"/>
+<text x="133.0" y="112.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#F472B6">Glu</text>
+<text x="133.0" y="133.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">2</text>
+<rect x="180.0" y="94.0" width="54" height="28" rx="8" fill="rgba(244,114,182,0.1)" stroke="#F472B6" stroke-width="0.8"/>
+<text x="207.0" y="112.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#F472B6">Asp</text>
+<text x="207.0" y="133.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">3</text>
+<rect x="254.0" y="94.0" width="54" height="28" rx="8" fill="rgba(251,191,36,0.1)" stroke="#FBBF24" stroke-width="0.8"/>
+<text x="281.0" y="112.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#FBBF24">Gly</text>
+<text x="281.0" y="133.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">4</text>
+<circle cx="55.0" cy="154" r="3.5" fill="#5AADE0" opacity="0.7"/>
+<text x="63.0" y="157" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="8" font-weight="400" fill="rgba(255,255,255,0.55)">Hydrophobic</text>
+<circle cx="135.0" cy="154" r="3.5" fill="#F472B6" opacity="0.7"/>
+<text x="143.0" y="157" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="8" font-weight="400" fill="rgba(255,255,255,0.55)">Negative</text>
+<circle cx="215.0" cy="154" r="3.5" fill="#FBBF24" opacity="0.7"/>
+<text x="223.0" y="157" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="8" font-weight="400" fill="rgba(255,255,255,0.55)">Special</text>
+<text x="170.0" y="184" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-weight="400" fill="rgba(255,255,255,0.55)"><tspan font-size="10">C</tspan><tspan font-size="7" dy="3">16</tspan><tspan font-size="10" dy="-3">H</tspan><tspan font-size="7" dy="3">24</tspan><tspan font-size="10" dy="-3">N</tspan><tspan font-size="7" dy="3">4</tspan><tspan font-size="10" dy="-3">O</tspan><tspan font-size="7" dy="3">10</tspan></text>
+<text x="228.5" y="184" text-anchor="start" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="10" font-weight="400" fill="rgba(255,255,255,0.55)">|  432.38 Da</text>
+</svg>

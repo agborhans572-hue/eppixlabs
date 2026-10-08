@@ -1,0 +1,5 @@
+import {NextResponse} from 'next/server';
+import {configured,supabaseServer} from '@/lib/supabase';
+export async function GET(request:Request){const url=new URL(request.url),code=url.searchParams.get('code'),tokenHash=url.searchParams.get('token_hash'),type=url.searchParams.get('type');const requested=url.searchParams.get('next')||'/account';const next=requested.startsWith('/')&&!requested.startsWith('//')&&!requested.includes('\\')?requested:'/account';
+  if(configured()) {const db=await supabaseServer();if(code){const {error}=await db.auth.exchangeCodeForSession(code);if(!error)return NextResponse.redirect(new URL(next,url.origin));}else if(tokenHash&&['signup','recovery','email'].includes(type||'')){const {error}=await db.auth.verifyOtp({token_hash:tokenHash,type:type as 'signup'|'recovery'|'email'});if(!error)return NextResponse.redirect(new URL(type==='recovery'?'/reset-password':next,url.origin));}}
+  return NextResponse.redirect(new URL('/login?error=Unable%20to%20verify%20the%20sign-in%20link',url.origin));}

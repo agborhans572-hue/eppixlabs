@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192">
+<!-- Peptide Chain: Thymogen | Mode: dark -->
+<defs>
+
+<filter id="bond-glow" x="-20%" y="-20%" width="140%" height="140%">
+  <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur"/>
+  <feFlood flood-color="#7CCAE8" flood-opacity="0.35"/>
+  <feComposite in2="blur" operator="in"/>
+  <feMerge>
+    <feMergeNode/>
+    <feMergeNode in="SourceGraphic"/>
+  </feMerge>
+</filter>
+
+</defs>
+<style>
+@keyframes connectorPulse {
+  0%, 100% { stroke-opacity: 0.25; }
+  50% { stroke-opacity: 1; }
+}
+@keyframes residueGlow {
+  0%, 100% { filter: drop-shadow(0 0 2px rgba(124, 202, 232, 0.2)); }
+  50% { filter: drop-shadow(0 0 14px rgba(180, 225, 248, 0.85)); }
+}
+@keyframes textBreath {
+  0%, 100% { opacity: 0.75; }
+  50% { opacity: 1; }
+}
+line {
+  animation: connectorPulse 5s ease-in-out infinite;
+}
+rect[rx] {
+  animation: residueGlow 5s ease-in-out infinite;
+  animation-delay: 0.3s;
+}
+text[font-size="11"], text[font-size="16"] {
+  animation: textBreath 5s ease-in-out infinite;
+  animation-delay: 0.6s;
+}
+</style>
+<rect width="192" height="192" fill="none"/>
+<text x="96.0" y="44" text-anchor="middle" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#FFFFFF">Thymogen</text>
+<text x="96.0" y="62" text-anchor="middle" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="10" font-weight="400" fill="rgba(255,255,255,0.55)">L-Glu-L-Trp immunomodulatory dipeptide</text>
+<line x1="86.0" y1="108.0" x2="106.0" y2="108.0" stroke="#4A9ED6" stroke-width="1.0" stroke-linecap="round" opacity="0.5"/>
+<rect x="32.0" y="94.0" width="54" height="28" rx="8" fill="rgba(244,114,182,0.1)" stroke="#F472B6" stroke-width="0.8"/>
+<text x="59.0" y="112.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#F472B6">Glu</text>
+<text x="59.0" y="133.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">1</text>
+<rect x="106.0" y="94.0" width="54" height="28" rx="8" fill="rgba(90,173,224,0.1)" stroke="#5AADE0" stroke-width="0.8"/>
+<text x="133.0" y="112.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="600" fill="#5AADE0">Trp</text>
+<text x="133.0" y="133.0" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="7" font-weight="400" fill="rgba(255,255,255,0.55)">2</text>
+<circle cx="21.0" cy="154" r="3.5" fill="#5AADE0" opacity="0.7"/>
+<text x="29.0" y="157" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="8" font-weight="400" fill="rgba(255,255,255,0.55)">Hydrophobic</text>
+<circle cx="101.0" cy="154" r="3.5" fill="#F472B6" opacity="0.7"/>
+<text x="109.0" y="157" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="8" font-weight="400" fill="rgba(255,255,255,0.55)">Negative</text>
+<text x="96.0" y="184" text-anchor="middle" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-weight="400" fill="rgba(255,255,255,0.55)"><tspan font-size="10">C</tspan><tspan font-size="7" dy="3">16</tspan><tspan font-size="10" dy="-3">H</tspan><tspan font-size="7" dy="3">19</tspan><tspan font-size="10" dy="-3">N</tspan><tspan font-size="7" dy="3">3</tspan><tspan font-size="10" dy="-3">O</tspan><tspan font-size="7" dy="3">5</tspan></text>
+<text x="151.0" y="184" text-anchor="start" font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="10" font-weight="400" fill="rgba(255,255,255,0.55)">|  333.34 Da</text>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 140" width="400" height="140">
+<rect width="400" height="140" fill="none"/>
+<rect x="20" y="16" width="360" height="108" rx="8"
+      fill="rgba(74,158,214,0.15)" stroke="#4A9ED6" stroke-width="0.5" stroke-dasharray="4 3"/>
+<text x="200.0" y="48" text-anchor="middle"
+      font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" font-weight="600"
+      fill="#FFFFFF">TB-500 Fragment 17-23</text>
+<text x="200.0" y="68" text-anchor="middle"
+      font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="10" font-weight="400"
+      fill="rgba(255,255,255,0.55)">7 amino acids — structure too large for diagram</text>
+
+
+<text x="200.0" y="108" text-anchor="middle"
+      font-family="'Geist Mono', 'SF Mono', 'Fira Code', monospace" font-size="9" font-weight="400"
+      fill="#4A9ED6">Thymosin beta-4 actin-binding fragment (17-23)</text>
+</svg>
