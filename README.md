@@ -38,7 +38,7 @@ Create a Google Cloud project and configure the OAuth consent screen for a web a
 
 Production domain: **https://eppixlabsshop.com**. Repository: https://github.com/agborhans572-hue/eppixlabs.
 
-In Vercel, import that GitHub repository, add `eppixlabsshop.com` in the project domain settings, and apply the DNS records Vercel shows at your domain registrar. Set `NEXT_PUBLIC_SITE_URL=https://eppixlabsshop.com` for production, then redeploy. In Supabase, use that origin as the Site URL and allow `https://eppixlabsshop.com/auth/callback` and `https://eppixlabsshop.com/auth/callback?next=/reset-password`. DNS registration and service configuration are still required; pushing this repository does not activate the domain.
+In Vercel, import that GitHub repository, add `eppixlabsshop.com` in the project domain settings, and apply the DNS records Vercel shows at your domain registrar. Set `NEXT_PUBLIC_SITE_URL=https://www.eppixlabsshop.com` for production, then redeploy. In Supabase, use that origin as the Site URL and allow `https://www.eppixlabsshop.com/auth/callback` and `https://www.eppixlabsshop.com/auth/callback?next=/reset-password`. The apex domain redirects to `www.eppixlabsshop.com`; keep authentication and mutation origins aligned with that hostname. See [DEPLOYMENT_STATUS.md](DEPLOYMENT_STATUS.md) for the verified live setup.
 
 Sign in to Vercel and import this repository, or run `npx vercel login` followed by `npx vercel`. Select Next.js and the repository root. Configure every value in `.env.example` in Vercel's environment settings. Set `NEXT_PUBLIC_SITE_URL` to your actual production origin. Public Supabase values are build-time variables, so redeploy after changing them.
 
@@ -52,7 +52,7 @@ Discounts are 5% at 3 vials, 10% at 5, and 20% at 10; packs contribute their con
 
 The source capture contains 279 public routes plus 9 certificate category/pagination states, 76 products and 259 variants. Live private account layouts and business logic are inaccessible; the independent account page exposes the authenticated email and an empty order history. Original public assets are retained, but menus, dialogs and some dynamic behaviors are independently reconstructed and should not be described as a guaranteed pixel-identical copy. The source's Canadian store remains an external link.
 
-Supabase integration, OAuth, production email flows and deployment cannot be verified until the service settings exist. Local automated reports are in `artifacts`. Payment integration, fulfillment, marketing delivery and customer/order migration are deferred.
+Supabase database/storage integration, production deployment, carts, email/password login, logout, ownership isolation, and authentication token callbacks have been verified on the live site. Google OAuth and actual authentication email delivery remain unverified and need provider configuration. Local automated reports are in `artifacts`. Payment integration, fulfillment, marketing delivery and customer/order migration are deferred.
 
 Sixteen catalog certificates have public images and laboratory verification links, but their corresponding batch-detail URLs return 404 on the reference website. The local app provides independent report views using those published records. Their original page layouts are therefore a remaining fidelity gap; exact URLs and source status codes are recorded in `artifacts/certificate-source-report.json`.
 
