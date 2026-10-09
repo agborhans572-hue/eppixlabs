@@ -11,13 +11,17 @@ The live site is **https://www.eppixlabsshop.com**. https://eppixlabsshop.com re
 - Redeployed successfully and verified all 304 public route states, cart discount boundaries/persistence, rejected client prices and untrusted origins, login/logout, two-account isolation, RLS ownership, saved submissions, and a Supabase storage download.
 - Verified signup-confirmation and recovery tokens, password updates, old-password rejection and invalid links without sending email. Temporary test accounts, carts and submissions were cleaned up.
 
-## Remaining provider setup
+## Provider verification
 
-Google is **disabled** in Supabase. In Google Cloud, create a web OAuth client and configure its consent screen. Its authorized redirect URI must be `https://tpnujdhralsbhglhfgaa.supabase.co/auth/v1/callback`. Enter its client ID and secret in the project's **Authentication → Sign In / Providers → Google** settings, then enable the provider. Complete the Google consent/testing requirements before opening it to the public. Verify sign-in through the live site's Google button afterward.
+Google is now enabled. The live Google button reached account selection, completed consent, returned to the protected account page, and logout restored the login redirect. Custom SMTP is enabled with Resend; signup-confirmation and password-reset requests to the user-approved test mailbox were accepted and appear in Resend with a `sent` event.
 
-Custom SMTP is **disabled**. In **Authentication → Emails → SMTP Settings**, configure your email provider's sender address/name, host, port, username and password. Verify the sender/domain with that provider. Supabase's default mail service is restricted and is not sufficient to establish public signup/reset delivery. After configuring SMTP, verify actual signup confirmation and password reset with a mailbox you control. Never put mail credentials in source files or chat.
+Inbox delivery remains unconfirmed. Both Google Public DNS and Cloudflare currently return no MX records for `eppixlabsshop.com`. Resend shows no `delivered` event for either test email yet. Configure a receiving mailbox or forwarding service for `hello@eppixlabsshop.com` and publish that provider's required MX records; outbound SMTP configuration alone does not establish receiving mail. Allow DNS propagation, then verify receipt and actual email-link completion. The requested mailbox signup account is retained so its confirmation link is not invalidated; generated temporary automated test accounts were removed.
+
+Google OAuth and SMTP settings can be managed in Supabase's authentication provider and email settings. Keep the Site URL and callbacks on `https://www.eppixlabsshop.com`. Never put provider credentials in source files or chat.
 
 Checkout remains unavailable. Newsletter/support/affiliate submissions are stored, but their email delivery and payment/fulfillment integrations remain deferred.
+
+The latest checks passed all 304 live route states, 27 live backend checks, 5 authentication-token checks and 24 unit tests. Interactive live checks also passed filter selection/reset, strength search, Google OAuth return and logout. These checks do not establish pixel-identical fidelity for every visual or interaction state.
 
 ## Repeat live verification
 
@@ -30,4 +34,4 @@ $env:TEST_ORIGIN='https://www.eppixlabsshop.com'
 node scripts/verify-routes.mjs
 ```
 
-These scripts create temporary test accounts/submissions and remove them. Local detailed reports are under the ignored `artifacts` directory. They do not test email delivery, Google OAuth, or payments.
+These scripts create temporary test accounts/submissions and remove them. Local detailed reports are under the ignored `artifacts` directory. The repeatable scripts do not test actual email delivery, Google OAuth consent, or payments; the provider and OAuth checks above were performed separately.
