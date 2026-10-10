@@ -47,3 +47,11 @@ node scripts/verify-routes.mjs
 ```
 
 These scripts create temporary test accounts/submissions and remove them. Local detailed reports are under the ignored `artifacts` directory. The repeatable scripts do not test actual email delivery, Google OAuth consent, or payments; the provider and OAuth checks above were performed separately.
+
+## Account dashboard update - October 10, 2026
+
+Inspected the signed-in reference account dashboard in Chrome and captured six anonymized layouts. Replaced the minimal account screen with the reference sidebar, greeting, quick links, recent-orders empty state and partner program panel. All six sections require authentication and publish noindex metadata. Addresses and notification preferences persist in Supabase user metadata; messages persist as support requests scoped to the authenticated user ID. The account API is included in session refresh and private/no-store handling. The build includes all six account templates. No migration or additional environment variables are needed.
+
+Validation: production build, type checking, 32 unit tests, six account integration groups, nine email OTP checks, content/assets checks and all 291 canonical sitemap URLs passed locally. Browser checks verified address and preference persistence, saved messages, dashboard styling in both themes and sign-out. Temporary test accounts and support messages were removed.
+
+Existing checkout remains unavailable and creates no orders. Customer orders, staff reply/alert delivery and product-follow notifications still need their own backend integration. Deployment is authorized through the existing GitHub main branch and Vercel integration. Repeat production account verification with TEST_ORIGIN and NEXT_PUBLIC_SITE_URL set to https://www.eppixlabsshop.com; results are written to the ignored artifacts directory.

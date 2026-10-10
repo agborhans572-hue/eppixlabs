@@ -4,6 +4,8 @@ import type {Cart,Certificate,Product,SearchResult,Variant} from '@/lib/types';
 import {installCalculators} from './calculators';
 import {createPortal} from 'react-dom';
 import {SignupVerification} from './signup-verification';
+import {AccountControls} from './account-controls';
+import type {AccountData} from '@/lib/account-validation';
 import membership from '@/reference/behavior/category-members.json';
 import {chooseVariant,filteredProducts,defaultFilters,vialDiscount,matchesArticle} from '@/lib/interactions';
 type Surface='cart'|'menu'|'region'|'filter'|'coa'|'search'|'image'|null;
@@ -39,13 +41,15 @@ function selectVariant(product:Product,container:HTMLElement,strength?:string,pa
     owned<HTMLElement>('p,span,dd').forEach(el=>{if(el.children.length)return;const value=el.textContent?.trim()||'';if(/^R[A-Z0-9-]+$/.test(value)&&c)el.textContent=c.batch;});
     const url=new URL(location.href);url.searchParams.set('strength',variant.strength);if(url.searchParams.has('coa'))url.searchParams.set('coa',variant.strength);url.searchParams.set('pack',String(variant.packSize));history.replaceState(null,'',url);}
 }
-export function Storefront({html,route,catalog,certificates,initialStrength,initialQuery,initialCoa}:{html:string;route:string;catalog:Product[];certificates:Certificate[];initialStrength?:string;initialQuery?:string;initialCoa?:string}){
+export function Storefront({html,route,catalog,certificates,initialStrength,initialQuery,initialCoa,accountData}:{html:string;route:string;catalog:Product[];certificates:Certificate[];initialStrength?:string;initialQuery?:string;initialCoa?:string;accountData?:AccountData}){
  const root=useRef<HTMLDivElement>(null),dialog=useRef<HTMLDivElement>(null);
  const [surface,setSurface]=useState<Surface>(null),[cart,setCart]=useState<Cart|null>(null),[cartError,setCartError]=useState(''),[busy,setBusy]=useState(false),[notice,setNotice]=useState('');
  const [query,setQuery]=useState(''),[results,setResults]=useState<SearchResult[]>([]),[searching,setSearching]=useState(false),[certificate,setCertificate]=useState<Certificate|null>(null),[expandedImage,setExpandedImage]=useState(''),[imageTitle,setImageTitle]=useState('Image'),[imageReport,setImageReport]=useState('');
  const [filters,setFilters]=useState({...defaultFilters,categories:({'/collections/intranasal-sprays':'Intranasal Sprays','/collections/peptide-vials':'Peptides','/collections/capsules':'Capsules','/collections/bioregulators':'Bioregulators','/collections/aminos':'Aminos','/collections/cosmetics':'Cosmetics'} as Record<string,string>)[route]?[({'/collections/peptide-vials':'Peptides','/collections/capsules':'Capsules','/collections/bioregulators':'Bioregulators','/collections/aminos':'Aminos','/collections/cosmetics':'Cosmetics'} as Record<string,string>)[route]]:[]}),[anchor,setAnchor]=useState<HTMLElement|null>(null);
  const liveQuery=useRef('');
  const [signupEmail,setSignupEmail]=useState('');
+ const [accountTarget,setAccountTarget]=useState<HTMLElement|null>(null);
+ useEffect(()=>{setAccountTarget(root.current?.querySelector<HTMLElement>('[data-account-controls]')||null);},[route]);
  useEffect(()=>{if(route==='/signup'){try{const pending=sessionStorage.getItem('eppix-signup-email');if(pending)setSignupEmail(pending);}catch{}}},[route]);
  useEffect(()=>{const form=root.current?.querySelector<HTMLFormElement>('main form[data-form="signup"]');if(form)form.hidden=!!signupEmail;},[signupEmail]);
  async function loadCart(){setCartError('');try{setCart(await api('/api/cart'));}catch(e){setCartError((e as Error).message);}}
@@ -187,6 +191,7 @@ export function Storefront({html,route,catalog,certificates,initialStrength,init
  const searchAnchor=root.current?.querySelector<HTMLElement>('[data-search="global"]')?.parentElement?.parentElement;
  const modalTitle=surface==='cart'?'Cart':surface==='menu'?'Menu':surface==='region'?'Select Your Store':surface==='filter'?'Filter Products':surface==='coa'?'Certificate of Analysis':'Image';
  return <><div ref={root} className="clone-captured" dangerouslySetInnerHTML={{__html:html}}/>
+ {accountData&&accountTarget&&createPortal(<AccountControls section={accountTarget.dataset.accountControls!} initial={accountData}/>,accountTarget)}
  {signupEmail&&root.current?.querySelector('main form[data-form="signup"]')?.parentElement&&createPortal(<SignupVerification email={signupEmail} onCancel={()=>{try{sessionStorage.removeItem('eppix-signup-email');}catch{}setSignupEmail('');}}/>,root.current.querySelector('main form[data-form="signup"]')!.parentElement!)}
  {notice&&<div className="clone-toast" role="status">{notice}<button aria-label="Dismiss notification" onClick={()=>setNotice('')}>×</button></div>}
  {surface==='search'&&searchAnchor&&createPortal(<><div className="clone-search-panel glass-strong" role="region" aria-label="Search results">{query.length<1?<p>Search products, certificates, articles, or batch numbers.</p>:searching?<p role="status">Searching&hellip;</p>:results.length?(['Product','Certificate','Research','Page'] as const).map(type=>{const group=results.filter(r=>r.type===type);return group.length?<section key={type}><h2>{type==='Research'?'Research':type==='Page'?'Pages':type+'s'}</h2>{group.map(r=><a key={r.url} href={r.url}>{r.image?<img src={r.image} alt=""/>:<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">{r.type==='Certificate'?<><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></>:<><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/></>}</svg>}<span>{r.title}{r.subtitle&&<small>{r.subtitle}</small>}</span></a>)}</section>:null;}):<div className="clone-search-empty"><p>No results found</p><p>Try a different search term</p></div>}</div><button className="clone-search-clear" aria-label="Clear search" onClick={()=>{setQuery('');setSurface(null);root.current?.querySelector<HTMLInputElement>('[data-search=global]')?.focus();}}>×</button></>,searchAnchor)}
