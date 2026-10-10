@@ -4,9 +4,10 @@ import {load} from 'cheerio';
 import {products,readPage,prepareHtml,certificates} from '@/lib/catalog';
 import {currentUser} from '@/lib/repository';
 import {Storefront} from '@/components/storefront';
+import {isNonIndexablePath} from '@/lib/site';
 export const dynamic='force-dynamic';
 type Props={params:Promise<{path?:string[]}>;searchParams:Promise<Record<string,string|string[]|undefined>>};
-export async function generateMetadata({params}:Props):Promise<Metadata>{const {path}=await params;const p=readPage('/'+(path||[]).join('/'));return {title:p?.title||'Eppix Labs',description:p?.description,alternates:p?{canonical:'/'+(path||[]).join('/')}:undefined};}
+export async function generateMetadata({params}:Props):Promise<Metadata>{const {path}=await params;const route='/'+(path||[]).join('/');const p=readPage(route);return {title:p?.title||'Eppix Labs',description:p?.description,alternates:p?{canonical:route}:undefined,robots:isNonIndexablePath(route)?{index:false,follow:true}:undefined};}
 export default async function Page({params,searchParams}:Props){const {path}=await params;const route='/'+(path||[]).join('/');const query=await searchParams;const state=new URLSearchParams();if(route==='/certificates-of-analysis'){for(const key of ['category','page'])if(typeof query[key]==='string')state.set(key,query[key]);state.sort();}let page=(state.size?readPage(route+'?'+state.toString()):null)||readPage(route);let user=null;
   if(route==='/account'){user=await currentUser();if(!user)redirect('/login?next=/account');page=readPage('/login');}
   if(route==='/checkout')page=readPage('/login');
