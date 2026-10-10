@@ -44,7 +44,7 @@ export function prepareHtml(page:CapturedPage):string {
     if($(el).find('button').length) {
       $(el).attr('data-product',slug).attr('data-product-card','true');
       $(el).find('[class*="perspective:1200px"]').attr('data-coa-flip-frame','true');
-      const product=products().find(p=>p.slug===slug);if(product){$(el).find('h3,p,span,div').filter((_,item)=>!$(item).children().length).each((_,item)=>{const value=$(item).text().replace(/\s/g,'');const strength=product.variants.map(v=>v.strength).find(strength=>[product.name,product.displayName].some(name=>name&&value===(name+strength).replace(/\s/g,'')));if(strength)$(item).attr('data-card-heading','true').text((product.displayName||product.name)+' '+strength.replace(/(\d)(mg|mcg|g|mL|IU)$/,'$1 $2'));});}
+      const product=products().find(p=>p.slug===slug);if(product){const initialStrength=$(el).find('button').map((_,button)=>$(button).text().trim()).get().find(text=>product.variants.some(variant=>variant.strength===text))||product.variants.find(variant=>variant.packSize===1)?.strength;$(el).find('h3,p,span,div').filter((_,item)=>!$(item).children().length).each((_,item)=>{const value=$(item).text().replace(/\s/g,'');const strength=product.variants.map(v=>v.strength).find(strength=>[product.name,product.displayName].some(name=>name&&value===(name+strength).replace(/\s/g,'')))||([product.name,product.displayName].some(name=>name&&value===name.replace(/\s/g,''))?initialStrength:undefined);if(strength)$(item).attr('data-card-heading','true').text((product.displayName||product.name)+' '+strength.replace(/(\d)(mg|mcg|g|mL|IU)$/,'$1 $2'));});}
       $(el).find('p').filter((_,p)=>/^(From)?\$\d/.test($(p).text().trim())).attr('data-variant-price','true');
       $(el).find('img').first().attr('data-product-image','true');
     }
@@ -85,6 +85,7 @@ export function prepareHtml(page:CapturedPage):string {
     else if(/menu/i.test(aria)) b.attr('data-action','menu');
     else if(aria.startsWith('Store region')) b.attr('data-action','region');
     else if(aria==='Search site') b.attr('data-action','search');
+    else if(b.attr('aria-controls')==='section-rail') b.attr('data-action','sections');
     else if(text==='Add to Cart') b.attr('data-action','add');
     else if(aria.includes('certificate of analysis')||/^(Full\s*)?COA\s*→$/.test(text)) b.attr('data-action','coa');
     else if(text==='10'&&b.closest('[data-product-detail]').length)b.attr('data-action','strength').attr('data-value','10');
@@ -115,6 +116,9 @@ export function prepareHtml(page:CapturedPage):string {
     f.find('input[id$="-company"]').attr('name','company');
   });
   const menu=$('header nav').first().find('a').clone();menu.attr('class','font-medium py-2.5 transition-colors text-[13px] text-foreground-muted hover:text-foreground');$('header').append('<nav data-mobile-menu hidden class="lg:hidden border-t border-border glass-strong px-4 sm:px-6 py-4"><div class="flex flex-col gap-1"></div></nav>');$('[data-mobile-menu] > div').append(menu);
+  $('[data-mobile-menu] a').each((_,el)=>{const link=$(el),href=link.attr('href')||'';if(href==='/collections/peptides'?page.route==='/collections/peptides'||page.route.startsWith('/products/'):page.route.startsWith(href))link.removeClass('text-[13px] text-foreground-muted hover:text-foreground').addClass('text-[14px] text-foreground').attr('aria-current','page');});
+  $('header [data-action="region"]').parent().before('<div data-header-search></div>');
+  $('nav[aria-label="Jump to"] a[href^="#"]').attr('data-action','section-link');
   $('img').removeAttr('fetchpriority');
   try{const mobile=load(readFileSync('reference/behavior/announcements-mobile.html','utf8'),null,false);mobile('button[aria-label="Previous announcement"]').attr('data-action','announcement-prev');mobile('button[aria-label="Next announcement"]').attr('data-action','announcement-next');$.root().append($('<template data-announcements-mobile>'+mobile.html()+'</template>'),$('<template data-announcements-desktop>'+($('[aria-label="Announcements"]').html()||'')+'</template>'));}catch{}
   for(const theme of ['light','dark']){try{const template=$('<template data-theme-icon="'+theme+'">'+readFileSync('reference/behavior/theme-'+theme+'.html','utf8')+'</template>');if($('body').length)$('body').append(template);else $.root().append(template);}catch{}}

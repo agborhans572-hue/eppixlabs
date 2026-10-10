@@ -43,7 +43,9 @@ export function installProductGalleries(root:HTMLElement){
     const release=(id:number)=>{if(track.hasPointerCapture(id))track.releasePointerCapture(id);};
     const reset=()=>{gesture=null;delete frame.dataset.galleryDragging;syncProductGallery(container);};
     const down=(event:PointerEvent)=>{
-      if(event.isPrimary===false||event.pointerType==='mouse'&&event.button!==0||current().visible.length<=1)return;
+      // A second finger belongs to browser pinch zoom, never a gallery tap or swipe.
+      if(event.isPrimary===false){if(gesture){const id=gesture.id;reset();release(id);suppressClickUntil=performance.now()+500;}return;}
+      if(event.pointerType==='mouse'&&event.button!==0||current().visible.length<=1)return;
       gesture={id:event.pointerId,x:event.clientX,y:event.clientY,time:performance.now(),dragging:false};
       track.setPointerCapture(event.pointerId);
     };
