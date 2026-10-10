@@ -76,21 +76,26 @@ export function Storefront({html,route,catalog,certificates,initialStrength,init
     if(!frame||!track||track.children.length<2)return;
     const front=track.children[0] as HTMLElement,back=track.children[1] as HTMLElement;
     const product=catalog.find(p=>p.slug===card.dataset.product);
-    const hover=matchMedia('(hover: hover) and (pointer: fine)');
-    let hovered=false;
+    // A touch screen can be the primary pointer even when a mouse is connected.
+    // Actual pointer events determine whether to preview the certificate.
+    let hovered=card.matches(':hover')&&matchMedia('(any-hover: hover) and (any-pointer: fine)').matches;
     const refresh=()=>{
       const strength=card.dataset.strength;
       const available=strength?!!(product?.coaImages?.[strength]||product?.certificates.find(c=>c.strength===strength)?.image):!!back.querySelector('img');
-      const flipped=hovered&&hover.matches&&available;
+      const flipped=hovered&&available;
       frame.dataset.coaAvailable=String(available);frame.dataset.coaFlipped=String(flipped);
       track.style.transform=flipped?'rotateY(180deg)':'rotateY(0deg)';
       front.inert=flipped;back.inert=!flipped;back.hidden=!available;
       card.querySelectorAll<HTMLElement>('[data-action="coa"]').forEach(button=>button.hidden=!available);
     };
-    const enter=()=>{hovered=true;refresh();};const leave=()=>{hovered=false;refresh();};
-    frame.addEventListener('mouseenter',enter);frame.addEventListener('mouseleave',leave);
-    card.addEventListener('clone:variant-change',refresh);hover.addEventListener('change',leave);refresh();
-    cardHoverCleanup.push(()=>{frame.removeEventListener('mouseenter',enter);frame.removeEventListener('mouseleave',leave);card.removeEventListener('clone:variant-change',refresh);hover.removeEventListener('change',leave);});
+    const enter=(event:PointerEvent)=>{if(event.pointerType!=='mouse')return;if(!hovered){hovered=true;refresh();}};
+    const leave=()=>{hovered=false;refresh();};
+    card.addEventListener('pointerenter',enter);
+    // Also recover when hydration completes while the pointer is already inside.
+    card.addEventListener('pointermove',enter);
+    card.addEventListener('pointerleave',leave);
+    card.addEventListener('clone:variant-change',refresh);refresh();
+    cardHoverCleanup.push(()=>{card.removeEventListener('pointerenter',enter);card.removeEventListener('pointermove',enter);card.removeEventListener('pointerleave',leave);card.removeEventListener('clone:variant-change',refresh);});
   });
   let researchSubjects:string[]=[],researchOrder:'Curated'|'Newest'|'Oldest'='Curated';
   const library=node!.querySelector<HTMLElement>('#full-library');const researchEntries=Array.from(library?.querySelectorAll<HTMLAnchorElement>('a[href^="/peptide-research/"]')||[]).map((a,index)=>({a,index,item:a.closest('li')||a,parent:(a.closest('li')||a).parentElement!,date:a.querySelector('time')?.getAttribute('datetime')||''}));
