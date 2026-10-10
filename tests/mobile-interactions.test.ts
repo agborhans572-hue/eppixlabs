@@ -1,10 +1,11 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {Window} from 'happy-dom';
-import {installProductGalleries,syncProductGallery} from '../components/product-gallery';
+import {installProductGalleries,syncProductGallery,imageScopeForExpansion} from '../components/product-gallery';
 import {installHeroTouches,installTouchFeedback,installSectionTracking} from '../components/mobile-interactions';
-import {prepareHtml,readPage} from '../lib/catalog';
+import {prepareHtml,readPage,products} from '../lib/catalog';
 import {installCalculators} from '../components/calculators';
+import {updateVialSummary} from '../components/product-discount';
 
 function dom(html:string){
   const window=new Window();window.document.body.innerHTML=html;
@@ -63,15 +64,46 @@ test('touch button feedback clears on cancellation and lets a native tap act onc
   d.pointer(button,'pointerdown',10,10);d.pointer(button,'pointerup',10,10);button.click();assert.equal(clicks,1);assert.equal(button.classList.contains('touch-active'),false);
   const disabled=d.root.querySelectorAll('button')[1];d.pointer(disabled,'pointerdown',10,10);assert.equal(disabled.classList.contains('touch-active'),false);cleanup();
 });
+
+test('regional discount previews include saved cart vials and selected packs without stale tiers',()=>{
+  for(const region of ['us','ca'] as const){
+    const d=dom(prepareHtml(readPage('/products/retatrutide',region)!,region)),detail=d.root.querySelector<HTMLElement>('[data-product-detail]')!;
+    const quantity=detail.querySelector<HTMLInputElement>('input[aria-label="Quantity"]')!,summary=detail.querySelector<HTMLElement>('[data-vial-summary]')!,next=detail.querySelector<HTMLElement>('[data-vial-next]')!,after=detail.querySelector<HTMLElement>('[data-vial-after]')!;
+    detail.dataset.cartVials='2';detail.dataset.pack='1';quantity.value='1';updateVialSummary(detail);
+    assert.match(summary.textContent!,/^3 vials \(2 in your cart \+ 1 here\) — 5% off/);assert.match(next.textContent!,/Add 2 more vials for 10%/);assert.equal(after.textContent,'After that, 20% at 10 vials.');
+    detail.dataset.pack='5';quantity.value='2';updateVialSummary(detail);assert.match(summary.textContent!,/^12 vials \(2 in your cart \+ 10 here\) — 20% off/);assert.equal(next.hidden,true);assert.equal(after.hidden,true);
+    detail.dataset.cartVials='0';detail.dataset.pack='1';quantity.value='1';updateVialSummary(detail);assert.equal(summary.textContent,'1 vial — no vial discount yet.');assert.equal(summary.parentElement?.classList.contains('clone-vial-earned'),false);assert.equal(next.hidden,false);assert.equal(after.hidden,false);assert.match(after.textContent!,/10% at 5 vials, 20% at 10 vials/);
+  }
+});
+
+test('portal cart buttons receive touch feedback without duplicating native clicks',()=>{
+  const d=dom('<button class="clone-touch-button"><span>Continue Shopping</span></button>'),button=d.root.querySelector<HTMLButtonElement>('button')!;
+  const cleanup=installTouchFeedback(d.root);let clicks=0;button.addEventListener('click',()=>clicks++);
+  d.pointer(button.firstElementChild!,'pointerdown',10,10);assert.equal(button.classList.contains('touch-active'),true);d.pointer(button,'pointerup',10,10);button.click();assert.equal(clicks,1);assert.equal(button.classList.contains('touch-active'),false);cleanup();
+});
 test('hero touch lifts the pointed vial and clears the preview 700ms after release',async()=>{
   const d=dom(prepareHtml(readPage('/')!));const vial=d.root.querySelector<HTMLElement>('[data-vial]')!;
   d.window.document.elementFromPoint=()=>vial as never;const cleanup=installHeroTouches(d.root);
   d.pointer(vial,'pointerdown',120,400);assert.equal(vial.dataset.vialActive,'true');d.pointer(vial,'pointerup',120,400);assert.equal(vial.dataset.vialActive,'true');
   await new Promise(resolve=>setTimeout(resolve,720));assert.equal(vial.dataset.vialActive,undefined);cleanup();
 });
+test('both stores expand the certificate beside a nested toolbar',()=>{
+  for(const region of ['us','ca'] as const){
+    const d=dom(prepareHtml(readPage('/products/retatrutide',region)!));
+    const trigger=Array.from(d.root.querySelectorAll<HTMLElement>('button[data-action="expand-image"]')).find(button=>button.textContent?.trim()==='Expand')!;
+    assert.ok(trigger);const scope=imageScopeForExpansion(trigger),image=scope?.querySelector('img');
+    assert.match(image?.alt||'',/certificate|certificate of analysis/i);assert.match(image?.getAttribute('src')||'',/^\/reference\//);
+    const expected=products(region).find(product=>product.slug==='retatrutide')?.certificates.find(certificate=>certificate.strength==='10mg')?.image;
+    assert.equal(image?.getAttribute('src'),expected,'the toolbar resolves the selected product certificate');
+    assert.equal(imageScopeForExpansion(d.root.querySelector('[data-action="cart"]')!),null,'an unrelated control must not expand a product image');
+  }
+});
+
 test('the phone calculator section toggle is independent of content accordions',()=>{
-  const d=dom(prepareHtml(readPage('/peptide-calculator')!));const toggle=d.root.querySelector('[aria-controls="section-rail"]')!;
-  assert.equal(toggle.getAttribute('data-action'),'sections');const links=d.root.querySelectorAll('[data-action="section-link"]');assert.equal(links.length,7);for(const link of links)assert.ok(d.root.querySelector(link.getAttribute('href')!));
+  for(const region of ['us','ca'] as const){
+    const d=dom(prepareHtml(readPage('/peptide-calculator',region)!));const toggle=d.root.querySelector('[aria-controls="section-rail"]')!;
+    assert.equal(toggle.getAttribute('data-action'),'sections');const links=d.root.querySelectorAll('[data-action="section-link"]');assert.equal(links.length,region==='ca'?5:7);for(const link of links)assert.ok(d.root.querySelector(link.getAttribute('href')!));
+  }
 });
 test('phone section labels follow the reference intersection band and selected links',()=>{
   const d=dom(prepareHtml(readPage('/peptide-calculator')!));const previous=globalThis.IntersectionObserver;
@@ -90,6 +122,18 @@ test('phone section labels follow the reference intersection band and selected l
     // Browser CustomEvent permits primitive detail; Happy DOM's type restricts it to object.
     d.root.dispatchEvent(new d.window.CustomEvent('clone:section-change',{detail:'molarity' as unknown as object}) as unknown as Event);
     assert.equal(active,'molarity');assert.equal(d.root.querySelector('[data-action="section-link"][aria-current=true]')?.getAttribute('href'),'#molarity');cleanup();
+  }finally{Object.assign(globalThis,{IntersectionObserver:previous});}
+});
+test('Canadian calculator section selection updates its phone label and active link',()=>{
+  const d=dom(prepareHtml(readPage('/peptide-calculator','ca')!)),previous=globalThis.IntersectionObserver;
+  class Observer{observe(){}disconnect(){}}
+  Object.assign(globalThis,{IntersectionObserver:Observer});
+  try{
+    let active='';const cleanup=installSectionTracking(d.root,id=>active=id);
+    d.root.dispatchEvent(new d.window.CustomEvent('clone:section-change',{detail:'sequence' as unknown as object}) as unknown as Event);
+    assert.equal(active,'sequence');assert.equal(d.root.querySelector('[data-action="sections"]')?.nextElementSibling?.textContent,'Sequence Properties');
+    assert.equal(d.root.querySelector('[data-action="sections"]')?.nextElementSibling?.nextElementSibling?.textContent,'5 of 5');
+    assert.equal(d.root.querySelector('[data-action="section-link"][aria-current=true]')?.getAttribute('href'),'#sequence');cleanup();
   }finally{Object.assign(globalThis,{IntersectionObserver:previous});}
 });
 test('touching the sequence graph previews charge without changing the chosen buffer pH',()=>{

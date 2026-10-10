@@ -3,6 +3,17 @@ import {galleryGesture,galleryPosition} from '@/lib/gallery';
 const transition='transform 0.35s cubic-bezier(0.25, 0.1, 0.25, 1)';
 const slidesFor=(track:HTMLElement)=>Array.from(track.children) as HTMLElement[];
 
+/** The Canadian certificate places its Expand control in a nested toolbar. */
+export function imageScopeForExpansion(trigger:HTMLElement){
+  if(trigger.dataset.action!=='expand-image')return null;
+  let scope:HTMLElement|null=trigger;
+  while(scope&&!scope.matches('[data-product],main,body')){
+    if(scope.querySelector('img'))return scope;
+    scope=scope.parentElement;
+  }
+  return null;
+}
+
 export function syncProductGallery(container:HTMLElement,index?:number){
   const track=container.querySelector<HTMLElement>('[data-product-gallery-track]');
   if(!track)return;

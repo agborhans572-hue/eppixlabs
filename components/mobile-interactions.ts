@@ -6,7 +6,7 @@ export function installTouchFeedback(root:HTMLElement){
     const button=target instanceof Element?target.closest<HTMLButtonElement>('button'):null;
     if(button===pressed)return;
     clear();
-    if(button&&root.contains(button)&&!button.disabled&&button.className.includes('touch-active')){pressed=button;pressed.classList.add('touch-active');}
+    if(button&&root.contains(button)&&!button.disabled&&(button.className.includes('touch-active')||button.classList.contains('clone-touch-button'))){pressed=button;pressed.classList.add('touch-active');}
   };
   const down=(event:PointerEvent)=>{if(event.pointerType==='touch'&&event.isPrimary)show(event.target);};
   const move=(event:PointerEvent)=>{if(event.pointerType==='touch'&&event.isPrimary&&event.buttons)show(root.ownerDocument.elementFromPoint(event.clientX,event.clientY));};
@@ -37,7 +37,7 @@ export function installHeroTouches(root:HTMLElement){
 
 /** Keep desktop links and the phone section label in sync with scroll position. */
 export function installSectionTracking(root:HTMLElement,change:(id:string)=>void){
-  const links=Array.from(root.querySelectorAll<HTMLAnchorElement>('nav[aria-label="Jump to"] a[href^="#"]'));
+  const links=Array.from(root.querySelectorAll<HTMLAnchorElement>('[data-action="section-link"]'));
   const sections=links.map(link=>root.querySelector<HTMLElement>(link.getAttribute('href')!));
   const toggle=root.querySelector<HTMLElement>('[data-action="sections"]');
   if(!links.length)return()=>{};

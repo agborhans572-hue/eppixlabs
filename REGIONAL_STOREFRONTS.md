@@ -14,6 +14,8 @@ The reference has two separate regional sites: `www.eppixlabs.com` uses USD and 
 
 ## Verification
 
+The subsequent both-store mobile fidelity pass has 61 passing tests and a passing production build/TypeScript check. It adds cart exit animations and editable quantity controls, cart-aware product discount previews, narrower header/search geometry, matching filter/viewer details, and fixes the Canadian calculator drawer and nested certificate Expand button. Seven page types in both regions at 360/390/430px in both themes passed 84 layout checks without horizontal overflow or broken loaded images. Evidence and scope are recorded in `BEHAVIOR_AUDIT.md` and ignored `artifacts/mobile-fidelity-review/`. This pass uses the existing main/Vercel production release path.
+
 Production build and TypeScript pass. The suite has 56 tests, including regional identity/currency boundaries, all 58 Canadian galleries and local scientific images, catalog pagination/sorting, native mobile filter content, canonical URLs and actual signup/recovery forms. The existing 27 Supabase checks and 13 regional integration checks passed, with temporary accounts, carts and submissions removed. XML GET/HEAD, robots and all 556 canonical/indexable URLs passed.
 
 Seven Canadian templates were checked at actual browser viewport widths of 360, 390 and 430px (21 layouts): no horizontal overflow or broken loaded images. Browser sequences exercised regional navigation, strength/price/report changes, mobile filters, gallery dragging/dots, expansion, desktop tabs/keyboard navigation and certificate hover flips. Evidence is in ignored `artifacts/canada-browser-review.json`, `artifacts/stores-integration.json` and `artifacts/live-deployment-report.json`.
