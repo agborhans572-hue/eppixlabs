@@ -10,6 +10,8 @@
     "test": "tsx --test tests/*.test.ts",
     "capture": "node scripts/capture.mjs",
     "import": "node --env-file=.env.local scripts/import.mjs",
+    "import:canada": "node --env-file=.env.local scripts/import-canada.mjs",
+    "verify:stores": "node --env-file=.env.local scripts/verify-stores.mjs",
     "verify:content": "node scripts/verify-content.mjs",
     "verify:sitemap": "node scripts/verify-sitemap.mjs",
     "verify:signup-otp": "node --env-file=.env.local scripts/verify-signup-otp.mjs",

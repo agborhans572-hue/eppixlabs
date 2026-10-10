@@ -1,0 +1,27 @@
+# US and Canadian storefronts
+
+The reference has two separate regional sites: `www.eppixlabs.com` uses USD and FedEx; `www.eppixlabs.ca` uses CAD, Canadian pricing/strengths, Canada Post and Canadian payment options. The previous Canada selector sent customers to that external reference website. The shop now contains its own Canadian storefront at `https://www.eppixlabsshop.com/ca`; the original US routes remain at the site root.
+
+## Implementation
+
+- Imported 58 Canadian products and 216 variants into separate `ca:` identities. Canadian database product slugs use `ca/` so the existing unique slug constraint cannot overwrite US products. The import compared US products, prices and stock before and after: unchanged. No database migration or new environment variable is required.
+- Canadian public content, regional navigation, account links, search results and product/strength links remain under `/ca`. The region selector links both stores within the shop. Accounts are shared; guest and signed-in carts use separate regional keys, including separate guest-to-account merging. Server pricing rejects variants belonging to another store. Cart responses identify CAD or USD explicitly.
+- Canadian cards retain strength dropdowns, selected lot links, purity/mass details, sale prices, availability and certificate flips. Product galleries retain thumbnail tabs on desktop, mobile dots, pointer dragging/swiping, certificate/structure/sequence views, theme assets, expansion and keyboard navigation. Canadian stock/category/sort controls and pagination use the complete catalog. Newest ordering follows the captured Canadian reference.
+- Captured the hydrated Canadian login/signup forms, which otherwise returned empty server-rendered content, and connected them to the existing authentication and email verification flow. Recovery, logout and OTP redirects retain the Canadian region. Canadian addresses default to Canada with province/postal-code labels.
+- Sitemap includes 556 canonical public pages: 291 US and 265 Canadian. Strength, certificate-opening and filter queries canonicalize to their base page. Account/auth/checkout pages are private, and robots advertises the single canonical XML sitemap.
+- Canadian checkout remains unavailable while payments are unconfigured. The reference's bank-transfer recipient/instructions are removed from the rendered payment page. Canadian contact links use `hello@eppixlabsshop.com`.
+- Vercel file tracing includes the Canadian content/templates and excludes raw captures, local test artifacts and environment files. Existing shared public assets remain at `/reference/`.
+
+## Verification
+
+Production build and TypeScript pass. The suite has 56 tests, including regional identity/currency boundaries, all 58 Canadian galleries and local scientific images, catalog pagination/sorting, native mobile filter content, canonical URLs and actual signup/recovery forms. The existing 27 Supabase checks and 13 regional integration checks passed, with temporary accounts, carts and submissions removed. XML GET/HEAD, robots and all 556 canonical/indexable URLs passed.
+
+Seven Canadian templates were checked at actual browser viewport widths of 360, 390 and 430px (21 layouts): no horizontal overflow or broken loaded images. Browser sequences exercised regional navigation, strength/price/report changes, mobile filters, gallery dragging/dots, expansion, desktop tabs/keyboard navigation and certificate hover flips. Evidence is in ignored `artifacts/canada-browser-review.json`, `artifacts/stores-integration.json` and `artifacts/live-deployment-report.json`.
+
+These are browser mouse journeys and existing simulated touch regressions; physical iPhone/Android scrolling, pinch zoom and software keyboards remain unverified. Reference catalog, prices, stock, shipping claims and policies are captured snapshots, not a live synchronization or confirmation of the shop owner's Canadian fulfillment capability. Payments, fulfillment and marketing email delivery remain unconfigured. Reference-provided scientific documents are retained without inventing missing results. Two obsolete GLOW asset URLs in public records return 404 on the reference; the actual GLOW gallery's component diagrams and every rendered scientific gallery asset are present locally.
+
+## Release
+
+The Canadian database import is already complete. Application changes have not been pushed or deployed in this revision. Commit the changed application, components, libraries, configuration, regional capture/import/verification scripts, tests, this document, `BEHAVIOR_AUDIT.md`, the complete `reference/canada/` content (raw captures are ignored), and new `public/reference/` assets together. Do not commit `.env.local`, `.next`, `.local`, `artifacts` or raw captures. Pushing the approved commit to the existing `origin/main` triggers the existing Vercel deployment; no new project or domain setup is needed.
+
+After release, verify the Vercel deployment is READY for the pushed commit and check `/ca`, `/ca/products/retatrutide`, the two-way selector, regional carts and `/sitemap.xml` on the preferred `www.eppixlabsshop.com` hostname. The existing apex-to-www redirect should continue to preserve `/ca` paths. This release does not configure a payment processor or activate bank transfers.

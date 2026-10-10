@@ -4,5 +4,5 @@ export function siteOrigin():string {
 }
 
 export function isNonIndexablePath(route:string):boolean {
-  return /^\/(?:account|cart|checkout|login|signup|forgot-password|reset-password|auth|api)(?:\/|$)/.test(route);
+  return /^(?:\/ca)?\/(?:account|cart|checkout|login|signup|forgot-password|reset-password|auth|api)(?:\/|$)/.test(route);
 }

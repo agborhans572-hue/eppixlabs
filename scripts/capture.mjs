@@ -3,15 +3,17 @@ import { createHash } from 'node:crypto';
 import { load } from 'cheerio';
 import path from 'node:path';
 
-const origin = 'https://www.eppixlabs.com';
+const canadian = process.env.CAPTURE_REGION === 'ca';
+const contentRoot = canadian ? 'reference/canada' : 'reference';
+const origin = canadian ? 'https://www.eppixlabs.ca' : 'https://www.eppixlabs.com';
 const root = process.cwd();
-await mkdir('reference/pages', { recursive: true });
-await mkdir('reference/raw', { recursive: true });
+await mkdir(contentRoot+'/pages', { recursive: true });
+await mkdir(contentRoot+'/raw', { recursive: true });
 await mkdir('public/reference', { recursive: true });
 const hash = (s) => createHash('sha256').update(s).digest('hex').slice(0, 20);
 const assets = new Map(); const failures = []; const pages = [];
 const requestedRoutes=process.argv.slice(2).filter(arg=>arg.startsWith('/'));
-if(requestedRoutes.length){try{const previous=JSON.parse(await readFile('reference/manifest.json','utf8'));for(const asset of previous.assets)assets.set(asset.source,Promise.resolve(asset.local));pages.push(...previous.pages.filter(page=>!requestedRoutes.includes(page.route)));failures.push(...previous.failures.filter(failure=>!requestedRoutes.includes(failure.route)));}catch{}}
+if(requestedRoutes.length){try{const previous=JSON.parse(await readFile(contentRoot+'/manifest.json','utf8'));for(const asset of previous.assets)assets.set(asset.source,Promise.resolve(asset.local));pages.push(...previous.pages.filter(page=>!requestedRoutes.includes(page.route)));failures.push(...previous.failures.filter(failure=>!requestedRoutes.includes(failure.route)));}catch{}}
 async function fetchRetry(url) {
   for (let i = 0; i < 3; i++) { try { const r = await fetch(url, { signal: AbortSignal.timeout(45000) }); if (!r.ok) throw Error(`HTTP ${r.status}`); return r; } catch(e) { if(i === 2) throw e; } }
 }
@@ -45,10 +47,10 @@ function walk(value, found) {
   for(const child of Object.values(value)) if(child && typeof child === 'object') walk(child,found);
 }
 async function capture(route) {
-  const filename = hash(route); const filepath = `reference/pages/${filename}.json`;
+  const filename = hash(route); const filepath = `${contentRoot}/pages/${filename}.json`;
   try {
     let html;
-    try { html = await readFile(`reference/raw/${filename}.html`, 'utf8'); } catch { html = await (await fetchRetry(origin + route)).text(); await writeFile(`reference/raw/${filename}.html`,html); }
+    try { html = await readFile(`${contentRoot}/raw/${filename}.html`, 'utf8'); } catch { html = await (await fetchRetry(origin + route)).text(); await writeFile(`${contentRoot}/raw/${filename}.html`,html); }
     const $ = load(html); const records = []; let rsc = '';
     $('script').each((_,el) => {
       const t = $(el).html() || ''; const match = t.match(/^self\.__next_f\.push\((\[.*\])\)$/s);
@@ -91,12 +93,12 @@ async function capture(route) {
   } catch(e) { failures.push({route,error:String(e)}); console.log(`FAILED ${route}: ${e.message}`); }
 }
 const sitemap = await (await fetchRetry(origin+'/sitemap.xml')).text();
-await writeFile('reference/sitemap.xml',sitemap);
+await writeFile(contentRoot+'/sitemap.xml',sitemap);
 const sm = load(sitemap,{xmlMode:true});
-const routes = requestedRoutes.length?requestedRoutes:[...new Set(['/', ...sm('url > loc').toArray().map(el=>new URL(sm(el).text()).pathname), '/login','/signup','/forgot-password','/reset-password','/faq','/support','/affiliate','/collections/best-sellers','/collections/new'])];
+const routes = requestedRoutes.length?requestedRoutes:[...new Set(['/', ...sm('url > loc').toArray().map(el=>new URL(sm(el).text()).pathname), '/login','/signup','/forgot-password','/reset-password','/faq','/support','/affiliate','/collections/best-sellers','/collections/new',...(canadian?['/certificates-of-analysis?page=2','/certificates-of-analysis?page=3']:[])])];
 let index = 0;
 await Promise.all(Array.from({length:5},async()=>{while(index<routes.length) await capture(routes[index++]);}));
 pages.sort((a,b)=>a.route.localeCompare(b.route));
 const manifest = {origin,capturedAt:new Date().toISOString(),pages,assets:await Promise.all([...assets.entries()].map(async([source,p])=>({source,local:await p}))),failures};
-await writeFile('reference/manifest.json',JSON.stringify(manifest,null,2));
+await writeFile(contentRoot+'/manifest.json',JSON.stringify(manifest,null,2));
 console.log(`Done: ${pages.length} pages, ${assets.size} assets, ${failures.length} failures`);

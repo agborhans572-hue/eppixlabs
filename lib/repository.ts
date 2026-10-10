@@ -4,16 +4,19 @@ import { configured, supabaseAdmin, supabaseServer } from './supabase';
 import { localTransaction } from './local-store';
 import { guestCartId, HttpError } from './security';
 import type { CartItem, Product } from './types';
+import {cartKey,type StoreRegion} from './stores';
 export async function currentUser() {if(!configured())return null;const {data,error}=await (await supabaseServer()).auth.getUser();if(error)return null;return data.user;}
-export async function authoritativeProducts():Promise<Product[]> {
-  if(!configured()) {if(process.env.NODE_ENV==='production')throw new HttpError(503,'The store is not configured.');return products();}
+export async function authoritativeProducts(region:StoreRegion='us'):Promise<Product[]> {
+  if(!configured()) {if(process.env.NODE_ENV==='production')throw new HttpError(503,'The store is not configured.');return products(region);}
   const admin=supabaseAdmin();const [{data:rows,error},{data:variants,error:variantError}]=await Promise.all([admin.from('products').select('data'),admin.from('variants').select('*')]);
   if(error||variantError||!rows?.length)throw new HttpError(503,'Catalog is unavailable.');
-  return rows.map(row=>{const p=row.data as Product;return {...p,variants:(variants||[]).filter(v=>v.product_id===p.id).map(v=>({...v.data,priceCents:v.price_cents,available:v.available,stock:v.stock}))};});
+  const regional=rows.filter(row=>((row.data as Product).store||'us')===region);
+  if(!regional.length)throw new HttpError(503,'This regional catalog is unavailable.');
+  return regional.map(row=>{const p=row.data as Product;return {...p,variants:(variants||[]).filter(v=>v.product_id===p.id).map(v=>({...v.data,priceCents:v.price_cents,available:v.available,stock:v.stock}))};});
 }
-export async function cartContext() {const guest=await guestCartId();const user=await currentUser();return {key:user?'user:'+user.id:'guest:'+guest,userId:user?.id||null,guestKey:'guest:'+guest};}
-export async function readCartItems():Promise<CartItem[]> {
-  const context=await cartContext();
+export async function cartContext(region:StoreRegion='us') {const guest=await guestCartId();const user=await currentUser();return {key:cartKey(user?'user:'+user.id:'guest:'+guest,region),userId:user?.id||null,guestKey:cartKey('guest:'+guest,region)};}
+export async function readCartItems(region:StoreRegion='us'):Promise<CartItem[]> {
+  const context=await cartContext(region);
   if(configured()) {
     const db=supabaseAdmin();
     const {data,error}=await db.rpc('read_cart',{p_key:context.key,p_user_id:context.userId,p_guest_key:context.userId?context.guestKey:null});
@@ -21,8 +24,8 @@ export async function readCartItems():Promise<CartItem[]> {
   }
   return localTransaction(s=>s.carts[context.key]?.items||[]);
 }
-export async function mutateCart(variantId:string,quantity:number,operation:'add'|'set'|'remove'):Promise<CartItem[]> {
-  const context=await cartContext(); const catalog=await authoritativeProducts();
+export async function mutateCart(variantId:string,quantity:number,operation:'add'|'set'|'remove',region:StoreRegion='us'):Promise<CartItem[]> {
+  const context=await cartContext(region); const catalog=await authoritativeProducts(region);
   const p=catalog.find(p=>p.variants.some(v=>v.id===variantId)),v=p?.variants.find(v=>v.id===variantId);
   if(!p||!v)throw new HttpError(400,'Unknown product variant.');
   if(operation!=='remove'&&quantity>0&&(!v.available||p.comingSoon))throw new HttpError(409,'This variant is unavailable.');

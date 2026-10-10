@@ -2,6 +2,12 @@
 
 Reference: https://www.eppixlabs.com/. Local routes and public assets are indexed in `reference/manifest.json`. This audit distinguishes implementation, exercised sequences, and outstanding verification; binding a control is not proof of complete behavior fidelity.
 
+## Canadian storefront review - 10 October 2026
+
+The reference also has a separate Canadian store at `https://www.eppixlabs.ca`. Added a local Canadian storefront under `/ca` with its own captured content, 58-product/216-variant CAD catalog, local country switching, regional search/account navigation and isolated carts. Canadian cards, gallery tabs, mobile filters and pagination differ from the US design and have corresponding bindings. The Canadian database import verified existing US products/prices/stock unchanged. Captured hydrated sign-in/signup forms, protected account routes and regional OTP/recovery redirects retain existing account functionality.
+
+Build/TypeScript and 56 tests pass. The 27 existing backend checks and 13 regional integration checks pass; temporary records were removed. All 556 sitemap URLs are canonical, public and indexable. Twenty-one Canadian responsive layouts at 360/390/430px had no horizontal overflow or broken loaded images. Desktop thumbnail/keyboard navigation, hover flips, phone-width dragging/dots, image expansion, native filters and regional links were exercised. Physical touch-device behavior remains unverified. Checkout remains unavailable; reference bank-transfer instructions are removed. Full scope, evidence and release instructions are in `REGIONAL_STOREFRONTS.md`. These application changes await push/deployment.
+
 ## Mobile interaction review - 10 October 2026
 
 Reinspected the reference at an actual 390px browser viewport, including the inline navigation, anchored filters, product certificates and chemical diagrams, full-screen viewer, hero vial touch handlers, sticky header search and calculator section drawer. Fixed missing touch lift/label/shadow feedback on hero vials, missing button press feedback, outside-tap dismissal and active links in the phone menu, and the calculator's incorrectly bound Jump to control. The calculator now has the reference's 272px left drawer, scrolling section label, active links and touch graph preview. Section tracking measures the current visible band during smooth scrolling so stale observer ratios cannot leave the label on the previous long section.

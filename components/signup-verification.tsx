@@ -1,7 +1,8 @@
 'use client';
 import {useEffect,useRef,useState} from 'react';
+import {storePath,type StoreRegion} from '@/lib/stores';
 
-export function SignupVerification({email,onCancel}:{email:string;onCancel:()=>void}){
+export function SignupVerification({email,onCancel,region='us'}:{email:string;onCancel:()=>void;region?:StoreRegion}){
   const [code,setCode]=useState(''),[busy,setBusy]=useState(false),[message,setMessage]=useState(''),[remaining,setRemaining]=useState(60);
   const input=useRef<HTMLInputElement>(null);
   useEffect(()=>{input.current?.focus();},[]);
@@ -10,7 +11,7 @@ export function SignupVerification({email,onCancel}:{email:string;onCancel:()=>v
     if(busy)return;
     setBusy(true);setMessage('');
     try{
-      const response=await fetch('/api/auth/'+action,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email,...(action==='verify-signup'?{token:code}:{})})});
+      const response=await fetch('/api/auth/'+action+'?region='+region,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email,...(action==='verify-signup'?{token:code}:{})})});
       const result=await response.json();
       if(!response.ok)throw Error(result.error||'Please try again later.');
       if(result.redirect){try{sessionStorage.removeItem('eppix-signup-email');}catch{}location.assign(result.redirect);return;}
@@ -29,6 +30,6 @@ export function SignupVerification({email,onCancel}:{email:string;onCancel:()=>v
     {message&&<p role="status" className="clone-form-feedback">{message}</p>}
     <button className="clone-secondary" type="button" disabled={busy||remaining>0} onClick={()=>void request('resend-signup')}>{remaining>0?`Resend code in ${remaining}s`:'Resend code'}</button>
     <button className="clone-secondary" type="button" disabled={busy} onClick={onCancel}>Use a different email</button>
-    <p>Already have an account? <a href="/login">Sign in</a>.</p>
+    <p>Already have an account? <a href={storePath('/login',region)}>Sign in</a>.</p>
   </section>;
 }

@@ -25,7 +25,7 @@ test('sitemap covers every public page, product and generated certificate',()=>{
 
 test('robots advertises the canonical sitemap and permits public crawling',()=>{
   assert.equal(robots().sitemap,siteOrigin()+'/sitemap.xml');
-  assert.deepEqual(robots().rules,{userAgent:'*',allow:'/',disallow:['/api/','/auth/','/account','/cart','/checkout']});
+  assert.deepEqual(robots().rules,{userAgent:'*',allow:'/',disallow:['/api/','/auth/','/account','/cart','/checkout','/ca/account','/ca/cart','/ca/checkout']});
 });
 
 test('canonical origin uses www by default and normalizes the environment override',()=>{

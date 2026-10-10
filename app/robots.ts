@@ -3,7 +3,7 @@ import {siteOrigin} from '@/lib/site';
 
 export default function robots():MetadataRoute.Robots {
   return {
-    rules:{userAgent:'*',allow:'/',disallow:['/api/','/auth/','/account','/cart','/checkout']},
+    rules:{userAgent:'*',allow:'/',disallow:['/api/','/auth/','/account','/cart','/checkout','/ca/account','/ca/cart','/ca/checkout']},
     sitemap:siteOrigin()+'/sitemap.xml',
   };
 }

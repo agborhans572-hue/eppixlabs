@@ -7,7 +7,7 @@ export function chooseVariant(product:Product,strength?:string,pack=1):Variant|u
   const singles=product.variants.filter(v=>v.packSize===1);
   return product.variants.find(v=>v.strength===strength&&v.packSize===pack)
     ||singles.find(v=>v.strength===strength)
-    ||singles.slice().sort((a,b)=>a.priceCents-b.priceCents)[0]
+    ||singles.filter(v=>product.store!=='ca'||v.priceCents>0).slice().sort((a,b)=>a.priceCents-b.priceCents)[0]
     ||product.variants[0];
 }
 export function filteredProducts(products:Product[],filters:CatalogFilters,membership:Record<string,string[]>):Product[]{

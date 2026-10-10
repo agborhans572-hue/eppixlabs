@@ -1,7 +1,8 @@
 import {readFile,writeFile,readdir} from 'node:fs/promises';import {load} from 'cheerio';
-for(const file of await readdir('reference/pages')){
- const page=JSON.parse(await readFile('reference/pages/'+file,'utf8'));if(!page.records?.length)continue;
- const raw=await readFile('reference/raw/'+file.replace('.json','.html'),'utf8'),$=load(raw);let flight='';
+const contentRoot=process.env.CAPTURE_REGION==='ca'?'reference/canada':'reference';
+for(const file of await readdir(contentRoot+'/pages')){
+ const page=JSON.parse(await readFile(contentRoot+'/pages/'+file,'utf8'));if(!page.records?.length)continue;
+ const raw=await readFile(contentRoot+'/raw/'+file.replace('.json','.html'),'utf8'),$=load(raw);let flight='';
  $('script').each((_,el)=>{const match=($(el).html()||'').match(/^self\.__next_f\.push\((\[.*\])\)$/s);if(match)try{const row=JSON.parse(match[1]);if(row[0]===1)flight+=row[1];}catch{}});
  const rows=new Map();
  for(const m of flight.matchAll(/(?:^|\n)([0-9a-f]+):/g)){
@@ -22,6 +23,6 @@ for(const file of await readdir('reference/pages')){
   if(x&&typeof x==='object')return Object.fromEntries(Object.entries(x).map(([k,v])=>[k,resolve(v,trail)]));
   return x;
  }
- page.records=page.records.map(r=>resolve(r));await writeFile('reference/pages/'+file,JSON.stringify(page));
+ page.records=page.records.map(r=>resolve(r));await writeFile(contentRoot+'/pages/'+file,JSON.stringify(page));
 }
 console.log('Resolved streamed public product records');

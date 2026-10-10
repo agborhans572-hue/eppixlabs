@@ -1,0 +1,3375 @@
+{
+  "origin": "https://www.eppixlabs.ca",
+  "capturedAt": "2026-10-10T13:41:33.486Z",
+  "pages": [
+    {
+      "route": "/",
+      "title": "Buy Research Peptides Canada | Eppix Labs Canada",
+      "file": "8a5edab282632443219e.json"
+    },
+    {
+      "route": "/about",
+      "title": "About Eppix Labs | Canadian Peptide Supplier | Eppix Labs",
+      "file": "979bddc4a8caafdda413.json"
+    },
+    {
+      "route": "/affiliate",
+      "title": "Affiliate Program — Earn on Every Referral | Eppix Labs",
+      "file": "19baf385f9f3a8262d20.json"
+    },
+    {
+      "route": "/affiliate/apply",
+      "title": "Become an Affiliate — Earn Commissions | Eppix Labs",
+      "file": "33b86125835f8f26fde7.json"
+    },
+    {
+      "route": "/authors/adam-reeves",
+      "title": "Adam Reeves, Research Editor | Eppix Labs",
+      "file": "140e320d83823d2a1c96.json"
+    },
+    {
+      "route": "/buy-peptides-canada",
+      "title": "Peptides Canada Online — Domestic Supplier | Eppix Labs",
+      "file": "03185fa21dd1c969cb3d.json"
+    },
+    {
+      "route": "/certificates-of-analysis",
+      "title": "Lab Results & COAs Canada | Janoshik-Tested | Eppix Labs",
+      "file": "246a625f882c55448dc6.json"
+    },
+    {
+      "route": "/certificates-of-analysis?page=2",
+      "title": "Lab Results & COAs Canada | Janoshik-Tested | Eppix Labs",
+      "file": "d8e42f6652768047af15.json"
+    },
+    {
+      "route": "/certificates-of-analysis?page=3",
+      "title": "Lab Results & COAs Canada | Janoshik-Tested | Eppix Labs",
+      "file": "f1fad88c89867469c59b.json"
+    },
+    {
+      "route": "/certificates-of-analysis/5-amino-1mq",
+      "title": "5-Amino-1MQ COA History — Every Tested Lot | Eppix Labs",
+      "file": "d24d2567bca59eafca0d.json"
+    },
+    {
+      "route": "/certificates-of-analysis/51q-ca-26a-01",
+      "title": "5-Amino-1MQ 51Q-CA-26A-01 COA — 99.5% Purity | Eppix Labs",
+      "file": "0c7c73e30fb74c8a22d0.json"
+    },
+    {
+      "route": "/certificates-of-analysis/ara-290",
+      "title": "ARA-290 COA History — Every Tested Lot | Eppix Labs",
+      "file": "6a5c832781f3dba87315.json"
+    },
+    {
+      "route": "/certificates-of-analysis/ara2-ca-26g-16",
+      "title": "ARA-290 ARA2-CA-26G-16 COA — 99.7% Purity | Eppix Labs",
+      "file": "51a9806c1257f42c59ff.json"
+    },
+    {
+      "route": "/certificates-of-analysis/bpc-157",
+      "title": "BPC-157 COA History — Every Tested Lot | Eppix Labs",
+      "file": "9ca8e3a35850178b3ad6.json"
+    },
+    {
+      "route": "/certificates-of-analysis/bpc-ca-26f-10",
+      "title": "BPC-157 BPC-CA-26F-10 COA — 99.8% Purity | Eppix Labs",
+      "file": "d0b451bfdca7945cdbee.json"
+    },
+    {
+      "route": "/certificates-of-analysis/cag-ca-26a-01",
+      "title": "Cagrilintide CAG-CA-26A-01 COA — 99.4% Purity | Eppix Labs",
+      "file": "f439075ac2d5113d0491.json"
+    },
+    {
+      "route": "/certificates-of-analysis/cagl-ca-26g-10",
+      "title": "Cagrilintide CAGL-CA-26G-10 COA — 99.6% Purity | Eppix Labs",
+      "file": "071e49bbd6bd6bb37204.json"
+    },
+    {
+      "route": "/certificates-of-analysis/cagrilintide",
+      "title": "Cagrilintide COA History — Every Tested Lot | Eppix Labs",
+      "file": "288c2b0930fb40a0daa0.json"
+    },
+    {
+      "route": "/certificates-of-analysis/cart-ca-26f-20",
+      "title": "Cartalax CART-CA-26F-20 COA — 99.8% Purity | Eppix Labs",
+      "file": "f822b22597d1718df750.json"
+    },
+    {
+      "route": "/certificates-of-analysis/cartalax",
+      "title": "Cartalax COA History — Every Tested Lot | Eppix Labs",
+      "file": "b9402712c78eec472dcd.json"
+    },
+    {
+      "route": "/certificates-of-analysis/cjc-1295-no-dac",
+      "title": "CJC-1295 No DAC COA History — Every Tested Lot | Eppix Labs",
+      "file": "b900b8adbb887b3a4d5c.json"
+    },
+    {
+      "route": "/certificates-of-analysis/cjnd-ca-26f-10",
+      "title": "CJC-1295 No DAC CJND-CA-26F-10 COA | Eppix Labs",
+      "file": "ae2b38150e64f2322cd4.json"
+    },
+    {
+      "route": "/certificates-of-analysis/crys-ca-26f-01",
+      "title": "Crystagen CRYS-CA-26F-01 COA — 97.6% Purity | Eppix Labs",
+      "file": "6e2251fd4be546ed9676.json"
+    },
+    {
+      "route": "/certificates-of-analysis/crystagen",
+      "title": "Crystagen COA History — Every Tested Lot | Eppix Labs",
+      "file": "9e37c9112a14642bfa5c.json"
+    },
+    {
+      "route": "/certificates-of-analysis/dsip",
+      "title": "DSIP COA History — Every Tested Lot | Eppix Labs",
+      "file": "0410b345de7c84712efd.json"
+    },
+    {
+      "route": "/certificates-of-analysis/dsip-ca-26f-10",
+      "title": "DSIP 10mg COA — Lot DSIP-CA-26F-10 — 99.6% HPLC | Eppix Labs",
+      "file": "f3f91ab3cbcd97644c65.json"
+    },
+    {
+      "route": "/certificates-of-analysis/elor-ca-26g-10",
+      "title": "Eloralintide ELOR-CA-26G-10 COA — 99.8% Purity | Eppix Labs",
+      "file": "d5cbe1475bbac0cb375b.json"
+    },
+    {
+      "route": "/certificates-of-analysis/eloralintide",
+      "title": "Eloralintide COA History — Every Tested Lot | Eppix Labs",
+      "file": "397b091ea7b99fb860e4.json"
+    },
+    {
+      "route": "/certificates-of-analysis/epit-ca-26g-10",
+      "title": "Epitalon EPIT-CA-26G-10 COA — 98.7% Purity | Eppix Labs",
+      "file": "c63608a2ad005be8ebea.json"
+    },
+    {
+      "route": "/certificates-of-analysis/epitalon",
+      "title": "Epitalon COA History — Every Tested Lot | Eppix Labs",
+      "file": "bc03032f705d7fd35dc7.json"
+    },
+    {
+      "route": "/certificates-of-analysis/ghk-ca-26a-02",
+      "title": "GHK-Cu GHK-CA-26A-02 COA — 99.8% Purity | Eppix Labs",
+      "file": "afc7519c9cc9e5a55700.json"
+    },
+    {
+      "route": "/certificates-of-analysis/ghk-cu",
+      "title": "GHK-Cu COA History — Every Tested Lot | Eppix Labs",
+      "file": "2e491a9ad4d1810b9b60.json"
+    },
+    {
+      "route": "/certificates-of-analysis/ghkc-ca-26i-100",
+      "title": "GHK-Cu GHKC-CA-26I-100 COA — 99.8% Purity | Eppix Labs",
+      "file": "0eedb502577fceab5908.json"
+    },
+    {
+      "route": "/certificates-of-analysis/hgh-ca-26g-100",
+      "title": "HGH (Somatropin) HGH-CA-26G-100 COA | Eppix Labs",
+      "file": "038a3dda94ed14f560d5.json"
+    },
+    {
+      "route": "/certificates-of-analysis/hgh-somatropin",
+      "title": "HGH COA History — Every Tested Lot | Eppix Labs",
+      "file": "9e2e658b0b5ecad26b6a.json"
+    },
+    {
+      "route": "/certificates-of-analysis/igf-1-lr3",
+      "title": "IGF-1 LR3 COA History — Every Tested Lot | Eppix Labs",
+      "file": "c597efb92eeee3eab555.json"
+    },
+    {
+      "route": "/certificates-of-analysis/igf1-ca-26a-01",
+      "title": "IGF-1 LR3 IGF1-CA-26A-01 COA — 98.6% Purity | Eppix Labs",
+      "file": "15a7e86bd83d5a066d31.json"
+    },
+    {
+      "route": "/certificates-of-analysis/ipam-ca-26g-10",
+      "title": "Ipamorelin IPAM-CA-26G-10 COA — 99.8% Purity | Eppix Labs",
+      "file": "eb8a5ff5427aee876073.json"
+    },
+    {
+      "route": "/certificates-of-analysis/ipamorelin",
+      "title": "Ipamorelin COA History — Every Tested Lot | Eppix Labs",
+      "file": "8df8cf3d07e43df99a27.json"
+    },
+    {
+      "route": "/certificates-of-analysis/kisspeptin-10",
+      "title": "Kisspeptin-10 COA History — Every Tested Lot | Eppix Labs",
+      "file": "64508ebb6113693edd70.json"
+    },
+    {
+      "route": "/certificates-of-analysis/kpv",
+      "title": "KPV COA History — Every Tested Lot | Eppix Labs",
+      "file": "3c63b39fef1804e513df.json"
+    },
+    {
+      "route": "/certificates-of-analysis/kpv-ca-26a-01",
+      "title": "KPV Peptide KPV-CA-26A-01 COA — 99.8% Purity | Eppix Labs",
+      "file": "0a5f4b4c78683cbeb3de.json"
+    },
+    {
+      "route": "/certificates-of-analysis/kpv-ca-26i-10",
+      "title": "KPV 10mg COA — Lot KPV-CA-26I-10 — 99.1% HPLC | Eppix Labs",
+      "file": "fa8ab7847af4b691d950.json"
+    },
+    {
+      "route": "/certificates-of-analysis/kspn-ca-26g-10",
+      "title": "Kisspeptin-10 KSPN-CA-26G-10 COA — 99.8% Purity | Eppix Labs",
+      "file": "7a32a982d040d9f43c15.json"
+    },
+    {
+      "route": "/certificates-of-analysis/livagen",
+      "title": "Livagen COA History — Every Tested Lot | Eppix Labs",
+      "file": "9378a5f036bc653c8db5.json"
+    },
+    {
+      "route": "/certificates-of-analysis/live-ca-26f-20",
+      "title": "Livagen LIVE-CA-26F-20 COA — 99.9% Purity | Eppix Labs",
+      "file": "a73eff9be1cc7db7d033.json"
+    },
+    {
+      "route": "/certificates-of-analysis/melanotan-1",
+      "title": "Melanotan-1 COA History — Every Tested Lot | Eppix Labs",
+      "file": "37a7254591ff3614674f.json"
+    },
+    {
+      "route": "/certificates-of-analysis/melanotan-ii",
+      "title": "Melanotan 2 COA History — Every Tested Lot | Eppix Labs",
+      "file": "a1c659dc4273567bbeba.json"
+    },
+    {
+      "route": "/certificates-of-analysis/mots-c",
+      "title": "MOTS-c COA History — Every Tested Lot | Eppix Labs",
+      "file": "d94f0f5d2f2b36dc5287.json"
+    },
+    {
+      "route": "/certificates-of-analysis/mots-ca-26a-02",
+      "title": "MOTS-c MOTS-CA-26A-02 COA — 99.3% Purity | Eppix Labs",
+      "file": "1515fba6ba9facbc4684.json"
+    },
+    {
+      "route": "/certificates-of-analysis/mots-ca-26f-20",
+      "title": "MOTS-c MOTS-CA-26F-20 COA — 99.3% Purity | Eppix Labs",
+      "file": "bfc9fd974b11da4e3983.json"
+    },
+    {
+      "route": "/certificates-of-analysis/mots-ca-26i-40",
+      "title": "MOTS-c MOTS-CA-26I-40 COA — 99.4% Purity | Eppix Labs",
+      "file": "87f4c779342bfc02b327.json"
+    },
+    {
+      "route": "/certificates-of-analysis/mt1-ca-26f-10",
+      "title": "Melanotan-1 MT1-CA-26F-10 COA — 99.8% Purity | Eppix Labs",
+      "file": "dafca219ce421f8912bf.json"
+    },
+    {
+      "route": "/certificates-of-analysis/mt2-ca-26f-10",
+      "title": "Melanotan 2 MT2-CA-26F-10 COA — 99.9% Purity | Eppix Labs",
+      "file": "b55f0a3aee004b045183.json"
+    },
+    {
+      "route": "/certificates-of-analysis/n-acetyl-selank",
+      "title": "NA-Selank COA History — Every Tested Lot | Eppix Labs",
+      "file": "ec03dcaaa5f4e5af7df7.json"
+    },
+    {
+      "route": "/certificates-of-analysis/n-acetyl-semax",
+      "title": "NA-Semax COA History — Every Tested Lot | Eppix Labs",
+      "file": "f215f3a0379c324e1976.json"
+    },
+    {
+      "route": "/certificates-of-analysis/nad",
+      "title": "NAD+ COA History — Every Tested Lot | Eppix Labs",
+      "file": "9b9afb8c436ca51e92dc.json"
+    },
+    {
+      "route": "/certificates-of-analysis/nad-ca-26f-500",
+      "title": "NAD+ NAD-CA-26F-500 COA | Eppix Labs",
+      "file": "f6d611ab3105258c55d0.json"
+    },
+    {
+      "route": "/certificates-of-analysis/nad-ca-26i-1000",
+      "title": "NAD+ NAD-CA-26I-1000 COA | Eppix Labs",
+      "file": "6b0e5aa942a3c8d6d911.json"
+    },
+    {
+      "route": "/certificates-of-analysis/nasa-ca-26f-10",
+      "title": "NA-Semax NASA-CA-26F-10 COA — 99.3% Purity | Eppix Labs",
+      "file": "23e5ec8b5d33114e5923.json"
+    },
+    {
+      "route": "/certificates-of-analysis/nslk-ca-26g-10",
+      "title": "NA-Selank NSLK-CA-26G-10 COA — 99.7% Purity | Eppix Labs",
+      "file": "86dd521bdf27621ca390.json"
+    },
+    {
+      "route": "/certificates-of-analysis/p21",
+      "title": "P21 COA History — Every Tested Lot | Eppix Labs",
+      "file": "acc79ee671e4740888ba.json"
+    },
+    {
+      "route": "/certificates-of-analysis/p21-ca-26h-10",
+      "title": "P21 10mg COA — Lot P21-CA-26H-10 — 99.3% HPLC | Eppix Labs",
+      "file": "39d6932d389acbc0cdc0.json"
+    },
+    {
+      "route": "/certificates-of-analysis/pe-22-28",
+      "title": "PE-22-28 COA History — Every Tested Lot | Eppix Labs",
+      "file": "427c68272f2cca1d2768.json"
+    },
+    {
+      "route": "/certificates-of-analysis/pe22-ca-26f-01",
+      "title": "PE-22-28 PE22-CA-26F-01 COA — 99.8% Purity | Eppix Labs",
+      "file": "31b0ac49c6407c282532.json"
+    },
+    {
+      "route": "/certificates-of-analysis/pine-ca-26f-20",
+      "title": "Pinealon PINE-CA-26F-20 COA — 98.7% Purity | Eppix Labs",
+      "file": "bde4a80d8872f4d2b130.json"
+    },
+    {
+      "route": "/certificates-of-analysis/pinealon",
+      "title": "Pinealon COA History — Every Tested Lot | Eppix Labs",
+      "file": "0312beac76cbd6734933.json"
+    },
+    {
+      "route": "/certificates-of-analysis/pt-141",
+      "title": "PT-141 COA History — Every Tested Lot | Eppix Labs",
+      "file": "9b3b0e6db8439a004ae7.json"
+    },
+    {
+      "route": "/certificates-of-analysis/pt-ca-26a-01",
+      "title": "PT-141 10mg COA — Lot PT-CA-26A-01 — 99.9% HPLC | Eppix Labs",
+      "file": "e6fc4ae6f0bb155b625c.json"
+    },
+    {
+      "route": "/certificates-of-analysis/reta-ca-26c-01",
+      "title": "Retatrutide RETA-CA-26C-01 COA — 99.8% Purity | Eppix Labs",
+      "file": "1e673720e25207de7b26.json"
+    },
+    {
+      "route": "/certificates-of-analysis/reta-ca-26f-10",
+      "title": "Retatrutide RETA-CA-26F-10 COA — 99.6% Purity | Eppix Labs",
+      "file": "024ae77b4db58dbbe0ef.json"
+    },
+    {
+      "route": "/certificates-of-analysis/reta-ca-26f-20",
+      "title": "Retatrutide RETA-CA-26F-20 COA — 99.6% Purity | Eppix Labs",
+      "file": "d6d035d5c4e90a0d09a1.json"
+    },
+    {
+      "route": "/certificates-of-analysis/reta-ca-26f-40",
+      "title": "Retatrutide RETA-CA-26F-40 COA — 99.7% Purity | Eppix Labs",
+      "file": "511d1ee886f5fadd59ea.json"
+    },
+    {
+      "route": "/certificates-of-analysis/reta-ca-26h-100",
+      "title": "Retatrutide RETA-CA-26H-100 COA — 99.7% Purity | Eppix Labs",
+      "file": "a4353e96c1871f8bb0b8.json"
+    },
+    {
+      "route": "/certificates-of-analysis/retatrutide",
+      "title": "Retatrutide COA History — Every Tested Lot | Eppix Labs",
+      "file": "d00f6b3f10299502d638.json"
+    },
+    {
+      "route": "/certificates-of-analysis/selank",
+      "title": "Selank COA History — Every Tested Lot | Eppix Labs",
+      "file": "5be2320db8384d21ef18.json"
+    },
+    {
+      "route": "/certificates-of-analysis/sema-ca-26f-10",
+      "title": "Semaglutide SEMA-CA-26F-10 COA — 99.5% Purity | Eppix Labs",
+      "file": "607025cad60783fccbaa.json"
+    },
+    {
+      "route": "/certificates-of-analysis/semaglutide",
+      "title": "Semaglutide COA History — Every Tested Lot | Eppix Labs",
+      "file": "acbdbd9c6893447ba230.json"
+    },
+    {
+      "route": "/certificates-of-analysis/semax",
+      "title": "Semax COA History — Every Tested Lot | Eppix Labs",
+      "file": "9a9459c95994ee7d3815.json"
+    },
+    {
+      "route": "/certificates-of-analysis/serm-ca-26d-01",
+      "title": "Sermorelin SERM-CA-26D-01 COA — 98.8% Purity | Eppix Labs",
+      "file": "24b21f1352dd35c21cde.json"
+    },
+    {
+      "route": "/certificates-of-analysis/sermorelin",
+      "title": "Sermorelin COA History — Every Tested Lot | Eppix Labs",
+      "file": "27e8fff988ea94f48dce.json"
+    },
+    {
+      "route": "/certificates-of-analysis/slnk-ca-26f-10",
+      "title": "Selank SLNK-CA-26F-10 COA — 99.2% Purity | Eppix Labs",
+      "file": "e7f8aa365fd612af7154.json"
+    },
+    {
+      "route": "/certificates-of-analysis/smax-ca-26g-10",
+      "title": "Semax SMAX-CA-26G-10 COA | Eppix Labs",
+      "file": "df1d92b7ccbb7429bc58.json"
+    },
+    {
+      "route": "/certificates-of-analysis/ss-31",
+      "title": "SS-31 COA History — Every Tested Lot | Eppix Labs",
+      "file": "58424872132d4cf3a0fc.json"
+    },
+    {
+      "route": "/certificates-of-analysis/ss31-ca-26f-50",
+      "title": "SS-31 SS31-CA-26F-50 COA — 99.8% Purity | Eppix Labs",
+      "file": "4355edb556a75e0a3b8c.json"
+    },
+    {
+      "route": "/certificates-of-analysis/ss31-ca-26i-100",
+      "title": "SS-31 SS31-CA-26I-100 COA — 99.8% Purity | Eppix Labs",
+      "file": "81c0e0aa5508d5a474f7.json"
+    },
+    {
+      "route": "/certificates-of-analysis/ta1-ca-26i-10",
+      "title": "Thymosin Alpha-1 TA1-CA-26I-10 COA | Eppix Labs",
+      "file": "100c7017eaa05a80feb6.json"
+    },
+    {
+      "route": "/certificates-of-analysis/tb-500",
+      "title": "TB-500 COA History — Every Tested Lot | Eppix Labs",
+      "file": "7287f6a6b58202de329e.json"
+    },
+    {
+      "route": "/certificates-of-analysis/tb5-ca-26f-10",
+      "title": "TB-500 TB5-CA-26F-10 COA — 99.2% Purity | Eppix Labs",
+      "file": "82a9cd292c7864c3cb1c.json"
+    },
+    {
+      "route": "/certificates-of-analysis/tesa-ca-26f-10",
+      "title": "Tesamorelin TESA-CA-26F-10 COA — 98.8% Purity | Eppix Labs",
+      "file": "ae0569d68f79fa9031ef.json"
+    },
+    {
+      "route": "/certificates-of-analysis/tesa-ca-26i-20",
+      "title": "Tesamorelin TESA-CA-26I-20 COA — 99.3% Purity | Eppix Labs",
+      "file": "fb1f982a70cdfabb0104.json"
+    },
+    {
+      "route": "/certificates-of-analysis/tesamorelin",
+      "title": "Tesamorelin COA History — Every Tested Lot | Eppix Labs",
+      "file": "44e61fb0ce2fbc1e12c4.json"
+    },
+    {
+      "route": "/certificates-of-analysis/thymosin-alpha-1",
+      "title": "Thymosin Alpha-1 COA History — Every Tested Lot | Eppix Labs",
+      "file": "3207e8878e384c2dcc65.json"
+    },
+    {
+      "route": "/certificates-of-analysis/tirz-ca-26a-01",
+      "title": "Tirzepatide TIRZ-CA-26A-01 COA — 99.8% Purity | Eppix Labs",
+      "file": "fe34e18ca46aebea45f3.json"
+    },
+    {
+      "route": "/certificates-of-analysis/tirz-ca-26f-60",
+      "title": "Tirzepatide TIRZ-CA-26F-60 COA — 99.9% Purity | Eppix Labs",
+      "file": "7a1e9b7ea885177fc454.json"
+    },
+    {
+      "route": "/certificates-of-analysis/tirz-ca-26g-10",
+      "title": "Tirzepatide TIRZ-CA-26G-10 COA — 99.6% Purity | Eppix Labs",
+      "file": "9d1350e300d957b51a3f.json"
+    },
+    {
+      "route": "/certificates-of-analysis/tirz-ca-26g-15",
+      "title": "Tirzepatide TIRZ-CA-26G-15 COA — 99.9% Purity | Eppix Labs",
+      "file": "7aa628977f3f2200aa6c.json"
+    },
+    {
+      "route": "/certificates-of-analysis/tirzepatide",
+      "title": "Tirzepatide COA History — Every Tested Lot | Eppix Labs",
+      "file": "d181a213435b88859deb.json"
+    },
+    {
+      "route": "/certificates-of-analysis/vesu-ca-26g-20",
+      "title": "Vesugen VESU-CA-26G-20 COA — 99.9% Purity | Eppix Labs",
+      "file": "12858e43036b74cc9078.json"
+    },
+    {
+      "route": "/certificates-of-analysis/vesugen",
+      "title": "Vesugen COA History — Every Tested Lot | Eppix Labs",
+      "file": "d35a600a2ac9c4c8bdae.json"
+    },
+    {
+      "route": "/collections/aminos",
+      "title": "NAD+ & Glutathione Vials Canada — Aminos | Eppix Labs",
+      "file": "25f3919c84113ac0be84.json"
+    },
+    {
+      "route": "/collections/best-sellers",
+      "title": "Best-Selling Research Peptides Canada | Eppix Labs",
+      "file": "27a169a0db8c78505c3e.json"
+    },
+    {
+      "route": "/collections/bioregulators",
+      "title": "Peptide Bioregulators Canada — Khavinson | Eppix Labs",
+      "file": "999d8084d348bc6a74cf.json"
+    },
+    {
+      "route": "/collections/blends",
+      "title": "Peptide Blends Canada — GLOW, KLOW, Wolverine | Eppix Labs",
+      "file": "766d3fa8a62e00fe6cbe.json"
+    },
+    {
+      "route": "/collections/capsules",
+      "title": "Research Capsules Canada — 5-Amino-1MQ, BAM15 | Eppix Labs",
+      "file": "9acb970864360e1dde8d.json"
+    },
+    {
+      "route": "/collections/cognitive",
+      "title": "Nootropic Peptides Canada — Semax, Selank | Eppix Labs",
+      "file": "1ab730584b285d8d5dc5.json"
+    },
+    {
+      "route": "/collections/cosmetics",
+      "title": "Cosmetic Peptides Canada — GHK-Cu, AHK-Cu | Eppix Labs",
+      "file": "f8abf61fe9cd3b895d2e.json"
+    },
+    {
+      "route": "/collections/growth-hormone",
+      "title": "Growth Hormone Peptides Canada — Ipamorelin | Eppix Labs",
+      "file": "50339b7d8d52d0de0449.json"
+    },
+    {
+      "route": "/collections/hormonal-signaling",
+      "title": "Hormonal Peptides Canada — PT-141, Melanotan | Eppix Labs",
+      "file": "11ad7c60801162a2dbe6.json"
+    },
+    {
+      "route": "/collections/intranasal-sprays",
+      "title": "Peptide Nasal Sprays Canada — Research Sprays | Eppix Labs",
+      "file": "870ae6f93635610fb92f.json"
+    },
+    {
+      "route": "/collections/longevity",
+      "title": "Longevity Peptides Canada — NAD+, Epitalon | Eppix Labs",
+      "file": "9dcca929612014605645.json"
+    },
+    {
+      "route": "/collections/metabolic-glp-1",
+      "title": "GLP-1 & Metabolic Peptides Canada — Retatrutide | Eppix Labs",
+      "file": "0b482845f96817d3b4e5.json"
+    },
+    {
+      "route": "/collections/new",
+      "title": "New Research Peptides — Latest Arrivals | Eppix Labs",
+      "file": "b9f0746644a5bec776ee.json"
+    },
+    {
+      "route": "/collections/peptide-vials",
+      "title": "Research Peptide Vials Canada — Lot-Tested | Eppix Labs",
+      "file": "ff5119798cdae59b1293.json"
+    },
+    {
+      "route": "/collections/peptide-vials?page=2",
+      "title": "Research Peptide Vials Canada — Lot-Tested | Eppix Labs",
+      "file": "b9ba190f09bdb1a7e57a.json"
+    },
+    {
+      "route": "/collections/peptides",
+      "title": "Buy Research Peptides Canada | Full Catalog | Eppix Labs",
+      "file": "bbdb3616dbb78b4fae63.json"
+    },
+    {
+      "route": "/collections/peptides?page=2",
+      "title": "Buy Research Peptides Canada | Full Catalog | Eppix Labs",
+      "file": "97a35eadfd03c49a48f3.json"
+    },
+    {
+      "route": "/collections/peptides?page=2&sort=new",
+      "title": "Buy Research Peptides Canada | Full Catalog | Eppix Labs",
+      "file": "6476ac70d4051cff5c21.json"
+    },
+    {
+      "route": "/collections/peptides?page=3",
+      "title": "Buy Research Peptides Canada | Full Catalog | Eppix Labs",
+      "file": "2d5b1ccf917a64e43787.json"
+    },
+    {
+      "route": "/collections/peptides?page=3&sort=new",
+      "title": "Buy Research Peptides Canada | Full Catalog | Eppix Labs",
+      "file": "5c218cabb707aae06236.json"
+    },
+    {
+      "route": "/collections/peptides?sort=new",
+      "title": "Buy Research Peptides Canada | Full Catalog | Eppix Labs",
+      "file": "eaf50684119fbedfdd6c.json"
+    },
+    {
+      "route": "/collections/tissue-repair",
+      "title": "Healing Peptides Canada — BPC-157, TB-500 | Eppix Labs",
+      "file": "b71b346633dd09970217.json"
+    },
+    {
+      "route": "/contact",
+      "title": "Contact Us — Peptide Support Canada | Eppix Labs",
+      "file": "4eb950636535d637ee74.json"
+    },
+    {
+      "route": "/faq",
+      "title": "Peptides Canada FAQ | COAs, Shipping, Legality | Eppix Labs",
+      "file": "1965ee0fd57296a19690.json"
+    },
+    {
+      "route": "/forgot-password",
+      "title": "Reset Your Password | Eppix Labs",
+      "file": "b798fcee2a6504460b80.json"
+    },
+    {
+      "route": "/login",
+      "title": "Sign In to Your Account | Eppix Labs",
+      "file": "7e93fba0bc7adda858a2.json"
+    },
+    {
+      "route": "/payment-methods",
+      "title": "Payment Methods | Interac e-Transfer & Card | Eppix Labs",
+      "file": "88352d7b01eda746634f.json"
+    },
+    {
+      "route": "/peptide-calculator",
+      "title": "Peptide Calculator | Reconstitution & Molarity | Eppix Labs",
+      "file": "11bd035732cc88be7006.json"
+    },
+    {
+      "route": "/peptide-coa-verification",
+      "title": "Peptide COA Verification | Eppix Labs",
+      "file": "149d1ce770d1b6b831e2.json"
+    },
+    {
+      "route": "/peptide-research",
+      "title": "Peptide Research Library Canada | COA Science | Eppix Labs",
+      "file": "7c4f4486888135b7dee6.json"
+    },
+    {
+      "route": "/peptide-research/are-peptides-legal-in-canada",
+      "title": "Are Peptides Legal in Canada? | Eppix Labs",
+      "file": "960909c665e815dd7b39.json"
+    },
+    {
+      "route": "/peptide-research/bacteriostatic-water-guide",
+      "title": "Bacteriostatic Water: Lab Guide | Eppix Labs",
+      "file": "18a924ed776876fc4bd4.json"
+    },
+    {
+      "route": "/peptide-research/bpc-157",
+      "title": "BPC-157: A Research Literature Overview | Eppix Labs",
+      "file": "053d3e84176a43cbc515.json"
+    },
+    {
+      "route": "/peptide-research/bpc-157-capsules-vs-vials",
+      "title": "BPC-157 Capsules vs Vials | Eppix Labs",
+      "file": "90c5a2194c66f8668549.json"
+    },
+    {
+      "route": "/peptide-research/bpc-157-vs-tb-500",
+      "title": "BPC-157 vs TB-500: The Research Comparison | Eppix Labs",
+      "file": "df8b80a3226efce3d3ce.json"
+    },
+    {
+      "route": "/peptide-research/buy-5-amino-1mq-canada",
+      "title": "Buy 5-Amino-1MQ in Canada — NNMT Inhibitor | Eppix Labs",
+      "file": "9012bacc32fe67174303.json"
+    },
+    {
+      "route": "/peptide-research/buy-bpc-157-canada",
+      "title": "Buy BPC-157 in Canada — Batch-Tested | Eppix Labs",
+      "file": "5558318d2e7ad38e45b6.json"
+    },
+    {
+      "route": "/peptide-research/buy-cagrilintide-canada",
+      "title": "Buy Cagrilintide in Canada — Amylin Analogue | Eppix Labs",
+      "file": "ad0f125d0142a5d910f7.json"
+    },
+    {
+      "route": "/peptide-research/buy-cjc-1295-ipamorelin-canada",
+      "title": "CJC-1295 and Ipamorelin in Canada | Eppix Labs",
+      "file": "5c451be62561fcfa45e8.json"
+    },
+    {
+      "route": "/peptide-research/buy-eloralintide-canada",
+      "title": "Buy Eloralintide in Canada — Amylin Agonist | Eppix Labs",
+      "file": "306af8e61e8d8a8eb38b.json"
+    },
+    {
+      "route": "/peptide-research/buy-epitalon-canada",
+      "title": "Buy Epitalon in Canada — The Telomerase Claim | Eppix Labs",
+      "file": "0b15424d78a8faf26b5c.json"
+    },
+    {
+      "route": "/peptide-research/buy-ghk-cu-canada",
+      "title": "Buy GHK-Cu in Canada — The Copper Peptide | Eppix Labs",
+      "file": "aae14801de634027ac2e.json"
+    },
+    {
+      "route": "/peptide-research/buy-ipamorelin-canada",
+      "title": "Buy Ipamorelin in Canada — Batch-Tested | Eppix Labs",
+      "file": "791ad8a3021fa0a2e880.json"
+    },
+    {
+      "route": "/peptide-research/buy-kpv-canada",
+      "title": "Buy KPV in Canada — The α-MSH Fragment | Eppix Labs",
+      "file": "a78ade4d46a6dbb6458d.json"
+    },
+    {
+      "route": "/peptide-research/buy-mots-c-canada",
+      "title": "Buy MOTS-c in Canada — Batch-Tested | Eppix Labs",
+      "file": "eba8464d8d9f3f6784e4.json"
+    },
+    {
+      "route": "/peptide-research/buy-nad-canada",
+      "title": "NAD+ in Canada: The Coenzyme, Not a Peptide | Eppix Labs",
+      "file": "2a04c515ddbc2486118c.json"
+    },
+    {
+      "route": "/peptide-research/buy-retatrutide-canada",
+      "title": "Buy Retatrutide in Canada — Triple Agonist | Eppix Labs",
+      "file": "a7d9c749744e3f7c8947.json"
+    },
+    {
+      "route": "/peptide-research/buy-selank-canada",
+      "title": "Buy Selank in Canada — Tuftsin Analogue | Eppix Labs",
+      "file": "a3913afbc838a1991a43.json"
+    },
+    {
+      "route": "/peptide-research/buy-semaglutide-canada",
+      "title": "Buy Semaglutide in Canada — Batch-Verified | Eppix Labs",
+      "file": "4c52cc91e7299f3869ef.json"
+    },
+    {
+      "route": "/peptide-research/buy-sermorelin-canada",
+      "title": "Buy Sermorelin in Canada — GHRH(1-29) | Eppix Labs",
+      "file": "464640cd58c7f4158193.json"
+    },
+    {
+      "route": "/peptide-research/buy-tb-500-canada",
+      "title": "Buy TB-500 in Canada — Batch-Tested | Eppix Labs",
+      "file": "484a1cf9fa717727a8b4.json"
+    },
+    {
+      "route": "/peptide-research/buy-tesamorelin-canada",
+      "title": "Buy Tesamorelin in Canada — GHRH Analogue | Eppix Labs",
+      "file": "418002ca38f9e6396f17.json"
+    },
+    {
+      "route": "/peptide-research/buy-thymosin-alpha-1-canada",
+      "title": "Thymosin Alpha-1 in Canada | Eppix Labs",
+      "file": "443484d997fc2db7d910.json"
+    },
+    {
+      "route": "/peptide-research/buy-tirzepatide-canada",
+      "title": "Buy Tirzepatide in Canada — Research Grade | Eppix Labs",
+      "file": "c5eee5fa7ce7d735b3ec.json"
+    },
+    {
+      "route": "/peptide-research/cagrilintide-vs-semaglutide",
+      "title": "Cagrilintide vs Semaglutide | Eppix Labs",
+      "file": "6688e130e8d2aa182837.json"
+    },
+    {
+      "route": "/peptide-research/cjc-1295-dac-vs-no-dac",
+      "title": "CJC-1295 With DAC vs Without DAC | Eppix Labs",
+      "file": "3fe379935bd875e30c78.json"
+    },
+    {
+      "route": "/peptide-research/first-peptide-order-mistakes",
+      "title": "First Peptide Order: 8 Mistakes | Eppix Labs",
+      "file": "ace1b97ae41344d12747.json"
+    },
+    {
+      "route": "/peptide-research/ghk-cu-topical-vs-reconstituted",
+      "title": "GHK-Cu: Topical vs Research Grade | Eppix Labs",
+      "file": "2ab1c3bb2c49a977cdff.json"
+    },
+    {
+      "route": "/peptide-research/how-peptides-are-made-spps",
+      "title": "How Peptides Are Made: SPPS | Eppix Labs",
+      "file": "2e5afc2543e95d379d3e.json"
+    },
+    {
+      "route": "/peptide-research/how-to-choose-a-peptide-supplier-canada",
+      "title": "How to Choose a Peptide Supplier in Canada | Eppix Labs",
+      "file": "1d173436cf120242a516.json"
+    },
+    {
+      "route": "/peptide-research/how-to-read-a-certificate-of-analysis",
+      "title": "How to Read a Certificate of Analysis | Eppix Labs",
+      "file": "e84b7604ad17ee65db07.json"
+    },
+    {
+      "route": "/peptide-research/how-to-spot-a-fake-coa",
+      "title": "How to Spot a Fake Peptide COA: Seven Red Flags | Eppix Labs",
+      "file": "497723a79df1c48f24ff.json"
+    },
+    {
+      "route": "/peptide-research/how-to-verify-a-peptide-coa",
+      "title": "How to Verify a Peptide COA in Three Steps | Eppix Labs",
+      "file": "d858de70f04e535754e8.json"
+    },
+    {
+      "route": "/peptide-research/how-we-ship-peptides-canada",
+      "title": "How We Ship Peptides Across Canada | Eppix Labs",
+      "file": "9f28d64b11ddc68cc180.json"
+    },
+    {
+      "route": "/peptide-research/interac-etransfer-research-orders",
+      "title": "Interac e-Transfer for Research Orders | Eppix Labs",
+      "file": "73a65b9800bcc1c1dc85.json"
+    },
+    {
+      "route": "/peptide-research/ipamorelin-vs-sermorelin",
+      "title": "Ipamorelin vs Sermorelin | Eppix Labs",
+      "file": "293d896966e911a280fe.json"
+    },
+    {
+      "route": "/peptide-research/janoshik-testing-explained",
+      "title": "Janoshik Testing Explained | Eppix Labs",
+      "file": "a74193cb01b8ad61acb5.json"
+    },
+    {
+      "route": "/peptide-research/mass-spectrometry-peptide-verification",
+      "title": "Mass Spectrometry in Peptide Testing | Eppix Labs",
+      "file": "86a142cdbeb34ca7ccd8.json"
+    },
+    {
+      "route": "/peptide-research/peptide-blends-explained",
+      "title": "Peptide Blends Explained | Eppix Labs",
+      "file": "0fb4871bb07ddaadabbf.json"
+    },
+    {
+      "route": "/peptide-research/peptide-import-risks-canada",
+      "title": "Peptide Import Risks in Canada | Eppix Labs",
+      "file": "1626bb242a3444a1d147.json"
+    },
+    {
+      "route": "/peptide-research/peptide-molecular-weight",
+      "title": "Peptide Molecular Weight Explained | Eppix Labs",
+      "file": "7acda700cfaaa69e0145.json"
+    },
+    {
+      "route": "/peptide-research/peptide-pricing-canada",
+      "title": "Peptide Pricing in Canada Explained | Eppix Labs",
+      "file": "2ef6cb9f54a3b0c657fc.json"
+    },
+    {
+      "route": "/peptide-research/peptide-reconstitution-lab-guide",
+      "title": "Peptide Reconstitution: The Laboratory Guide | Eppix Labs",
+      "file": "6160a0b15cb196377634.json"
+    },
+    {
+      "route": "/peptide-research/peptide-research-glossary",
+      "title": "Peptide Research Glossary (A-Z) | Eppix Labs",
+      "file": "a2b919ed55f930367630.json"
+    },
+    {
+      "route": "/peptide-research/peptide-storage-guide",
+      "title": "Peptide Storage and Shelf Life | Eppix Labs",
+      "file": "2b75d3941f8d940749c0.json"
+    },
+    {
+      "route": "/peptide-research/peptides-wada-cces-athletes",
+      "title": "Peptides, WADA and CCES Explained | Eppix Labs",
+      "file": "85c65808c7564398773d.json"
+    },
+    {
+      "route": "/peptide-research/purity-vs-fill-accuracy",
+      "title": "Purity vs Fill Accuracy Explained | Eppix Labs",
+      "file": "4e81ebbb65d9c3cfde1b.json"
+    },
+    {
+      "route": "/peptide-research/retatrutide-vs-tirzepatide",
+      "title": "Retatrutide vs Tirzepatide: Triple Against Dual | Eppix Labs",
+      "file": "10a908756ddbc3905784.json"
+    },
+    {
+      "route": "/peptide-research/selank-vs-semax",
+      "title": "Selank vs Semax: Research Comparison | Eppix Labs",
+      "file": "81bd46b7001bc1c3dca4.json"
+    },
+    {
+      "route": "/peptide-research/semaglutide-vs-retatrutide",
+      "title": "Semaglutide vs Retatrutide | Eppix Labs",
+      "file": "14de11bf8b0a51fe0879.json"
+    },
+    {
+      "route": "/peptide-research/semaglutide-vs-tirzepatide",
+      "title": "Semaglutide vs Tirzepatide | Eppix Labs",
+      "file": "cda153aad1f41bae7fcf.json"
+    },
+    {
+      "route": "/peptide-research/tirzepatide",
+      "title": "Tirzepatide: A Research Literature Overview | Eppix Labs",
+      "file": "5311d79e61b39d240c48.json"
+    },
+    {
+      "route": "/peptide-research/topic/buying-in-canada",
+      "title": "Buying Peptides in Canada | Eppix Labs",
+      "file": "93d71b7f8411a4aabca5.json"
+    },
+    {
+      "route": "/peptide-research/topic/coas-and-testing",
+      "title": "COAs & Testing — Peptide Research Library | Eppix Labs",
+      "file": "7d998d518d8aee140d6f.json"
+    },
+    {
+      "route": "/peptide-research/topic/comparisons-and-lab-practice",
+      "title": "Comparisons & Lab Practice | Eppix Labs",
+      "file": "21a73a72556d47eae0e7.json"
+    },
+    {
+      "route": "/peptide-research/topic/compound-guides",
+      "title": "Compound Guides — Peptide Research Library | Eppix Labs",
+      "file": "a6400d0b58ba93bd2186.json"
+    },
+    {
+      "route": "/peptide-research/topic/regulation",
+      "title": "Regulation & Compliance — Peptide Research… | Eppix Labs",
+      "file": "6b0c7afde0cf47a07846.json"
+    },
+    {
+      "route": "/peptide-research/underfilled-vials",
+      "title": "Underfilled Vials in Research Peptides | Eppix Labs",
+      "file": "9b31a6e5e1280587eb44.json"
+    },
+    {
+      "route": "/peptide-research/understanding-peptide-sequences",
+      "title": "How to Read a Peptide Sequence | Eppix Labs",
+      "file": "c0f0180ce0b9422f5ddb.json"
+    },
+    {
+      "route": "/peptide-research/what-is-hplc-testing",
+      "title": "What Is HPLC Testing for Peptides? | Eppix Labs",
+      "file": "3fb762e1a32b9d18e497.json"
+    },
+    {
+      "route": "/peptide-research/why-we-publish-every-coa",
+      "title": "Why We Publish Every COA | Eppix Labs",
+      "file": "442f299acb19a67040b6.json"
+    },
+    {
+      "route": "/privacy",
+      "title": "Privacy Policy — Data Protection | Eppix Labs",
+      "file": "0ece7f7c306b4cf686ab.json"
+    },
+    {
+      "route": "/products/5-amino-1mq",
+      "title": "Buy 5-Amino-1MQ Canada — Research Peptide | Eppix Labs",
+      "file": "e75558f83393f6ca384e.json"
+    },
+    {
+      "route": "/products/5-amino-1mq-capsules",
+      "title": "Buy 5-Amino-1MQ Capsules Canada | Eppix Labs",
+      "file": "0a1e9288c6affae40a36.json"
+    },
+    {
+      "route": "/products/aod-9604",
+      "title": "Buy AOD-9604 Canada — Growth Hormone Fragment | Eppix Labs",
+      "file": "b8717af9b437b1599cb7.json"
+    },
+    {
+      "route": "/products/ara-290",
+      "title": "Buy ARA-290 Canada — Non-Erythropoietic EPO | Eppix Labs",
+      "file": "d3cae3aa3b4f11893d20.json"
+    },
+    {
+      "route": "/products/bam15",
+      "title": "Buy BAM15 Capsules Canada — Research Peptide | Eppix Labs",
+      "file": "91b1bb4ed8342815c18f.json"
+    },
+    {
+      "route": "/products/bpc-157",
+      "title": "Buy BPC-157 Canada — Research Peptide | Eppix Labs",
+      "file": "dca35ecc82891f3cedd2.json"
+    },
+    {
+      "route": "/products/cagrilintide",
+      "title": "Buy Cagrilintide Canada — Research Peptide | Eppix Labs",
+      "file": "6f34609b61c892422eb2.json"
+    },
+    {
+      "route": "/products/cartalax",
+      "title": "Buy Cartalax Canada — Cartilage-Derived Peptide | Eppix Labs",
+      "file": "c60517328100ac179c9e.json"
+    },
+    {
+      "route": "/products/cjc-1295-ipamorelin",
+      "title": "Buy CJC-1295 / Ipamorelin Blend Canada | Eppix Labs",
+      "file": "8b9352c168fbf9cd5972.json"
+    },
+    {
+      "route": "/products/cjc-1295-no-dac",
+      "title": "Buy CJC-1295 (No DAC) Canada — GHRH Analogue | Eppix Labs",
+      "file": "05639e0568e87e1779f5.json"
+    },
+    {
+      "route": "/products/cjc-1295-with-dac",
+      "title": "Buy CJC-1295 (With DAC) Canada | Eppix Labs",
+      "file": "296bf75bef7149997965.json"
+    },
+    {
+      "route": "/products/coremend",
+      "title": "Buy Coremend Blend Canada — Research Peptide | Eppix Labs",
+      "file": "22c020bbe8567950a4e4.json"
+    },
+    {
+      "route": "/products/crystagen",
+      "title": "Buy Crystagen Canada — Peptide Bioregulator | Eppix Labs",
+      "file": "f2aa7286f483c0a5812d.json"
+    },
+    {
+      "route": "/products/deadpool",
+      "title": "Buy Deadpool Blend Canada — Recovery Blend | Eppix Labs",
+      "file": "83d00672dacafb7d8467.json"
+    },
+    {
+      "route": "/products/dsip",
+      "title": "Buy DSIP Canada — Delta Sleep–Inducing Peptide | Eppix Labs",
+      "file": "00163bae6ca87d762ef6.json"
+    },
+    {
+      "route": "/products/eloralintide",
+      "title": "Buy Eloralintide Canada — Research Peptide | Eppix Labs",
+      "file": "1b490a87297d4a857d7c.json"
+    },
+    {
+      "route": "/products/epitalon",
+      "title": "Buy Epitalon Canada — Synthetic Tetrapeptide | Eppix Labs",
+      "file": "39f8314678db492d0025.json"
+    },
+    {
+      "route": "/products/ghk-cu",
+      "title": "Buy GHK-Cu Canada — Copper Peptide | Eppix Labs",
+      "file": "374f824063ed9d291ab3.json"
+    },
+    {
+      "route": "/products/glow",
+      "title": "Buy GLOW Blend Canada — Multi-Peptide | Eppix Labs",
+      "file": "5e83b81d5e1c49fee249.json"
+    },
+    {
+      "route": "/products/glutathione",
+      "title": "Buy Glutathione Canada — Research Peptide | Eppix Labs",
+      "file": "8392f73ae9f562c0bd4d.json"
+    },
+    {
+      "route": "/products/hcg",
+      "title": "Buy HCG Canada — Gonadotropin Glycoprotein | Eppix Labs",
+      "file": "2a3396e224b88e90e412.json"
+    },
+    {
+      "route": "/products/hgh-somatropin",
+      "title": "Buy HGH (Somatropin) Canada — Research Peptide | Eppix Labs",
+      "file": "599402cebadabf746ce1.json"
+    },
+    {
+      "route": "/products/igf-1-lr3",
+      "title": "Buy IGF-1 LR3 Canada — Long-Acting IGF-1 | Eppix Labs",
+      "file": "84daf16c439841c25781.json"
+    },
+    {
+      "route": "/products/ipamorelin",
+      "title": "Buy Ipamorelin Canada — Ghrelin Receptor | Eppix Labs",
+      "file": "24763c83c026d24163a8.json"
+    },
+    {
+      "route": "/products/kisspeptin-10",
+      "title": "Buy Kisspeptin-10 Canada — KISS1 Receptor | Eppix Labs",
+      "file": "f196028a300201a6880c.json"
+    },
+    {
+      "route": "/products/klow",
+      "title": "Buy KLOW Blend Canada — Multi-Peptide | Eppix Labs",
+      "file": "b2963f3bee5e838e19d2.json"
+    },
+    {
+      "route": "/products/kpv",
+      "title": "Buy KPV Canada — Tripeptide Research Compound | Eppix Labs",
+      "file": "6aad6347989274243096.json"
+    },
+    {
+      "route": "/products/livagen",
+      "title": "Buy Livagen Canada — Peptide Bioregulator | Eppix Labs",
+      "file": "ef7c777d7f24f0a88900.json"
+    },
+    {
+      "route": "/products/mazdutide",
+      "title": "Buy Mazdutide Canada — Research Peptide | Eppix Labs",
+      "file": "fa963abccbec9b7d682a.json"
+    },
+    {
+      "route": "/products/melanotan-1",
+      "title": "Buy Melanotan-1 Canada — Research Peptide | Eppix Labs",
+      "file": "1cc8e55091829d917b41.json"
+    },
+    {
+      "route": "/products/melanotan-ii",
+      "title": "Buy Melanotan II Canada — Melanocortin Receptor | Eppix Labs",
+      "file": "f1b64e45867b3723172f.json"
+    },
+    {
+      "route": "/products/mito-genesis",
+      "title": "Buy Mito-Genesis Blend Canada — Mitochondrial | Eppix Labs",
+      "file": "9166d2fae95bebd784e5.json"
+    },
+    {
+      "route": "/products/mots-c",
+      "title": "Buy MOTS-c Canada — Mitochondrial-Derived | Eppix Labs",
+      "file": "cce462475cd525d4c1a6.json"
+    },
+    {
+      "route": "/products/n-acetyl-selank",
+      "title": "Buy N-Acetyl Selank Canada — Research Peptide | Eppix Labs",
+      "file": "161cfa86d61171152a6b.json"
+    },
+    {
+      "route": "/products/n-acetyl-semax",
+      "title": "Buy N-Acetyl Semax Canada — Research Peptide | Eppix Labs",
+      "file": "9e98803ce44a02e91800.json"
+    },
+    {
+      "route": "/products/nad",
+      "title": "Buy NAD+ Canada — Research Peptide | Eppix Labs",
+      "file": "9372d6a2012c049a7f91.json"
+    },
+    {
+      "route": "/products/ovagen",
+      "title": "Buy Ovagen Canada — Peptide Bioregulator | Eppix Labs",
+      "file": "712268c96714b7d888d8.json"
+    },
+    {
+      "route": "/products/oxytocin",
+      "title": "Buy Oxytocin Canada — Research Peptide | Eppix Labs",
+      "file": "6cd759d9180ec395b6a0.json"
+    },
+    {
+      "route": "/products/p21",
+      "title": "Buy P21 Canada — Neurotrophic Peptide Mimetic | Eppix Labs",
+      "file": "b9398597e8ca91164c46.json"
+    },
+    {
+      "route": "/products/pe-22-28",
+      "title": "Buy PE-22-28 Canada — TREK-1 Channel Blocker | Eppix Labs",
+      "file": "7d733a6f42bdf11e7a55.json"
+    },
+    {
+      "route": "/products/pfizer-bacteriostatic-water",
+      "title": "Buy Pfizer Bacteriostatic Water Canada | Eppix Labs",
+      "file": "37ac1185cdba3a841bb5.json"
+    },
+    {
+      "route": "/products/pinealon",
+      "title": "Buy Pinealon Canada — Peptide Bioregulator | Eppix Labs",
+      "file": "e08db9b99ad8a6a56971.json"
+    },
+    {
+      "route": "/products/pt-141",
+      "title": "Buy PT-141 Canada — Melanocortin Receptor | Eppix Labs",
+      "file": "7b4f9997b4a9df716ea9.json"
+    },
+    {
+      "route": "/products/retatrutide",
+      "title": "Buy Retatrutide Canada — Research Peptide | Eppix Labs",
+      "file": "979c4f4391dc720d8fe1.json"
+    },
+    {
+      "route": "/products/selank",
+      "title": "Buy Selank Canada — Synthetic Heptapeptide | Eppix Labs",
+      "file": "e196622e6a815da28ab0.json"
+    },
+    {
+      "route": "/products/semaglutide",
+      "title": "Buy Semaglutide Canada — Research Peptide | Eppix Labs",
+      "file": "38d105f132379cd89346.json"
+    },
+    {
+      "route": "/products/semax",
+      "title": "Buy Semax Canada — ACTH-Derived | Eppix Labs",
+      "file": "8a48a560bdfa3f4d2610.json"
+    },
+    {
+      "route": "/products/sermorelin",
+      "title": "Buy Sermorelin Canada — GHRH(1-29) Analogue | Eppix Labs",
+      "file": "f8efd60e740e74845e28.json"
+    },
+    {
+      "route": "/products/ss-31",
+      "title": "Buy SS-31 Canada — Research Peptide | Eppix Labs",
+      "file": "5a15f959268cafead8e3.json"
+    },
+    {
+      "route": "/products/tb-500",
+      "title": "Buy TB-500 Canada — Thymosin Beta-4 Fragment | Eppix Labs",
+      "file": "dc351b1708546a094904.json"
+    },
+    {
+      "route": "/products/tesamorelin",
+      "title": "Buy Tesamorelin Canada — GHRH Analogue | Eppix Labs",
+      "file": "11d3cced105a1628d149.json"
+    },
+    {
+      "route": "/products/tesamorelin-ipamorelin-blend",
+      "title": "Buy Tesamorelin / Ipamorelin Blend Canada | Eppix Labs",
+      "file": "354c3c249b6fa4ae73b3.json"
+    },
+    {
+      "route": "/products/thymosin-alpha-1",
+      "title": "Buy Thymosin Alpha-1 Canada — Thymic Peptide | Eppix Labs",
+      "file": "347970bb31aeb53b8ff5.json"
+    },
+    {
+      "route": "/products/tirzepatide",
+      "title": "Buy Tirzepatide Canada — Research Peptide | Eppix Labs",
+      "file": "9977830073ca1a9e1425.json"
+    },
+    {
+      "route": "/products/triad-gh",
+      "title": "Buy Triad-GH Blend Canada — Research Peptide | Eppix Labs",
+      "file": "25b9d6a5fa52c2933a0c.json"
+    },
+    {
+      "route": "/products/vesugen",
+      "title": "Buy Vesugen Canada — Peptide Bioregulator | Eppix Labs",
+      "file": "1e8fe67729b36efda2a5.json"
+    },
+    {
+      "route": "/products/vip",
+      "title": "Buy VIP Canada — Vasoactive Intestinal Peptide | Eppix Labs",
+      "file": "ff90460ae10ee7eee63b.json"
+    },
+    {
+      "route": "/products/wolverine",
+      "title": "Buy Wolverine Stack Canada — Multi-Peptide | Eppix Labs",
+      "file": "0fdb1ecbd92e07735001.json"
+    },
+    {
+      "route": "/research-peptides",
+      "title": "Research Peptides by City | Eppix Labs",
+      "file": "d8e732770d61ed299a7e.json"
+    },
+    {
+      "route": "/research-peptides-canada",
+      "title": "Research Peptides Canada — Sourcing Guide | Eppix Labs",
+      "file": "963a0bfc414209d24cff.json"
+    },
+    {
+      "route": "/research-peptides/calgary",
+      "title": "Research Peptides Calgary | 1-Day Delivery | Eppix Labs",
+      "file": "d9dcfcc0f760946e143a.json"
+    },
+    {
+      "route": "/research-peptides/edmonton",
+      "title": "Research Peptides Edmonton | Next-Day | Eppix Labs",
+      "file": "f233e1094188be3a2f9c.json"
+    },
+    {
+      "route": "/research-peptides/montreal",
+      "title": "Research Peptides Montreal | Domestic Shipping | Eppix Labs",
+      "file": "61760b664a0b7adb6f0d.json"
+    },
+    {
+      "route": "/research-peptides/ottawa",
+      "title": "Research Peptides Ottawa | Domestic Shipping | Eppix Labs",
+      "file": "2d666b6cd5686074f154.json"
+    },
+    {
+      "route": "/research-peptides/toronto",
+      "title": "Research Peptides Toronto | Xpresspost 1–2 Days | Eppix Labs",
+      "file": "9c9fd63e8e9d9ac01f10.json"
+    },
+    {
+      "route": "/research-peptides/vancouver",
+      "title": "Research Peptides Vancouver | Domestic Shipping | Eppix Labs",
+      "file": "b0afdc28ba57444a2ee0.json"
+    },
+    {
+      "route": "/research-peptides/winnipeg",
+      "title": "Research Peptides Winnipeg | 1–2 Day Delivery | Eppix Labs",
+      "file": "9fea960c85fc5dc3ab51.json"
+    },
+    {
+      "route": "/reset-password",
+      "title": "Choose a New Password | Eppix Labs",
+      "file": "84aa1abab39f3c9a4392.json"
+    },
+    {
+      "route": "/shipping",
+      "title": "Shipping & Returns — Peptide Delivery Canada | Eppix Labs",
+      "file": "484f220c2475a2c915ca.json"
+    },
+    {
+      "route": "/signup",
+      "title": "Create an Account — Research Peptides | Eppix Labs",
+      "file": "847d8d45dc581631825d.json"
+    },
+    {
+      "route": "/support",
+      "title": "Need Help? — Peptide Support & FAQ | Eppix Labs",
+      "file": "0b9f34c92865bdd17b72.json"
+    },
+    {
+      "route": "/terms",
+      "title": "Terms of Service — Research Peptide Orders | Eppix Labs",
+      "file": "2dda5c6b8eee51aae24f.json"
+    },
+    {
+      "route": "/verify",
+      "title": "Verify Your Batch — Lot Lookup | Eppix Labs",
+      "file": "3f34d3b758841bc2ea82.json"
+    }
+  ],
+  "assets": [
+    {
+      "source": "https://www.eppixlabs.ca/_next/static/chunks/51d18bac077b6b7b.css?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/3f77f81c000452114594.css"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/_next/static/media/2c55a0e60120577a-s.2a48534a.woff2",
+      "local": "/reference/14be8d33936ce037a136.woff2"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/_next/static/media/9c72aa0f40e4eef8-s.18a48cbc.woff2",
+      "local": "/reference/f0a647f4dfe3dcea1150.woff2"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/_next/static/media/ad66f9afd8947f86-s.7a40eb73.woff2",
+      "local": "/reference/a93c247ad483310bd647.woff2"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/_next/static/media/5476f68d60460930-s.c995e352.woff2",
+      "local": "/reference/cddfb67641d343b26512.woff2"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/_next/static/media/2bbe8d2671613f1f-s.76dcb0b2.woff2",
+      "local": "/reference/f4295d0f526cd4bf8cdb.woff2"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/_next/static/media/1bffadaabf893a1e-s.7cd81963.woff2",
+      "local": "/reference/ece34c7aef483b2471af.woff2"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+      "local": "/reference/12c77d18e28a265aa111.woff2"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/_next/static/media/5ce348bf30bf5439-s.56c1f21e.woff2",
+      "local": "/reference/a5a2c6e5a615c7a34322.woff2"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/_next/static/media/4fa387ec64143e14-s.3b336396.woff2",
+      "local": "/reference/d1683d59fa44ba5b1ed2.woff2"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/_next/static/media/6306c77e7c8268e4-s.e3369375.woff2",
+      "local": "/reference/30218cb9260e14341255.woff2"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/_next/static/media/7d817b4c03b0c5f1-s.a40b9a8b.woff2",
+      "local": "/reference/2c001a17817eea4f3f82.woff2"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/_next/static/media/bbc41e54d2fcbd21-s.fe42ddf4.woff2",
+      "local": "/reference/533b76fb9a4646619c05.woff2"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/_next/static/media/797e433ab948586e-s.29207c2f.woff2",
+      "local": "/reference/f7b83d39774a5e15f432.woff2"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/_next/static/chunks/b9e42b3f47183652.css?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/091c5af50f3c7b208ccb.css"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/Eppix%20labs%20logo-01.webp",
+      "local": "/reference/a3919073f9e538bd58e1.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/ogLogo1.webp",
+      "local": "/reference/69ad4e5b6e55591552a8.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/hero-vials/nad.webp",
+      "local": "/reference/4ca01c63bdf798f655d6.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/hero-vials/retatrutide.webp",
+      "local": "/reference/8168dd0a00c1ad7f625f.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/bpc-157-10mg-EQwAbckLHWOGTPZNXndBoj68sifme5-11.webp",
+      "local": "/reference/f175b86736e802fe56f9.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/tesamorelin-10mg-9WccwfKB2m2HJf9B29dvnNQGQ5vxwd-11.webp",
+      "local": "/reference/e1fd84c5a38733f84e2d.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/retatrutide-10mg-LKetAlT92VmtqSvYMycWgStvKkZrll-13.webp",
+      "local": "/reference/be4deb6106a33559157b.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/hero-vials/wolverine.webp",
+      "local": "/reference/2a43a860fdbb4e5e27fd.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/cjc-1295-no-dac-ipamorelin-5oo5mg-pRru2WOoSwVoeKpQrvlmS8ofsP1aby-16.webp",
+      "local": "/reference/bffef6bab60efc4f80bd.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/cjc-1295-no-dac-10mg-jsO3EhCI876L66IKKD6QlU5UV3ZLai-11.webp",
+      "local": "/reference/9eda1a2ea00ce51f707e.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/tb-500-10mg-D5X6AYUX34UTSE1R8DEMgKjwwBaWJK-12.webp",
+      "local": "/reference/e794fdc264dc194df7a7.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/kpv-10mg-QaaBQ7envZqvzbKMk5z3QsEC5YPLkq-15.webp",
+      "local": "/reference/511777eaf5a19c31dd0a.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/tirzepatide-10mg-Wb9mfaPLYwXvdD2QJA3S4W4DFmeyTt-15.webp",
+      "local": "/reference/c6e8c8c78f095f78fead.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/semaglutide-10mg-Rvx5oadSuJETvi0MfXAnU99pMJsM27-9.webp",
+      "local": "/reference/6f08a209cd0a322f1762.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/09/1790450909308-IPAMORELIN_10mg-p82oJvVS33d8XUjBGwBvDNVxepKnF6.webp",
+      "local": "/reference/e903631c23547e8be1f9.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/sermorelin-5mg-e288evnjbU32AwZOzEJ0R06ELY0Olz-7.webp",
+      "local": "/reference/8a6d4e097164c2b63c20.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/1788151680830-Wolverine_Stack_10mg_-TUOcAYCI5dTfZyIkxfDXDqYKfpTsGK.jpeg",
+      "local": "/reference/c33f104834c0f164f0bb.jpeg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/klow-80mg-qH6c0YkylHcvYSeJFEcSABFOXxVXrQ-15.webp",
+      "local": "/reference/5657a34456f99c3752ff.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/09/1788319531275-Eloralintide_10mg_-wgbGDDDOnjddmiuwck2CIxsOT15rD0.jpeg",
+      "local": "/reference/e30a31e0c9981af41bdf.jpeg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/09/1788909273569-cagrilintide-5mg-WZ8iWpPIoQOs6ANtauPg7i8ueZOUZ2.webp",
+      "local": "/reference/9cf9d76855f1f734aafe.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/glow-70mg-kv4tzMcgiDcyouBGxMhCfFjlolAPK3-11.webp",
+      "local": "/reference/87c3562692116f2bed61.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/ghk-cu-50mg-bNYRke8ceGbyIoi381mGx502WlnJBI-11.webp",
+      "local": "/reference/6ff9bb7b026cc08815db.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/5-Amino-1MQ-Orange-scaled-6.webp",
+      "local": "/reference/92605c494183758c0311.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/aod-9604-5mg-XNs6GqfhgYHN58i03XszD5UmXQStDs-10.webp",
+      "local": "/reference/78206f27f2bd33dd505d.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/deadpool-20mg-eHdmnXBC5OjOqVZEJ7EwbVmsKkQcPP-5.webp",
+      "local": "/reference/c5a1490e841ccf8ec0a9.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/09/1788932841407-coremend-blend-45mg-TNhMaPvsujHobq5sgXowwfnK4efMRZ.webp",
+      "local": "/reference/e9a07c91f3904436e9dd.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/payment-icons/visa.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/62d2246f5fbff20cf7ce.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/payment-icons/mastercard.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/b616c929f74e26c4c19b.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/09/1788938662148-HGH-scaled-K7ApgXPZr7ULukV3ifXZkT2rwzCAq1.webp",
+      "local": "/reference/ce98d5eb3b29e61985fc.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/09/1788931957071-cjc-1295-with-dac-5mg_2-w3irvGhNQgrk6PuDSivMQ06x7OFWnY-1.webp",
+      "local": "/reference/3837a475a32347508cf2.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/payment-icons/amex.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/368df13ba7328efe0bb9.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/payment-icons/interac.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/135ba1e7d64bf5b19459.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/igf-1-lr3-1mg-OV7w3DT1WJsVS0C6lYa9Jtq4C1AWKk-13.webp",
+      "local": "/reference/9607e977f0eb2d65a774.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/10/1790916991643-ara-290-20mg-t0Y2Y6z7xwYSs4j2UNYt6YKEVGSZw6.webp",
+      "local": "/reference/6fc9d1caca271065f741.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/mazdutide-10mg-zIdGjyTyEHLKxxUcLfx35uHcu7wOPu-10.webp",
+      "local": "/reference/d8a5bc703a46045d9fbf.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/cartalax-20mg-HSEeNPOYvEsfd3jgm1FP18Tnd0N4UJ-11.webp",
+      "local": "/reference/e3b159f8b8319f0450d4.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/selank-10mg-fSFcn744NBsstISArH6yaf5uoVcW3q-9.webp",
+      "local": "/reference/a51fc06802b1b79b81cc.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/09/1788582247588-NAD_500mg-jnGk283G6XHMiJkMeZiMklv5Ghibo4.webp",
+      "local": "/reference/211db05b4a25a545591f.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/mots-c-10mg-ymBCsT4WGmcuHheNsIrJ8eMKA1pIKP-13.webp",
+      "local": "/reference/0b3d946b4fc0929078d6.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/pt-141-10mg-nWDsoHx0sw75n1D9fKTEVrCwoiZaEl-12.webp",
+      "local": "/reference/8a6a4574600533b8a0d6.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/n-acetyl-selank-10mg-hdnOEcDtZUZ0OFZc13fIZHxDsSfFrZ-9.webp",
+      "local": "/reference/a2579f780d83dcc5ea0e.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/Semax-scaled-6.webp",
+      "local": "/reference/3246f81c4c309d6cd7d9.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/mito-genesis-120mg-ZD3LPaUJKXN5zn1wZRFcyfRQeR96cu-11.webp",
+      "local": "/reference/28474a3e8801210049bd.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/tesamorelin-ipamorelin-10mg-3mg-FhT3AmuTohr7QLKjL8Rf8VdPWMQkTV-14.webp",
+      "local": "/reference/fc20a383da7ab8a178b2.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/ss-31-50mg-Ec5yQ2AwHCZCbjlrQDG5KKqGFos2ma-15.webp",
+      "local": "/reference/24b9edc7e74fc316dfdd.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/epitalon-10mg-Lf9iUnIVLsZe7FvPKBgr7Kom1Npnx9-19.webp",
+      "local": "/reference/5b02b56fd601f70c7433.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/kisspeptin-10-10mg-ORFLQpSe1LUcpjLZccsIDqgYWk9W3b-11.webp",
+      "local": "/reference/fa0298226021aa8d2bff.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/melanotan-2-mt-2-10mg-pWJnkILf2nzGKZvBSx5RRwGxY6IcgK-7.webp",
+      "local": "/reference/3627f9ae4e7af41f7290.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/triad-gh-12mg-XgBEi0heY2XMSanSfJ8oPFdHSiTSvj-16.webp",
+      "local": "/reference/b18cc4e8b447b8b5161d.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/n-acetyl-semax-10mg-v30eCi7V0bti3uzir3a9ZAQwuDXLjg-13.webp",
+      "local": "/reference/9a9442812688ac2d75da.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/10/1791267384750-p21-10mg-hGVCuf35k099wnRgVNKP4TO3Rgzeb7.webp",
+      "local": "/reference/725f422437780bbca188.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/thymosin-alpha-1-10mg-q9jOsP1Rr7VDaE1mScsLdRlKSegeMo-9.webp",
+      "local": "/reference/74605f56d4c73344145c.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/vesugen-20mg-SYyXZNHInNwQrgr0ZsxivVsujKLxYA-16.webp",
+      "local": "/reference/bbd5325a1ca474640b29.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/melanotan-1-mt-1-10mg-RH0F2A1iAutihQIb8u0kW6lZGIbRPQ-14.webp",
+      "local": "/reference/883ea134e5377363d3c2.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/oxytocin-10mg-r3z4WurbWqpWPr2NlDhX3kXtLczC5P-6.webp",
+      "local": "/reference/a2ffc4e07022534c1f2b.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/1785917036043-pe-22-28-0RIflI9w9HAEmRHW7V3QdcgQf039gH-1.webp",
+      "local": "/reference/f975c9ca3123a0873c06.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/pinealon-20mg-BeB1zMm7DKpCMT4qfYOH9AO2sOKssM-9.webp",
+      "local": "/reference/8fca30a5abd25e62de63.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/livagen-20mg-Kb2Eq4A7y5VHYdLp0YMCSiS3icVO7w-19.webp",
+      "local": "/reference/e422c4d3ba13024544f5.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/crystagen-20mg-Gg3cghPsbyvIz3xRIxWDY15txdaF9k-15.webp",
+      "local": "/reference/d5c753de5ad398c62f8a.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/dsip-10mg-JxHWJ3aIojp7fCUnYzgpecjZnBGReg-11.webp",
+      "local": "/reference/287a91a82b1158a0d1fe.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/vip-10mg-BQBpzxpdKJEmbKtiSkDKYEMuth34iZ-5.webp",
+      "local": "/reference/2cb589584e1164112334.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/hcg-5000iu-9uVLVjANkdctvVczcZTlVA3e4uqFzV-1.webp",
+      "local": "/reference/5c5bca40663ded513f29.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/glutathione-1500mg-d7hPhQinEpRHslYMiW3m211CBxVhO8-7.webp",
+      "local": "/reference/c0c2724bb04fe908a951.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/ovagen-20mg-sMvVz4D9jx7nsdVE4PSTcmDAHoi891-9.webp",
+      "local": "/reference/7afcce646449a07ec54c.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/10/1791270048048-5-Amino-1MQ_50mg_30_Capsules-W7OIOtCawyQi1E7l43JCbgHG7k2Woj-1.webp",
+      "local": "/reference/250ff5af4d7d97343e1d.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/bam15-light.svg",
+      "local": "/reference/43c0189755d37a5a18bd.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/09/1788678557064-WhatsApp_Image_2026-09-06_at_1.05.13_AM-D4ZzakFUKPGTxRNuo6AQOKSHyAyd4h.webp",
+      "local": "/reference/c4186c1e2aff7a5d79a2.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/241052-Io84XMe67zyQddyfVJCUZII6BtsH2L.webp",
+      "local": "/reference/96ae931daec919b73c36.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/241088-j5xB0JvbF6EvjuAhL6pUxOmCvaMiPl.webp",
+      "local": "/reference/613157278d003dfad87e.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/241077-NZfvHLHXqMTFTD4Lm1pMmzq14DzGps.webp",
+      "local": "/reference/411bfa59273937eb8c48.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/241050-aOxNO5nvTyRRAcQLb0tyn8a4ZUc0Et.webp",
+      "local": "/reference/7113bcfdecc80544c6c8.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/239966-8xas7WMsGK6v9D41omL0PpIHws3Rr8.webp",
+      "local": "/reference/0ce1fc9c12cdc3cd2c91.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/239961-Od52o2la7jPNyk59pf4vfxFYfZYW0f.webp",
+      "local": "/reference/dbe2fbb1417c5f48aa72.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/239960-NbcWqkncSsQwVS6zEg5ikgE12EbiHH.webp",
+      "local": "/reference/e773714a4f2e581d2a8d.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/235936-Ey9eVMZEWCvrRFEb3UhZWmAZMg9lht.webp",
+      "local": "/reference/d1875297ca3e282b7685.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/206261-Tirzepatide_10mg_Eppix_Labs_ZM7AZYFI3FRR-7loEHTqqsHTqF1rwX88jWMqGTQgefs.webp",
+      "local": "/reference/e407a85ccc1c9c9d55ab.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/tirzepatide-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/e8f12d6516b60f3f16f8.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/tirzepatide-chain-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/f3d221ea9a7ccd11754e.svg"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/200341-Retatrutide_10mg_Eppix_Labs_WJGL1C7MTJQ3-GnzB67BhDTPrCTAgEKAQwuTn87maCD.webp",
+      "local": "/reference/8725e74a6192781838a7.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/retatrutide-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/df65882d204627b7d24b.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/retatrutide-chain-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/68b71b6c72e9632f568c.svg"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/213055-Elorantide_10mg_Eppix_Labs_JYKCKXJQ7V2T-DBzPOslYsf2mEfdRWlG9DDRBqXiacm.webp",
+      "local": "/reference/f9f15aa9c3f328968d1e.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/200382-Semaglutide_10mg_Eppix_Labs_VJUIGF3T5VXI-KT0afZ5i8CUklVFuUxFNFvx3x4Urdq.webp",
+      "local": "/reference/4a71b4e3dca4965a8d42.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/semaglutide-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/a91092dab607135df311.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/semaglutide-chain-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/a91faff6e63fe5c7374a.svg"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/235369-mfKhrpfgYh2JYdNtMFU6vcEgiFYDIm.webp",
+      "local": "/reference/d22d69fe95ab1474d0c5.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/233377-SNv0zPjwjoeMSe76CsoauzSWXgQwhZ.webp",
+      "local": "/reference/dbb190587e89cefec744.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/233525-7kILVupJMhpuFeUafqjmXkmIszGwTE.webp",
+      "local": "/reference/90fb9755a4421f71fc68.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/233374-oy9rWy05hqaoC6gSSNFvUP8X7vbP99.webp",
+      "local": "/reference/fa2675e1b22321dd9cd3.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/tirzepatide-light.svg",
+      "local": "/reference/bd540f156f2564a8c39b.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/tirzepatide-dark.svg",
+      "local": "/reference/dd3d552f2d4e9552e912.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/tirzepatide-chain-light.svg",
+      "local": "/reference/a5b16b32e5baf0bc5e39.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/tirzepatide-chain-dark.svg",
+      "local": "/reference/2d49752c8a01fa14fba4.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/retatrutide-light.svg",
+      "local": "/reference/9e8fdadbca059ad5e4c8.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/retatrutide-dark.svg",
+      "local": "/reference/6c577601735cdbaa8511.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/retatrutide-chain-light.svg",
+      "local": "/reference/d3a6bd61116813a52e10.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/retatrutide-chain-dark.svg",
+      "local": "/reference/f91e4a40c21e21f24ae0.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/cagrilintide-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/e8becb643be8a4a90c1b.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/cagrilintide-chain-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/be51ea689ab2b3766da9.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/cagrilintide-light.svg",
+      "local": "/reference/e1565f7f9956ee5f3810.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/cagrilintide-dark.svg",
+      "local": "/reference/488003b1610782ba2b0d.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/cagrilintide-chain-light.svg",
+      "local": "/reference/bdecacd2d43dd1eeabee.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/cagrilintide-chain-dark.svg",
+      "local": "/reference/6c6a6089c1c594babd8c.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/semaglutide-light.svg",
+      "local": "/reference/7294dfc5ac2e67aa6f0d.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/semaglutide-dark.svg",
+      "local": "/reference/3e838f8e092ef4484aae.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/semaglutide-chain-light.svg",
+      "local": "/reference/35907fb17bb695f479be.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/semaglutide-chain-dark.svg",
+      "local": "/reference/9bb16535303f8526f1a0.svg"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/202358-BPC157_10mg_Eppix_Labs_IMCZHUHNFTCA-5OsActGP6oZQuq7OA0jqfU2yC4j0uJ.webp",
+      "local": "/reference/1a1a6e4c5b2173028961.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/bpc-157-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/5b2159448a79c7fa2e3d.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/bpc-157-chain-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/32b7889c3ae00af3e7b8.svg"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/233353-u561iuvf8gxiYzks9fnaxP8AKfYkWX.webp",
+      "local": "/reference/7e597929235186fb26eb.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/232037-ioeHJXdgA5FMVRS2IKV3lA5yg96rlE.webp",
+      "local": "/reference/2ae88a68e33e13342c7e.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/232036-QGTPq05BMzC1Pv0jOU2JfiQ19KViLM.webp",
+      "local": "/reference/af91451325c8f291fe27.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/233356-tZEAAgUyF7SCrN9GVJNAi1IDbGA7qa.webp",
+      "local": "/reference/61d5f7fa5c743654f579.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/202378-TB500_TB4_10mg_Eppix_Labs_XID79XWKE1N2-y3Ve5JhIS1nHKy471xMHJdyW2TW9aj.webp",
+      "local": "/reference/c229b6d6aee65d372332.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/tb-500-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/efd0892888b4d842b1ed.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/tb-500-chain-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/180f1b2468c02497c640.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/bpc-157-light.svg",
+      "local": "/reference/f53af1d06f4ec1b9420e.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/bpc-157-dark.svg",
+      "local": "/reference/1ab75aa03aea233a961e.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/bpc-157-chain-light.svg",
+      "local": "/reference/6e7aa9ddd2d4e3d13e02.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/bpc-157-chain-dark.svg",
+      "local": "/reference/bae2d196ebfd558787f5.svg"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/233362-gfx1jK7uaHJ1WyMJ5f7eQIw2NHqhb0.webp",
+      "local": "/reference/3ded16ff3f77bcb24ab0.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/233365-W3cptqgvqGSuUccTYBYQokU9yEocYG.webp",
+      "local": "/reference/4a6862ef0a5dd15322c7.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/233359-Iz2D13CZaG5GxJbFbXfC4IdzA1Gjd6.webp",
+      "local": "/reference/d6a706d2ced7d1d435d0.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/233368-42i4T2h3lSOlviIQTrNkl29w5CIvrR.webp",
+      "local": "/reference/5b4c21581bb9c1458e6c.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/tb-500-light.svg",
+      "local": "/reference/70cc3845c3b1fa27c66b.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/tb-500-dark.svg",
+      "local": "/reference/2d49aee1db9e8f901677.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/tb-500-chain-light.svg",
+      "local": "/reference/4306e399dcb717fb34e7.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/tb-500-chain-dark.svg",
+      "local": "/reference/847e592fecd4caa89d80.svg"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/233487-pIMmO9r9IAhgPNKu1Q7fVI7UyYMSiw.webp",
+      "local": "/reference/42294881910a5d4cc653.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/kpv-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/22d281432cfff5514197.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/kpv-chain-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/7065c4722ebedee9ad8a.svg"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/225293-fGhtnbsYoMItufbZtAgecaVS9JDOhi.webp",
+      "local": "/reference/d9c0f9a3e512ed13ac9a.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/225295-k5RTb09ozISP5FgDEHAlkijHnbDHHj.webp",
+      "local": "/reference/ae1e31ff4d02f213c8d1.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/105641-rxbrPL7HVRZp5TipHjtarKzCCnggty.webp",
+      "local": "/reference/b4e84ccd504da17f651f.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/196414-BPC157TB500_5mg5mg_Eppix_Labs_V2HP5VUDHEQ4-r11vkCBX1JGF5v0pPeXJVsg1roJPPG.webp",
+      "local": "/reference/76b85210ace04652b6a2.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/kpv-light.svg",
+      "local": "/reference/7aaece1e341f88357877.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/kpv-dark.svg",
+      "local": "/reference/fc84990b54be88387ef4.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/kpv-chain-light.svg",
+      "local": "/reference/01eccf6baa5203f8f843.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/kpv-chain-dark.svg",
+      "local": "/reference/6dc75654f2637ef33783.svg"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/202368-Cartalax_10mgBPC157_5mgTB500_TB4_5mg_Eppix_Labs_6UNK7D9MD77P-M8z4u9UxbbSAZdEEXdzXpAWoJDfgP0.webp",
+      "local": "/reference/3a262f0fa38f4b4a8a83.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/cartalax-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/5809c7a8781da8851bc6.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/cartalax-chain-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/66a3035b6cae10d39c98.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/cartalax-light.svg",
+      "local": "/reference/4134dbffd4a7403841cf.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/cartalax-dark.svg",
+      "local": "/reference/c8f957cc371bc8b29831.svg"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/228086-AE9fyepRtgxaCuNv6Sx3gAhwi9LvzF.webp",
+      "local": "/reference/0986a951c1c35a0a97d3.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/cartalax-chain-light.svg",
+      "local": "/reference/1f4f99a3df3ec19661b0.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/cartalax-chain-dark.svg",
+      "local": "/reference/ae48682f1d4f440c3e2a.svg"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/204095-Cartalax_20mg_Eppix_Labs_Z5DANUWCDP2B-1D2FBKyv5NzVXXstd9IHiXoReubXPY.webp",
+      "local": "/reference/c27300dd0cb58b4042e6.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/202371-KLOW_Eppix_Labs_P49QV8LPLCK4-qtMiUfUkh8zZAqDIEgpucPpkduFIMC.webp",
+      "local": "/reference/0f821a45a8593c2a6b3b.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/ghk-cu-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/023a5369d13cb92093ce.svg"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/205552-GLOW_Eppix_Labs_DX4BZ3A97TKK-doR2yLKVdk7Dz8rr9wjTtowXKckMbY.webp",
+      "local": "/reference/5aff7002e62b6ee4909b.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/jan-125485-rlDSe6RCc3gdP6hGLgZeUOxiVvK7ka.webp",
+      "local": "/reference/19a2b6ea51e0bf4124d9.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/ghk-cu-chain-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/3e600d9e84328273a27d.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/ghk-cu-light.svg",
+      "local": "/reference/9c021411f5318ef5a83c.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/ghk-cu-dark.svg",
+      "local": "/reference/e4d361c216e4659d6284.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/ghk-cu-chain-light.svg",
+      "local": "/reference/91c504f7979e2d2018bf.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/ghk-cu-chain-dark.svg",
+      "local": "/reference/04a0e5da2d6dd80fc4a5.svg"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/200353-NAD_500mg_Eppix_Labs_WERPFDLV3MQ2-4poM56Pf4LnjdIucD5rCKmhUpJwQU2.webp",
+      "local": "/reference/bcf5ca64a5c0612216af.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/nad-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/d790b97d289a449f16da.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/nad-light.svg",
+      "local": "/reference/db54c7ad2d766249288e.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/nad-dark.svg",
+      "local": "/reference/b4d61845bcd9ee4e02b1.svg"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/200410-MOTSc_10mg_Eppix_Labs_BZ4ZZ5PSAKS1-9jGYFcQEgsKQWUsjxCGLMAt1eccHMd.webp",
+      "local": "/reference/c39c6929fec6d36cccb1.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/mots-c-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/0f557df4baf7e0f63f0b.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/mots-c-chain-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/82e8c362845b0713f120.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/mots-c-light.svg",
+      "local": "/reference/4888494f74f781ea7911.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/mots-c-dark.svg",
+      "local": "/reference/a13e78c6e74f8f3c0f1c.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/mots-c-chain-light.svg",
+      "local": "/reference/4567edd83083a390c5e2.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/mots-c-chain-dark.svg",
+      "local": "/reference/49d8eef80856eabbd937.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/5-amino-1mq-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/32403102121e1570700c.svg"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/205545-SS31_50mg_Eppix_Labs_3WHMUHZSJ535-p8MIgDgP6WQZytdP3XfddaFySLzQhq.webp",
+      "local": "/reference/62a4869abf8f7bcd0c1d.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/ss-31-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/024099daee1ceea24ee1.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/ss-31-chain-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/d29d47d617e929180d11.svg"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/204126-MitoPrime_120_mg_Eppix_Labs_ZG4RU7M6VB8Z-9O5zzqPqwF8GxDoD5VACPonCOaK0cZ.webp",
+      "local": "/reference/3a68ca0743caa8e404ca.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/5-amino-1mq-light.svg",
+      "local": "/reference/a862b50b1d6b314eb7c3.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/5-amino-1mq-dark.svg",
+      "local": "/reference/f6e8fb4760292b64a489.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/ss-31-light.svg",
+      "local": "/reference/12aee59c1c2d533ec43a.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/ss-31-dark.svg",
+      "local": "/reference/8fcbe3945e6b2f9ca11f.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/ss-31-chain-light.svg",
+      "local": "/reference/7676f685ec7ab0fa9651.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/ss-31-chain-dark.svg",
+      "local": "/reference/9662a0098712af0fce77.svg"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/204121-Tesamorelin_10mg_Eppix_Labs_9J8FN9YKNK1B-t4Qk9BKj16VHPQGIYLXmyJKT23NFJD.webp",
+      "local": "/reference/d699b20079f64a686276.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/tesamorelin-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/93b7ddee1d3340cf47ea.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/tesamorelin-chain-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/eed44630dc8dcbfed1e2.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/tesamorelin-light.svg",
+      "local": "/reference/b7a8a558d254c3f8a87e.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/tesamorelin-dark.svg",
+      "local": "/reference/1b4561116c3d624bfa19.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/tesamorelin-chain-light.svg",
+      "local": "/reference/4454a22dd7d46ad898d8.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/tesamorelin-chain-dark.svg",
+      "local": "/reference/a212fdd75ec11ec9ba49.svg"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/206303-Tesamorelin_10mgIpamorelin_3mg_Eppix_Labs_Q4R5K9PW43CJ-FIDpAQD9Cqi8FbifdVZwdtJfR57VsD.webp",
+      "local": "/reference/f0068ecb6cf9f9be0841.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/ipamorelin-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/d33a5f52c03c3fa6d8a6.svg"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/209657-Tesamorelin_6mgIpamorelin_3mgCJC1295_no_Dac_3mg_Eppix_Labs_12FLYWLQQ29G-Wgdu60wH0BhnI1Abumjik8YJn4z91Q.webp",
+      "local": "/reference/6a628c4e6efdbbddeb86.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/cjc-1295-no-dac-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/f27f1c543ba1550bcf48.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/cjc-1295-no-dac-chain-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/730b0acb852f20883864.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/ipamorelin-chain-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/5e1f54ffd53280220996.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/ipamorelin-light.svg",
+      "local": "/reference/992122ce4f6609b62417.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/ipamorelin-dark.svg",
+      "local": "/reference/263d2d0366958725795b.svg"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/204137-CJC1295_No_Dac_10mg_Eppix_Labs_9QPPDR5LVXVZ-gSZH9K7w5364FuiWN7Et6deZFU7AXv.webp",
+      "local": "/reference/5fa99aaa3e3c6c170460.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/cjc-1295-no-dac-light.svg",
+      "local": "/reference/9436fea646c96d2d84c1.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/cjc-1295-no-dac-dark.svg",
+      "local": "/reference/89e37daa0e7f583177ef.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/cjc-1295-no-dac-chain-light.svg",
+      "local": "/reference/dfe7586b4a576bbd9a1e.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/ipamorelin-chain-light.svg",
+      "local": "/reference/88863c37bba7ea6e3d1c.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/ipamorelin-chain-dark.svg",
+      "local": "/reference/f1ea399bc480d20570fe.svg"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/224233-uTUgWh8yLQcuKrmPmqtWMqDqVHdDzN.webp",
+      "local": "/reference/9a54d4fb19a9eef53fbd.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/cjc-1295-no-dac-chain-dark.svg",
+      "local": "/reference/68fcce593d77892e1eda.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/igf-1-lr3-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/29bbc75c21c191ad1ed3.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/igf-1-lr3-chain-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/e685a78f6f6fcd18fa80.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/igf-1-lr3-light.svg",
+      "local": "/reference/5fa4e55d5ddb5cb09774.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/igf-1-lr3-dark.svg",
+      "local": "/reference/ff8c7387555ea3d64e40.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/igf-1-lr3-chain-light.svg",
+      "local": "/reference/da356753342ee532152e.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/igf-1-lr3-chain-dark.svg",
+      "local": "/reference/a575ecdffb6a4b067290.svg"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/239967-xXN2w7EZmRHVJL3zXIEGRyZiyd3amP.webp",
+      "local": "/reference/32c8ddced0118d6753d2.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/aod-9604-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/e7f771e551fda520c6e7.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/aod-9604-chain-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/ae9177c1072662e8e1a0.svg"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/200421-Selank_10mg_Eppix_Labs_E5B4VWXFJRQX-u51VH61XsDCjt1eOaFszmd979oqfVT.webp",
+      "local": "/reference/da2a70fa01022ad650c6.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/selank-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/3674d5080670180be584.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/selank-chain-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/4dd703e271b1d0ba4eef.svg"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/224231-NSLK-CA-26G-10-rbuQI5vb7O3Lw8DPiCj7XnlTH0r75X.webp",
+      "local": "/reference/bbc2f2f29e622c307683.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/n-acetyl-selank-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/80e4dc75860076fca7b0.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/n-acetyl-selank-chain-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/7ab8a1ae0ce0026be433.svg"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/jan-105711-9CWh6VOCJopKdNFnGHk2YlRQ1e6USX.webp",
+      "local": "/reference/4f3af0d91156f2922504.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/semax-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/66e843d32a21686659cb.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/semax-chain-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/3cb398cc5c2769de6a07.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/selank-light.svg",
+      "local": "/reference/1f42b72b003039060a57.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/selank-dark.svg",
+      "local": "/reference/e8d1960fc8d1a83921af.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/selank-chain-light.svg",
+      "local": "/reference/c1b285e24f63f7c81b00.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/selank-chain-dark.svg",
+      "local": "/reference/b1238ca55120486c2996.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/aod-9604-light.svg",
+      "local": "/reference/7210e4ec918fc7c9ce1c.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/aod-9604-dark.svg",
+      "local": "/reference/0fecbc6ec74d7d09f534.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/aod-9604-chain-light.svg",
+      "local": "/reference/d03e47b60cf8b602ca31.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/aod-9604-chain-dark.svg",
+      "local": "/reference/b456d0c1ed6c9d107305.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/n-acetyl-selank-light.svg",
+      "local": "/reference/979261e820bf39e81c10.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/n-acetyl-selank-dark.svg",
+      "local": "/reference/49e8fc5ab2f6e0e451a7.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/n-acetyl-selank-chain-light.svg",
+      "local": "/reference/1099eaa83c8b3524e458.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/n-acetyl-selank-chain-dark.svg",
+      "local": "/reference/3c461565dc0b7ec49e80.svg"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/200497-NAcetyl_Semax_Amidate_10mg_Eppix_Labs_ALWM5ERVFUJJ-UGTToeavkiioPRDnA9mIMIvFl1Q5Em.webp",
+      "local": "/reference/24ef6e20b459cdc0f296.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/n-acetyl-semax-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/5971ae92c8399390b8d2.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/n-acetyl-semax-chain-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/cc3f70d4896a24edc5f4.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/n-acetyl-semax-light.svg",
+      "local": "/reference/3d1696f04264e742c7c9.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/n-acetyl-semax-dark.svg",
+      "local": "/reference/e91072457e676cabb45c.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/n-acetyl-semax-chain-light.svg",
+      "local": "/reference/b54a0081db1b3d6a1f05.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/n-acetyl-semax-chain-dark.svg",
+      "local": "/reference/19b51928f685e00ba3a9.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/semax-light.svg",
+      "local": "/reference/b8d772976516c8a72774.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/semax-dark.svg",
+      "local": "/reference/df221609568fa413abe2.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/semax-chain-light.svg",
+      "local": "/reference/54031213c9807bf37a04.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/semax-chain-dark.svg",
+      "local": "/reference/d3a3fda99f598fc5c5da.svg"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/jan-105662-JMqAaYsWDY6KHfXgzviH0dBrUOrqEV.webp",
+      "local": "/reference/425f2d4b8cbac57ec630.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/pt-141-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/05feb860f2e410df3e50.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/pt-141-chain-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/6a9489e220eba1beeb8a.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/pt-141-light.svg",
+      "local": "/reference/3adc7399648eaed04107.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/pt-141-dark.svg",
+      "local": "/reference/3bd83ba4b4d17dc31dec.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/pt-141-chain-light.svg",
+      "local": "/reference/6635f375a586d254ba29.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/pt-141-chain-dark.svg",
+      "local": "/reference/f24b69e977e45f3ba8a8.svg"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/200375-MT2_10mg_Eppix_Labs_58I15U1F7MAX-ONRmfzuJxgDx7cxnnFnHK3ZwcZgCNZ.webp",
+      "local": "/reference/d2d2c5e289b8ca3a1fdb.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/melanotan-ii-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/913803d258f2d504cae8.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/melanotan-ii-chain-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/057e863a62c9196b0287.svg"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/207697-Kisspeptin10_10mg_Eppix_Labs_Q3ZCTGFJGVGA-ikIqdXEtV33AAgCBMwCoRGe6PdS1K8.webp",
+      "local": "/reference/640ba3166e6cbe2d690b.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/kisspeptin-10-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/a44fe07d17f4b00158b6.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/kisspeptin-10-chain-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/738713cc9808054ace9d.svg"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/204114-MT1_10mg_Eppix_Labs_V2IYUCIB5JJV-ahQGIH9tItQN1sLB0pna9TLr3uqnL1.webp",
+      "local": "/reference/3281254a6b244224be87.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/melanotan-1-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/2bdcbddf793e15ba0b52.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/melanotan-1-chain-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/394280dac084885c6355.svg"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/206296-Epitalon_10mg_Eppix_Labs_C7BZY8ISTCE3-az6LfOFK3ecTyl4nbN2tKWzj4RyK4U.webp",
+      "local": "/reference/92dec09acc26449cc9a6.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/epitalon-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/def2d9cbf26b14748c77.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/epitalon-chain-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/e4210d67cd77bc9290ca.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/kisspeptin-10-light.svg",
+      "local": "/reference/0a514928acd972a99d2f.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/kisspeptin-10-dark.svg",
+      "local": "/reference/d579ebaf06c0ea458975.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/kisspeptin-10-chain-light.svg",
+      "local": "/reference/3183cfc9b9d84d760f97.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/kisspeptin-10-chain-dark.svg",
+      "local": "/reference/1f7da6293c43205c11de.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/epitalon-light.svg",
+      "local": "/reference/36a8f94a128d886e0bed.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/epitalon-dark.svg",
+      "local": "/reference/611610bb98c150f041a1.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/epitalon-chain-light.svg",
+      "local": "/reference/2b555986b22d0a135219.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/epitalon-chain-dark.svg",
+      "local": "/reference/f75f055c277fff018648.svg"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/233481-F09uHHYwcrkR9CRU7LEvjXQWhsMzbr.webp",
+      "local": "/reference/b63f5ca5271f74fec7f0.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/thymosin-alpha-1-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/3ab3e98bfee72c3a5051.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/thymosin-alpha-1-chain-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/f2c3d8a35efdeedc565e.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/melanotan-ii-light.svg",
+      "local": "/reference/e341d9dfdeb79e3e5d4f.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/melanotan-ii-dark.svg",
+      "local": "/reference/e4de48de74f37588da43.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/melanotan-ii-chain-light.svg",
+      "local": "/reference/33a960de74b864b2d6f2.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/melanotan-ii-chain-dark.svg",
+      "local": "/reference/53b63e80d2e85a882991.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/melanotan-1-light.svg",
+      "local": "/reference/b444097d510589584350.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/melanotan-1-dark.svg",
+      "local": "/reference/8959ddd37e76d9a0898b.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/melanotan-1-chain-light.svg",
+      "local": "/reference/a21f622338c7c44be4eb.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/melanotan-1-chain-dark.svg",
+      "local": "/reference/aec222b0ce38b46c3f0b.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/thymosin-alpha-1-light.svg",
+      "local": "/reference/e9d75f958b62ab972c6e.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/thymosin-alpha-1-dark.svg",
+      "local": "/reference/bb96fdafd8ceb9434d2e.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/thymosin-alpha-1-chain-light.svg",
+      "local": "/reference/cb6b17e293b1c3d1d99a.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/thymosin-alpha-1-chain-dark.svg",
+      "local": "/reference/c7494d96c879e7175126.svg"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/228036-jrUgHYbeIGy3VyPMdCJ9Tlxm21RMbW.webp",
+      "local": "/reference/46c1db00fb5609cb7d3c.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/196429-PE2228_10mg_Eppix_Labs_KMQVEBR3QSRX-NB4keS2pID92sccH4pE7kbdP4hbYJr.webp",
+      "local": "/reference/ac2c72357552cf9d2b68.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/pe-22-28-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/38d57412555d70eb4b7d.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/pe-22-28-chain-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/1d2f6a57992e34d9c413.svg"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/206277-Vesugen_20mg_Eppix_Labs_AJVPF7S7QQLT-KSx97TKFW8tKLZvkdcyKSfPROc5dkx.webp",
+      "local": "/reference/32c5b691c015d04f1b1e.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/vesugen-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/5784c98b5e7f34bf0403.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/vesugen-chain-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/f519adf1327a633d4544.svg"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/202381-Livagen_20mg_Eppix_Labs_12Y6SR7ABQRY-Uuvv9QMfS0xHPU69Fwp3RP95033Mup.webp",
+      "local": "/reference/c992ec4fc1a9be411987.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/livagen-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/a9210ebec4d55aeee59c.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/livagen-chain-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/5297ad967ed91a437937.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/pe-22-28-light.svg",
+      "local": "/reference/fa423e35fb18e12e8290.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/pe-22-28-dark.svg",
+      "local": "/reference/2b2cc799ebbcf7c1081c.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/pe-22-28-chain-light.svg",
+      "local": "/reference/f67f15772ab2d428c15f.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/pe-22-28-chain-dark.svg",
+      "local": "/reference/ab3b87ebc6151fd6eb9b.svg"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/196407-Crystagen_20mg_Eppix_Labs_KCUAZQ82Z4TR-OMIJDMqSuhn0QfT34k1LjvkAgahkYR.webp",
+      "local": "/reference/0e91a6b172a0bd75799d.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/crystagen-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/97c4a31a1e4b6c144e77.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/crystagen-chain-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/416a9215d3f59c7005dc.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/vesugen-light.svg",
+      "local": "/reference/d74c54c1cd04642556e3.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/vesugen-dark.svg",
+      "local": "/reference/791ebac9bf9e247f59a7.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/vesugen-chain-light.svg",
+      "local": "/reference/dc9ead51a443c35e6724.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/vesugen-chain-dark.svg",
+      "local": "/reference/c491a881b2120b9b207c.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/livagen-light.svg",
+      "local": "/reference/f102c52ba577ec4f923f.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/livagen-dark.svg",
+      "local": "/reference/451b0419c9626fb9c40a.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/livagen-chain-light.svg",
+      "local": "/reference/5527c9a0a63f2a9c28c3.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/livagen-chain-dark.svg",
+      "local": "/reference/af28b312a8f97295b0d9.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/crystagen-light.svg",
+      "local": "/reference/6649474c18794d269ed6.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/crystagen-dark.svg",
+      "local": "/reference/9acefe4f1c1a5005015c.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/crystagen-chain-light.svg",
+      "local": "/reference/bf6c9e60b60ce2284fff.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/crystagen-chain-dark.svg",
+      "local": "/reference/d68fb45828053052616d.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/vip-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/3b2961c714f7d9295dc8.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/vip-chain-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/b76b05e6da16291f81fd.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/vip-light.svg",
+      "local": "/reference/f0756220cb737207dff1.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/glutathione-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/f004258c8b1b74e904ae.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/glutathione-light.svg",
+      "local": "/reference/a3dfa17a007037c856dc.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/glutathione-dark.svg",
+      "local": "/reference/aeb9343fc1161373cf7e.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/vip-dark.svg",
+      "local": "/reference/4c8127462a98e51fcdc1.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/vip-chain-light.svg",
+      "local": "/reference/4e1a5e4ee2415f975369.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/vip-chain-dark.svg",
+      "local": "/reference/e0433e4cda57878aa184.svg"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/JEI-SERM-5-040526-f1UFk7nl1XixTiBtPfYpV1N0hhUDDf.webp",
+      "local": "/reference/91777d9966055398b7ae.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/sermorelin-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/88e75d92536ed96b6dac.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/sermorelin-chain-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/bb2ce2033dbc24993877.svg"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/200423-Pinealon_20mg_Eppix_Labs_P83QVC8SNHCQ-EnB4KVrXRIaAqn85sZLvZVXAzkElsI.webp",
+      "local": "/reference/11eb584ab62d5c785dfe.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/pinealon-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/f5963ab43dd94995d992.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/pinealon-chain-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/838fda4fc03b49f1477e.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/oxytocin-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/dcd7d60850523ea2f89e.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/oxytocin-chain-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/742c0e45356a4b7fd162.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/oxytocin-light.svg",
+      "local": "/reference/a2f41757321343b635c4.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/sermorelin-light.svg",
+      "local": "/reference/da8dc11c4c289c2bb3c2.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/sermorelin-dark.svg",
+      "local": "/reference/2151e0b8b2ab5171cde0.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/sermorelin-chain-light.svg",
+      "local": "/reference/99237ad87db460bdb07a.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/sermorelin-chain-dark.svg",
+      "local": "/reference/e3f31667388f7bcc73cd.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/oxytocin-dark.svg",
+      "local": "/reference/d6f6449199339ba85dea.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/oxytocin-chain-light.svg",
+      "local": "/reference/65ae68cc764f48d517af.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/oxytocin-chain-dark.svg",
+      "local": "/reference/bb3a92e4b72a3ec16437.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/pinealon-light.svg",
+      "local": "/reference/7fb8f10b1246238729b7.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/pinealon-dark.svg",
+      "local": "/reference/f9a4567a4dfbbb2d18ff.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/pinealon-chain-light.svg",
+      "local": "/reference/717617ac8f293fc8f0fb.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/pinealon-chain-dark.svg",
+      "local": "/reference/53276ee0ecc53c9b733c.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/cjc-1295-with-dac-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/9510f63184d04f439b23.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/cjc-1295-with-dac-chain-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/ef05328d1d93f9297d66.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/cjc-1295-with-dac-light.svg",
+      "local": "/reference/235641647e3e5e60b023.svg"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/219756-CqxZj0sVr6EXcat5p117uQuHRBweBi.webp",
+      "local": "/reference/766960930b7eaf52ac0b.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/ara-290-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/3f52f20e5de4d864ca09.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/ara-290-chain-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/ef0c2da306eeb69b85d0.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/cjc-1295-with-dac-dark.svg",
+      "local": "/reference/5c1c9ff97a0668117400.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/cjc-1295-with-dac-chain-light.svg",
+      "local": "/reference/2b208ffa28d9b54397db.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/cjc-1295-with-dac-chain-dark.svg",
+      "local": "/reference/3b304c11dd2127b38266.svg"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/product-37/coa/1780868843218-Test_Report__109246__1_-WYtzdxX0YOITTikwsBgZtKbFgcYNHz.png",
+      "local": "/reference/15add3d09c3fcad1c597.png"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/5-amino-1mq-capsules-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/1ea631712d3909bf748e.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/ara-290-light.svg",
+      "local": "/reference/82d9f9367a527a5789d9.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/ara-290-dark.svg",
+      "local": "/reference/e0b0ba392a037c76056d.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/ara-290-chain-light.svg",
+      "local": "/reference/cb0a6366b7c165678076.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/ara-290-chain-dark.svg",
+      "local": "/reference/a81a89a37ced51f955e4.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/mazdutide-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/1678bac154b67f52a76e.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/mazdutide-light.svg",
+      "local": "/reference/3270a07c933f3ead38ac.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/mazdutide-dark.svg",
+      "local": "/reference/e04e3afe3fa3737dce8b.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/bam15-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/1f9023cb8d87788135ad.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/bam15-dark.svg",
+      "local": "/reference/1f5be056c5796267ed75.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/5-amino-1mq-capsules-light.svg",
+      "local": "/reference/41c8416ef82b3cd06e92.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/5-amino-1mq-capsules-dark.svg",
+      "local": "/reference/6709b826f2389454b650.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/ghk-cu-50mg-bNYRke8ceGbyIoi381mGx502WlnJBI-10.webp",
+      "local": "/reference/bda54609eea572189836.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/216213-k1wC34Rjgmn5ow2zLTX44HCQkkwXtF.webp",
+      "local": "/reference/5832cb4d857e96f48fe9.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/product-23/molecular/1788938587756-hgh-kit-top-white-aPJ2jEFScpciS7cSfHlbgs2WnJsPpJ.webp",
+      "local": "/reference/76bdbd13c72605c66152.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/bpc-157-10mg-EQwAbckLHWOGTPZNXndBoj68sifme5-10.webp",
+      "local": "/reference/8a7136a1d41d6b276aec.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/kpv-10mg-QaaBQ7envZqvzbKMk5z3QsEC5YPLkq-14.webp",
+      "local": "/reference/0d52b2f04f6843616062.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/200433-DSIP_10mg_Eppix_Labs_XNHX9WJ2GD5F-dbrFGgb8HZNi7aRhlH7oI7P8RVVvYe.webp",
+      "local": "/reference/f8a6b3c239806e80d61b.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/dsip-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/2370089ae741f86ca351.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/dsip-chain-light.svg?dpl=dpl_CuigAbVGcG41gtq1UJQqhigDZYVd",
+      "local": "/reference/6238725f6f698771b88a.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/tirzepatide-10mg-Wb9mfaPLYwXvdD2QJA3S4W4DFmeyTt-10.webp",
+      "local": "/reference/f6fc6f3d5961f548a3d1.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/dsip-light.svg",
+      "local": "/reference/c9c820da3a12a970c7c6.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chemical/dsip-dark.svg",
+      "local": "/reference/c4efab7d673dff1828b0.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/dsip-chain-light.svg",
+      "local": "/reference/97299accaa52d75d3239.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/chain/dsip-chain-dark.svg",
+      "local": "/reference/f72b1767d3402c67f883.svg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/mots-c-10mg-ymBCsT4WGmcuHheNsIrJ8eMKA1pIKP-12.webp",
+      "local": "/reference/982abbdcc2c8fc756b78.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/tesamorelin-10mg-9WccwfKB2m2HJf9B29dvnNQGQ5vxwd-10.webp",
+      "local": "/reference/13abc7897d7ef07316ae.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/09/1790450914761-IPAMORELIN_10mg-GoD4bA67ARI10sdx3d1JFewq0l9QFh.webp",
+      "local": "/reference/ce4a1a3dedb31697e502.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/epitalon-10mg-Lf9iUnIVLsZe7FvPKBgr7Kom1Npnx9-13.webp",
+      "local": "/reference/e7ac826c9ed39608282d.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/1788151702429-Wolverine_Stack_10mg_-x7XIgc8lraKolrl4vaF08HV2n7vLwM.jpeg",
+      "local": "/reference/d6fe59f9c76c4e0942ba.jpeg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/tesamorelin-ipamorelin-10mg-3mg-FhT3AmuTohr7QLKjL8Rf8VdPWMQkTV-10.webp",
+      "local": "/reference/5931a572f99e2e5596a7.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/tb-500-10mg-D5X6AYUX34UTSE1R8DEMgKjwwBaWJK-8.webp",
+      "local": "/reference/45f0a5297ed171a154f8.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/retatrutide-10mg-LKetAlT92VmtqSvYMycWgStvKkZrll-12.webp",
+      "local": "/reference/99329ce4f5820fb444cc.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/semaglutide-10mg-Rvx5oadSuJETvi0MfXAnU99pMJsM27-8.webp",
+      "local": "/reference/605a2a41be71fc141dba.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/cagrilintide-10mg-oDPuJre6SSx4lDmcadZBAidAsBgtob-10.webp",
+      "local": "/reference/89e9587c1d361089d662.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/cjc-1295-no-dac-10mg-jsO3EhCI876L66IKKD6QlU5UV3ZLai-10.webp",
+      "local": "/reference/d8ad5c77b21efd7841db.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/selank-10mg-fSFcn744NBsstISArH6yaf5uoVcW3q-8.webp",
+      "local": "/reference/dcdfb2b25efee6433e3a.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/Semax-scaled-5.webp",
+      "local": "/reference/9891eeadb13d15f7b8b0.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/224233-IPAM-CA-26G-10-0mABCHWV4aAQrIlve2KhemR5n6D07q.webp",
+      "local": "/reference/51a85ef6d18ac69773cc.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/200406-CJCIpamorelin_5mg5mg_Eppix_Labs_QNIXMCMQKK83-YHRp3kjVmTcZbNHBYjPxHMpjyVp63j.webp",
+      "local": "/reference/5385de0691107f84b94a.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/sermorelin-5mg-e288evnjbU32AwZOzEJ0R06ELY0Olz-6.webp",
+      "local": "/reference/de6751cbd1c8e88e533a.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/09/1788582231685-NAD_500mg-dPjMbseWAHWQun7K7v4GnLMAlI9HxU.webp",
+      "local": "/reference/7f03fb75d14198dd8f25.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/204133-KPV_10mg_Eppix_Labs_U1E7UYWKFKUL-osnxPXbqoos9wF7jI89FZ4mRXMGkH3.webp",
+      "local": "/reference/33b1d4e6de06a6c4a9f4.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/thymosin-alpha-1-10mg-q9jOsP1Rr7VDaE1mScsLdRlKSegeMo-8.webp",
+      "local": "/reference/0ebbe595d135acf7333d.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/5-amino-1mq-50mg-1NzCr4gdnRJK92diHQARk1wqJBHdqN-10.webp",
+      "local": "/reference/8f0a8dea373118c0d20a.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/09/1788319525784-Eloralintide_10mg_-N92Wrzz4tcS1bRxzfiKOVwr2vun9ZO.jpeg",
+      "local": "/reference/5fec3714285425ec0462.jpeg"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/202374-Thymosin_Alpha1_10mg_Eppix_Labs_Z842EHFI7Q9Q-mL8fjkPPcvlT1Ggr73R6kLfZoT4Pwb.webp",
+      "local": "/reference/00b25a1e6ac696a9b647.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/241032-SGEz25mAKcwvUE7bAPC5soY2EBMCUJ.webp",
+      "local": "/reference/b4e9801dc9979d614028.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/241033-lorD83aoTM6BDApePz9kmAxGzKqUyN.webp",
+      "local": "/reference/412067c2566090380b2b.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/233496-Z0GJi4KPCooUZwijPa37y0WefZv70M.webp",
+      "local": "/reference/20f5097b00dbb1cf0152.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/233498-Q1q6boj7i49xQ9aFy817DoOh6zlb6b.webp",
+      "local": "/reference/24ae119916c09a09dc27.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/235949-ATJnzUrvyPC2fOHrQmpALnbaRisX2p.webp",
+      "local": "/reference/d3338c1e18c7b11e7859.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/233515-g1ea6oqwwYI3l74QbEIl1Xn9bHjoaM.webp",
+      "local": "/reference/17a64ac908c992982894.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/235941-FqYkTUglOLjtAt5m4VoumzsyPobKx0.webp",
+      "local": "/reference/f88b1c9ee60a32741a28.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/241034-8aZJVTLw4v3bsiJszrk5iAP92qVCSw.webp",
+      "local": "/reference/716b6119c7577fab2383.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/228062-0mVx4X5dqMwUnFKUED4QM00mWy9kYD.webp",
+      "local": "/reference/e389ed64a0068001757e.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/224199-TIRZ-CA-26G-15-fXWkk1r0wi9ROvs9U2Gt4tnvhsoagq.webp",
+      "local": "/reference/35eaf74cf285f1d7a31f.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/209665-ARA290_16mg_Eppix_Labs_EYZDDL67FWTQ-m1IXd2rleOdtOTfF9Y63JMhXXMgB1i.webp",
+      "local": "/reference/3e2b6dc91c04e18c1d05.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/219748-mQqrxwqOGqKQ12uNPkDdbL0dEifvtb.webp",
+      "local": "/reference/2f5459595e06f55c1b05.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/200363-Tirzepatide_60mg_Eppix_Labs_H4B24JA39Y81-Ks4tzgNj1g59yN5wxDGewGoC8vFjdX.webp",
+      "local": "/reference/f241c6be2033941ec868.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/202361-Retatrutide_20mg_Eppix_Labs_VAYMM5R4HY72-dqUXJ3WuBNgFwupGxhUDewgc5w2wi5.webp",
+      "local": "/reference/1ef255575a8652c1350c.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/204109-MOTSc_20mg_Eppix_Labs_5LFNEQ1MJIBI-Rsswh5oRp82ASSv4ZsbNkvzm1xrtBj.webp",
+      "local": "/reference/46106ba97a2f1527c069.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/jan-100042-EwFhcBMgutGxmKSCrDDpmPL6LxOghA.webp",
+      "local": "/reference/b0e4a6c7d707e159813d.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/jan-137750-Ps6kZ38aUFkXANbsVbR67Fc94ak6MG.webp",
+      "local": "/reference/3a8cf174798e34ed9771.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/JEI-MOTS-10-040526-Ovx1ELabNI1PJwD516KbLIwgtREnWt.webp",
+      "local": "/reference/891d03a049b6a47cc7af.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/jan-101980-l68tnOge50S0zs7GSRhnE16tEvo4ZR.webp",
+      "local": "/reference/f06c51195f4d7d9c4af9.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/tirzepatide-30mg-uhd40SP4b5ZymQqBujjsk6rVOcOzfk-9.webp",
+      "local": "/reference/c7c249385be2e10eb8b0.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/tirzepatide-60mg-wsNSEQ35DYWWuk3ZxctBnQjCpCMHQ7-9.webp",
+      "local": "/reference/d9acb493c4e50435784a.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/retatrutide-20mg-UxwsNHFL6f5xLIaMp4MmofOhJFdg1F-6.webp",
+      "local": "/reference/b9d4051bf5e027b214cc.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/09/1789841271380-RETA_100mg-qo5zSRNikGT43LfZtcvlh0xInUbqj8.webp",
+      "local": "/reference/5bbf40125a42235d7d37.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/09/1789841497936-retatrutide-50mg-hk73t3lYTi8CzJkemVkYpk0cl4gIgP.webp",
+      "local": "/reference/85d8111ae8ba67549151.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/dsip-10mg-JxHWJ3aIojp7fCUnYzgpecjZnBGReg-10.webp",
+      "local": "/reference/79b8bb0a5462c4920cb3.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/tirzepatide-15mg-HUQ9ZuTJgGQ4Rr1UVRL7YNckg0zGwY-6.webp",
+      "local": "/reference/b070320ae299ccb0813c.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/1780869073437-5-Amino-1MQ_Orange-XsGE4sLaDyliEQIQrHXkrt6KnpTAUC-scaled-3.webp",
+      "local": "/reference/4370a2a124a0386238cf.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/aod-9604-5mg-XNs6GqfhgYHN58i03XszD5UmXQStDs-8.webp",
+      "local": "/reference/ff08aa5ffe37faaf4b1c.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/cagrilintide-10mg-oDPuJre6SSx4lDmcadZBAidAsBgtob-11.webp",
+      "local": "/reference/9f4dfa9afebd6e4af551.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/1788151692876-Wolverine_Stack_-ofVV5N3XcUloaj6pbUhOXPOCyAUkGn.jpeg",
+      "local": "/reference/ffcecaee25c9096cf45b.jpeg"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/pt-141-10mg-nWDsoHx0sw75n1D9fKTEVrCwoiZaEl-6.webp",
+      "local": "/reference/78ec375966ab516d144e.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/kisspeptin-10-10mg-ORFLQpSe1LUcpjLZccsIDqgYWk9W3b-10.webp",
+      "local": "/reference/c4835d68363194acee46.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/melanotan-2-mt-2-10mg-pWJnkILf2nzGKZvBSx5RRwGxY6IcgK-6.webp",
+      "local": "/reference/5b169de0f688e9d332ef.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/melanotan-1-mt-1-10mg-RH0F2A1iAutihQIb8u0kW6lZGIbRPQ-8.webp",
+      "local": "/reference/3f8abdca45e984b5ad43.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/mazdutide-10mg-zIdGjyTyEHLKxxUcLfx35uHcu7wOPu-4.webp",
+      "local": "/reference/9554c5527e74237df3f0.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/oxytocin-10mg-r3z4WurbWqpWPr2NlDhX3kXtLczC5P-2.webp",
+      "local": "/reference/545c418188e806a22677.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/vip-10mg-BQBpzxpdKJEmbKtiSkDKYEMuth34iZ-4.webp",
+      "local": "/reference/b710d4172de5093339ad.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/hcg-5000iu-9uVLVjANkdctvVczcZTlVA3e4uqFzV.webp",
+      "local": "/reference/014b3cebf9c5ac020262.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/200401-Retatrutide_40mg_Eppix_Labs_TQPEY3CZTJ94-AXjBsoIbXonIKn4f3URky6TDatNjb6.webp",
+      "local": "/reference/cec255b0b44a1af5da12.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/n-acetyl-selank-10mg-hdnOEcDtZUZ0OFZc13fIZHxDsSfFrZ-8.webp",
+      "local": "/reference/069da1a03718503881fb.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/tesamorelin-20mg-UJxpzAiQjR7nnb2205DGNtuB6vSZCm-5.webp",
+      "local": "/reference/efc71a1eba4eff5fb711.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/n-acetyl-semax-10mg-v30eCi7V0bti3uzir3a9ZAQwuDXLjg-10.webp",
+      "local": "/reference/ee298a3d966f9a000b5a.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/10/1791267376597-p21-10mg-hnINKkdXkjuxBfnNJwU1nU3ngQnbqd.webp",
+      "local": "/reference/3ad918ccf6e7deab788f.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/1785917036043-pe-22-28-0RIflI9w9HAEmRHW7V3QdcgQf039gH.webp",
+      "local": "/reference/bd9bc08d65178a685b3b.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/pinealon-20mg-BeB1zMm7DKpCMT4qfYOH9AO2sOKssM-8.webp",
+      "local": "/reference/2ab42c42630c035e0931.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/09/1788932833651-coremend-blend-45mg-x30VN8P7IM4cRQZnhYmu792bKAc1rh.webp",
+      "local": "/reference/f7938a5a163bed847ecf.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/vesugen-20mg-SYyXZNHInNwQrgr0ZsxivVsujKLxYA-12.webp",
+      "local": "/reference/b042c2fb5b8e16b608e1.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/jan-152709-nZdX7ZLLw90eHY52qzgTWbUOZwmYUX.webp",
+      "local": "/reference/a1d28d9edeb6b31b58b0.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/219748-CAGL-CA-26G-10-EjDW7yOIli5n6j6dGIzpgI74oBQiIT.webp",
+      "local": "/reference/7a29a801be36dd65e384.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/09/1788582253027-NAD_1000mg-MdeznCNy1lFAc63P6GLa8sa4VpPNJK.webp",
+      "local": "/reference/5ac85cbdc0552318d756.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/triad-gh-12mg-XgBEi0heY2XMSanSfJ8oPFdHSiTSvj-12.webp",
+      "local": "/reference/df10cb3e35f3bcd16b56.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/glutathione-1500mg-d7hPhQinEpRHslYMiW3m211CBxVhO8-6.webp",
+      "local": "/reference/b1e5dfed80b99ca6a76c.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/KPV-scaled-8.webp",
+      "local": "/reference/850c4b9cfbe976105c1e.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/deadpool-20mg-eHdmnXBC5OjOqVZEJ7EwbVmsKkQcPP-4.webp",
+      "local": "/reference/2a04e4a9123d4f699328.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/cartalax-20mg-HSEeNPOYvEsfd3jgm1FP18Tnd0N4UJ-10.webp",
+      "local": "/reference/6d7e880e7e608fccbab1.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/klow-80mg-qH6c0YkylHcvYSeJFEcSABFOXxVXrQ-14.webp",
+      "local": "/reference/8c6adc515040e5c4bf8f.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/glow-70mg-kv4tzMcgiDcyouBGxMhCfFjlolAPK3-10.webp",
+      "local": "/reference/6cfb818d1173a98cee50.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/ghk-cu-100mg-t66Yji4EjKEMIn6nLQMKIvw4GUIEEW-5.webp",
+      "local": "/reference/d3b5ca6d31b5d5ab1622.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/mots-c-20mg-ZCDqRtUwxzH8jTvoGtJxSYZCcrXv9B-6.webp",
+      "local": "/reference/6a9c3ceb424d494b2d42.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/mots-c-40mg-BlxqvQuVkbrUtx8f2ezA5RSWR29ItJ-6.webp",
+      "local": "/reference/272a20cbf7761ac6131f.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/mito-genesis-120mg-ZD3LPaUJKXN5zn1wZRFcyfRQeR96cu-10.webp",
+      "local": "/reference/23988d0d3c2c69e25ea6.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/ss-31-100mg-8rBSxwkT3O7WH6tB7Xq56ev0CtZJnE-8.webp",
+      "local": "/reference/432a81ea93b06563f140.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/cjc-1295-ipamorelin-10oo10mg-X2XBE7LNTKjTCaTlcRA7YDZT20QOGY-1.webp",
+      "local": "/reference/88dc97bbdf1ec8515fed.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/09/1788931959746-cjc-1295-with-dac-5mg_2-9MPBdD7QuiI6vB2wXdRZHEPEif79go.webp",
+      "local": "/reference/b0466f699d56f550a55d.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/ss-31-50mg-Ec5yQ2AwHCZCbjlrQDG5KKqGFos2ma-12.webp",
+      "local": "/reference/9b4fe59edff205b24e71.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/09/HGH-scaled-2.webp",
+      "local": "/reference/f5ffc21462b8cbc908fc.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/jan-151526-TMzJ4KcwyIaIXANBtalE6pCx5k0Ir4.webp",
+      "local": "/reference/5a71d2a7f4b8ef4c7758.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/jan-151531-nQPSsIIHQjA8OmucW848NSyu8lIpQe.webp",
+      "local": "/reference/9c030f421fe735d0cf91.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/ovagen-20mg-sMvVz4D9jx7nsdVE4PSTcmDAHoi891-8.webp",
+      "local": "/reference/54eaa2701f12172af76f.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/livagen-20mg-Kb2Eq4A7y5VHYdLp0YMCSiS3icVO7w-18.webp",
+      "local": "/reference/ce95a8dbf9080e93f23f.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/igf-1-lr3-1mg-OV7w3DT1WJsVS0C6lYa9Jtq4C1AWKk-10.webp",
+      "local": "/reference/e3ed8ab29e9d53193e59.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/08/crystagen-20mg-Gg3cghPsbyvIz3xRIxWDY15txdaF9k-14.webp",
+      "local": "/reference/4f492b19c92e06d48c9b.webp"
+    },
+    {
+      "source": "https://www.eppixlabs.ca/media/2026/10/1790916983859-ara-290-20mg-fIFj8QPHNCcV1etBr5jkY0PkiARquy.webp",
+      "local": "/reference/5aec67261d66cc26d6ad.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/200385-NAD_1000mg_Eppix_Labs_NZMXF272YRZW-flj7i5foNyeAyas96WI3XrARNXfbOG.webp",
+      "local": "/reference/5a217c9992daf3dd8e98.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/219756-ARA2-CA-26G-16-kAY1Jnav6mvZqolpFv799JNA55188f.webp",
+      "local": "/reference/d5a21e08099a5113d001.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/224216-CJIP-CA-26G-20-LmG3HKaxNl0glpeV1qLIEw4FrBTkq9.webp",
+      "local": "/reference/a295ebaba3249605e529.webp"
+    },
+    {
+      "source": "https://jppfi113vbcpgvwn.public.blob.vercel-storage.com/datasheet/coa/216213-HGH-CA-26G-100-4X62SxKoKOc84mfef87TzsN5Ks6YNs.webp",
+      "local": "/reference/e56c322d750581aa184e.webp"
+    },
+    {
+      "source": "https://eppixinventory.wpenginepowered.com/wp-content/uploads/2026/03/Test-Report-98560.png",
+      "local": "/reference/0b7b546a719b5c0db3a9.png"
+    },
+    {
+      "source": "https://eppixinventory.wpenginepowered.com/wp-content/uploads/2026/03/Test-Report-99968.png",
+      "local": "/reference/b033ab36c94552338920.png"
+    },
+    {
+      "source": "https://eppixinventory.wpenginepowered.com/wp-content/uploads/2026/03/Test-Report-98769.png",
+      "local": "/reference/b574103d0b1b0fb2199d.png"
+    },
+    {
+      "source": "https://eppixinventory.wpenginepowered.com/wp-content/uploads/2026/03/Test-Report-109246.png",
+      "local": "/reference/7ee37fb986f8357e1343.png"
+    },
+    {
+      "source": "https://eppixinventory.wpenginepowered.com/wp-content/uploads/2026/03/Test-Report-99979.png",
+      "local": "/reference/e6bdad3787bde47f8b1e.png"
+    },
+    {
+      "source": "https://eppixinventory.wpenginepowered.com/wp-content/uploads/2026/03/Test-Report-103301.png",
+      "local": "/reference/85a60e0792cb9a8561ce.png"
+    },
+    {
+      "source": "https://eppixinventory.wpenginepowered.com/wp-content/uploads/2026/03/Test-Report-99919.png",
+      "local": "/reference/4d2682b6e914e97a01a9.png"
+    },
+    {
+      "source": "https://eppixinventory.wpenginepowered.com/wp-content/uploads/2026/03/Test-Report-97819.png",
+      "local": "/reference/f7a3e867db3b647ef8a4.png"
+    },
+    {
+      "source": "https://eppixinventory.wpenginepowered.com/wp-content/uploads/2026/03/Test-Report-99954.png",
+      "local": "/reference/67d5e3bafb729a11f765.png"
+    },
+    {
+      "source": "https://eppixinventory.wpenginepowered.com/wp-content/uploads/2026/03/Test-Report-105641.png",
+      "local": "/reference/a478821a4e201dfcfacb.png"
+    },
+    {
+      "source": "https://eppixinventory.wpenginepowered.com/wp-content/uploads/2026/04/Test-Report-102013.png",
+      "local": "/reference/b508baeaa164654cb3c4.png"
+    },
+    {
+      "source": "https://eppixinventory.wpenginepowered.com/wp-content/uploads/2026/03/Test-Report-100891.png",
+      "local": "/reference/ed327210476b2c61162e.png"
+    },
+    {
+      "source": "https://eppixinventory.wpenginepowered.com/wp-content/uploads/2026/03/Test-Report-98545.png",
+      "local": "/reference/71ecb28264db69dc8a5f.png"
+    }
+  ],
+  "failures": [
+    {
+      "url": "https://www.eppixlabs.ca/chain/glow-chain-light.svg",
+      "error": "Error: HTTP 404"
+    },
+    {
+      "url": "https://www.eppixlabs.ca/chemical/glow-light.svg",
+      "error": "Error: HTTP 404"
+    },
+    {
+      "url": "https://www.eppixlabs.ca/chain/glow-chain-light.svg",
+      "error": "Error: HTTP 404"
+    },
+    {
+      "url": "https://www.eppixlabs.ca/chemical/glow-light.svg",
+      "error": "Error: HTTP 404"
+    }
+  ]
+}
