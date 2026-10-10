@@ -32,6 +32,8 @@ npm.cmd run build
 
 ## Google sign-in
 
+Email/password account creation includes an email OTP verification step. Keep Supabase email confirmation enabled and copy `supabase/templates/confirmation.html` into Authentication → Emails → Confirm sign up, with subject `Your Eppix Labs verification code`. The template uses `{{ .Token }}` to send Supabase's numeric code. The site verifies it server-side, creates the session after success, and offers code resending with a 60-second cooldown. Google sign-in continues to use the provider's verified identity. Run `npm.cmd run verify:signup-otp` against a local running server to verify the account gate, invalid/used codes, session cookies and password login; this creates and cleans up a temporary Supabase account without sending email.
+
 Create a Google Cloud project and configure the OAuth consent screen for a web application. Create an OAuth web client. Use the callback URL shown by Supabase's Google provider, normally `https://YOUR_PROJECT_REF.supabase.co/auth/v1/callback`, as the Google authorized redirect URI. Enable Google in Supabase Authentication → Providers and enter the client ID and secret there. Add test users while the Google consent app is in testing. Google secrets do not belong in this repository or the browser.
 
 ## Vercel deployment
@@ -52,7 +54,7 @@ Discounts are 5% at 3 vials, 10% at 5, and 20% at 10; packs contribute their con
 
 The source capture contains 279 public routes plus 9 certificate category/pagination states, 76 products and 259 variants. Live private account layouts and business logic are inaccessible; the independent account page exposes the authenticated email and an empty order history. Original public assets are retained, but menus, dialogs and some dynamic behaviors are independently reconstructed and should not be described as a guaranteed pixel-identical copy. The source's Canadian store remains an external link.
 
-Supabase database/storage integration, production deployment, carts, email/password login, logout, ownership isolation, and authentication token callbacks have been verified on the live site. Google OAuth consent/return/logout are now verified, and Resend accepts authentication emails. Inbox delivery to the domain mailbox remains unconfirmed; no domain MX records are currently visible. See the deployment status for details. Local automated reports are in `artifacts`. Payment integration, fulfillment, marketing delivery and customer/order migration are deferred.
+Supabase database/storage integration, production deployment, carts, email/password login, logout, ownership isolation, and authentication token callbacks have been verified on the live site. Google OAuth consent/return/logout are verified. Zoho MX records are published, mailbox sending and receiving are verified, and Resend authentication emails for signup confirmation and password reset have reached the Zoho inbox. See the deployment status for details. Local automated reports are in `artifacts`. Payment integration, fulfillment, newsletter/support/affiliate email notifications and customer/order migration are deferred.
 
 Sixteen catalog certificates have public images and laboratory verification links, but their corresponding batch-detail URLs return 404 on the reference website. The local app provides independent report views using those published records. Their original page layouts are therefore a remaining fidelity gap; exact URLs and source status codes are recorded in `artifacts/certificate-source-report.json`.
 
