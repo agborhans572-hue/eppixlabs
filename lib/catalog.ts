@@ -57,12 +57,25 @@ export function prepareHtml(page:CapturedPage):string {
     $('main span,main p').filter((_,el)=>/^\$\d[\d,.]*$/.test($(el).text().trim())&&!$(el).children().length).first().attr('data-variant-price','true');
     const price=$('[data-variant-price]').first();if(price.length)price.parent().after('<div data-shipping-countdown class="flex items-center gap-2 mt-2"><span class="inline-block w-2 h-2 rounded-full bg-green-500 animate-pulse"></span><span class="font-mono text-[11px] tracking-wide text-foreground-secondary"></span></div>');
     $('main img').first().attr('data-product-image','true');
+    const track=$('main .touch-pan-y').first(),frame=track.parent();
+    track.attr('data-product-gallery-track','true').attr('data-slide','0');
+    frame.attr('data-product-gallery-frame','true').attr('role','region').attr('aria-label','Product images').attr('tabindex','0');
+    track.children().each((index,el)=>{
+      const slide=$(el),alt=slide.find('img').first().attr('alt')||'';
+      const kind=/certificate/i.test(alt)?'certificate':slide.find('.chemical-diagram').length?'diagram':'product';
+      slide.attr('data-gallery-kind',kind).attr('data-gallery-index',String(index));
+      if(kind==='certificate')slide.find('span').first().attr('data-gallery-certificate-label','true');
+    });
+    frame.find('button[aria-label="Next image"],button[aria-label="Previous image"]').remove();
+    if(track.children().length>1)for(const [direction,label,points] of [['previous','Previous image','15 18 9 12 15 6'],['next','Next image','9 18 15 12 9 6']])frame.append(`<button type="button" class="clone-gallery-arrow clone-gallery-${direction}" aria-label="${label}" data-action="gallery" data-slide="${direction}"${direction==='previous'?' hidden':''}><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="${points}"/></svg></button>`);
+    frame.append('<div data-gallery-expand-hint hidden class="clone-gallery-expand-hint"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg><span>Tap to expand</span></div>');
+    $('main button[aria-label^="Go to slide"]').attr('data-gallery-dot','true');
   }
   $('main figure').each((_,el)=>{const link=$(el).find('a[href^="/products/"]').first();if(link.length&&$(el).find('button').length){const slug=(link.attr('href')||'').split('/')[2]?.split('?')[0];$(el).attr('data-product',slug).attr('data-inline-certificate','true');}});
   $('[data-product]').each((_,container)=>{const product=products().find(p=>p.slug===$(container).attr('data-product'));if(!product)return;for(const c of product.certificates){for(const key of ['batch','purity','mass','laboratory','date','dateAdded'] as const){if(!c[key])continue;$(container).find('span,p,dd').filter((_,el)=>!$(el).children().length&&$(el).text().trim()===c[key]).attr('data-certificate-field',key);}$(container).find('p').filter((_,el)=>[product.name,product.displayName,c.productName].some(name=>name&&$(el).text().replace(/\s/g,'')===(name+c.strength).replace(/\s/g,''))).attr('data-certificate-heading','true');}});
   $('[data-product-detail] p').filter((_,el)=>/^\d+ vial/.test($(el).text().trim())).attr('data-vial-summary','true');
   $('[data-product-detail] p').filter((_,el)=>/^Add \d+ more vials/.test($(el).text().trim())).attr('data-vial-next','true');
-  $('[data-product-detail] .cursor-zoom-in').has('img').attr('data-action','expand-image').attr('role','button').attr('tabindex','0').attr('aria-label','Expand product image');
+  $('[data-product-detail] .cursor-zoom-in').has('img').each((_,el)=>{const target=$(el),alt=target.find('img').first().attr('alt')||'product image';target.attr('data-action','expand-image').attr('role','button').attr('tabindex','0').attr('aria-label','Expand '+alt);if(target.find('.chemical-diagram').length)target.attr('data-diagram-magnifier','true');});
   $('[data-product-detail] img[alt^="Certificate of Analysis"]').each((_,el)=>{const grid=$(el).closest('.grid-cols-2');if(grid.length){grid.attr('data-coa-document-grid','true');if(!grid.next('[data-coa-missing]').length)grid.after('<div data-coa-missing hidden class="bg-white/50 dark:bg-surface rounded-card border border-white/30 dark:border-border px-4 py-5 text-center"><p class="font-mono text-[11px] tracking-[0.12em] uppercase text-foreground-muted">Coming Soon</p><p class="mt-2 text-[13px] text-foreground-secondary"></p></div>');}});
   $('button').each((_,el)=>{
     const b=$(el),text=b.text().trim(),aria=b.attr('aria-label')||'';
@@ -79,7 +92,7 @@ export function prepareHtml(page:CapturedPage):string {
     else if(b.closest('[data-product-detail]').length && /^(Single Vial|1 Vial|\d+[- ]Pack)$/.test(text)) b.attr('data-action','pack').attr('data-value',/^(Single Vial|1 Vial)$/.test(text)?'1':text.match(/^\d+/)?.[0]||'1');
     else if(/quantity/i.test(aria)) b.attr('data-action',aria.startsWith('Increase')?'quantity-up':'quantity-down');
     else if(/^(Previous|Next) COA card$/.test(aria))b.attr('data-action','coa-card').attr('data-direction',aria.startsWith('Next')?'1':'-1');
-    else if(aria==='Next image'||aria.startsWith('Go to slide')) b.attr('data-action','gallery').attr('data-slide',aria==='Next image'?'next':String(Number(aria.match(/\d+/)?.[0])-1));
+    else if(aria==='Next image'||aria==='Previous image'||aria.startsWith('Go to slide')) b.attr('data-action','gallery').attr('data-slide',aria==='Next image'?'next':aria==='Previous image'?'previous':String(Number(aria.match(/\d+/)?.[0])-1));
     else if(/Notify/i.test(text) && b.attr('type')!=='submit') b.attr('data-action','notify');
     else if(page.route.startsWith('/peptide-research') && ['Curated','Newest','Oldest'].includes(text)) b.attr('data-action','research-sort').attr('data-value',text);
     else if(page.route.startsWith('/peptide-research') && ['Metabolic & GLP-1','Tissue Repair','Growth Hormone','Longevity','Cognitive','Immune & Inflammation','COAs & Testing','Regulation','Lab Practice'].includes(text)) b.attr('data-action','research-category').attr('data-value',text);
@@ -91,6 +104,7 @@ export function prepareHtml(page:CapturedPage):string {
     else if(b.attr('aria-expanded')!==undefined && !b.closest('header').length) b.attr('data-action','accordion');
   });
   $('input[placeholder^="Search products"]').attr('data-search','global').attr('autocomplete','off');
+  $('[data-action="accordion"]').each((_,el)=>{const button=$(el);if(button.attr('aria-expanded')==='false')button.closest('h2,h3').next().children().first().attr('inert','');});
   $('form').each((i,el)=>{
     const f=$(el),main=f.closest('main').length>0;
     const kind=f.find('#library-q').length?'research':main&&['/login','/signup','/forgot-password','/reset-password'].includes(page.route)?page.route.slice(1):main&&page.route==='/support'?'support':main&&page.route.startsWith('/affiliate')?'affiliate':main&&(page.route==='/verify'||f.find('#lot-lookup').length)?'verify':'subscribe';
