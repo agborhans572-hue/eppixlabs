@@ -14,4 +14,5 @@ export function updateVialSummary(container:HTMLElement){
   const after=container.querySelector<HTMLElement>('[data-vial-after]');
   if(after){after.hidden=count>=5;after.textContent=count<3?'After that, 10% at 5 vials, 20% at 10 vials.':'After that, 20% at 10 vials.';}
   container.querySelector<HTMLButtonElement>('[data-action="quantity-down"]')?.toggleAttribute('disabled',quantity<=1);
+  container.dispatchEvent(new container.ownerDocument.defaultView!.Event('clone:purchase-change'));
 }

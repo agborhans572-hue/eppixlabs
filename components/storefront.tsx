@@ -8,6 +8,7 @@ import {createPortal} from 'react-dom';
 import {SignupVerification} from './signup-verification';
 import {AccountControls} from './account-controls';
 import {HeaderSearch} from './header-search';
+import {StickyPurchaseBar} from './sticky-purchase-bar';
 import {CartDrawerContent,CloseIcon} from './cart-drawer';
 import {useSurfaceMotion} from './surface-motion';
 import {updateVialSummary} from './product-discount';
@@ -93,6 +94,8 @@ export function Storefront({html,route,region='us',catalog,certificates,initialS
  const [signupEmail,setSignupEmail]=useState('');
  const [accountTarget,setAccountTarget]=useState<HTMLElement|null>(null);
  const [headerSearchTarget,setHeaderSearchTarget]=useState<HTMLElement|null>(null);
+ const [purchaseDetail,setPurchaseDetail]=useState<HTMLElement|null>(null);
+ useEffect(()=>{setPurchaseDetail(root.current?.querySelector<HTMLElement>('[data-product-detail]')||null);},[route,region]);
  useEffect(()=>{setHeaderSearchTarget(root.current?.querySelector<HTMLElement>('[data-header-search]')||null);},[route]);
  const [activeSection,setActiveSection]=useState('reconstitution');
  useEffect(()=>installTouchFeedback(document.body),[]);
@@ -103,7 +106,7 @@ export function Storefront({html,route,region='us',catalog,certificates,initialS
  useEffect(()=>{if(route==='/signup'){try{const pending=sessionStorage.getItem('eppix-signup-email');if(pending)setSignupEmail(pending);}catch{}}},[route]);
  useEffect(()=>{const form=root.current?.querySelector<HTMLFormElement>('main form[data-form="signup"]');if(form)form.hidden=!!signupEmail;},[signupEmail]);
  async function loadCart(){setCartError('');try{setCart(await api('/api/cart'));}catch(e){setCartError((e as Error).message);}}
- async function updateCart(variantId:string,quantity:number,operation:'add'|'set'|'remove'){setBusy(true);try{setCart(await api('/api/cart',{variantId,quantity,operation}));setCartError('');setSurface('cart');}catch(e){setNotice((e as Error).message);}finally{setBusy(false);}}
+ async function updateCart(variantId:string,quantity:number,operation:'add'|'set'|'remove'){setBusy(true);try{setCart(await api('/api/cart',{variantId,quantity,operation}));setCartError('');setSurface('cart');return true;}catch(e){setNotice((e as Error).message);return false;}finally{setBusy(false);}}
  useEffect(()=>{void loadCart();},[]);
  useEffect(()=>{if(!notice)return;const timeout=setTimeout(()=>setNotice(''),6000);return()=>clearTimeout(timeout);},[notice]);
  useEffect(()=>{if(surface!=='diagram'||!dialog.current)return;return installDiagramMagnifiers(dialog.current,3,180);},[surface,expandedImage]);
@@ -259,8 +262,10 @@ export function Storefront({html,route,region='us',catalog,certificates,initialS
  const sectionLinks=Array.from(root.current?.querySelectorAll<HTMLAnchorElement>('[data-action="section-link"]')||[]).map(link=>({id:link.hash.slice(1),label:link.textContent||''}));
  const sectionTitle=region==='ca'?'Calculators':'Jump to';
  const modalTitle=surface==='cart'?'Cart':surface==='menu'?'Menu':surface==='region'?'Select Your Store':surface==='filter'?'Filter Products':surface==='coa'?'Certificate of Analysis':'Image';
+ const purchaseProduct=purchaseDetail&&catalog.find(product=>product.slug===purchaseDetail.dataset.product);
  return <><div ref={root} className="clone-captured" data-store={region} dangerouslySetInnerHTML={{__html:html}}/>
  {headerSearchTarget&&root.current&&createPortal(<HeaderSearch root={root.current} region={region}/>,headerSearchTarget)}
+ {purchaseDetail&&purchaseProduct&&<StickyPurchaseBar detail={purchaseDetail} product={purchaseProduct} region={region} cartVials={cart?.vialCount||0} busy={busy} suppressed={!!surface&&!['search','filter','region'].includes(surface)} add={(variant,quantity)=>updateCart(variant.id,quantity,'add')}/>}
  {accountData&&accountTarget&&createPortal(<AccountControls section={accountTarget.dataset.accountControls!} initial={accountData} region={region}/>,accountTarget)}
  {signupEmail&&root.current?.querySelector('main form[data-form="signup"]')?.parentElement&&createPortal(<SignupVerification region={region} email={signupEmail} onCancel={()=>{try{sessionStorage.removeItem('eppix-signup-email');}catch{}setSignupEmail('');}}/>,root.current.querySelector('main form[data-form="signup"]')!.parentElement!)}
  {notice&&<div className="clone-toast" role="status">{notice}<button aria-label="Dismiss notification" onClick={()=>setNotice('')}>×</button></div>}
@@ -272,7 +277,7 @@ export function Storefront({html,route,region='us',catalog,certificates,initialS
  {surface==='sections'&&<div className="clone-overlay" data-surface={surface} data-state={closing?'closing':'open'} onClick={()=>setSurface(null)}><div ref={dialog} id="section-rail" className="clone-section-rail glass-strong" role="dialog" aria-modal="true" aria-label={sectionTitle} onClick={event=>event.stopPropagation()}><div className="clone-section-heading"><p>{sectionTitle}</p><button aria-label={'Close '+sectionTitle.toLowerCase()} onClick={()=>setSurface(null)}><CloseIcon/></button></div><ul>{sectionLinks.map(section=><li key={section.id}><a href={'#'+section.id} aria-current={activeSection===section.id?'true':undefined} onClick={event=>{event.preventDefault();setSurface(null);root.current?.querySelector<HTMLElement>('#'+section.id)?.scrollIntoView({behavior:'smooth',block:'start'});root.current?.dispatchEvent(new CustomEvent('clone:section-change',{detail:section.id}));history.replaceState(null,'','#'+section.id);}}><span aria-hidden="true"/>{section.label}</a></li>)}</ul></div></div>}
  {surface==='canada-filters'&&<div className="clone-overlay" data-surface={surface} data-state={closing?'closing':'open'} onClick={()=>setSurface(null)}><div ref={dialog} id="category-drawer" className="clone-ca-filter-drawer glass-strong" role="dialog" aria-modal="true" aria-label="Product categories" onClick={event=>{event.stopPropagation();if((event.target as HTMLElement).closest('[aria-label="Close categories"]'))setSurface(null);}} dangerouslySetInnerHTML={{__html:root.current?.querySelector<HTMLTemplateElement>('template[data-canada-filters]')?.innerHTML||''}}/></div>}
  {surface&&!['search','region','filter','diagram','sections','canada-filters'].includes(surface)&&<div className="clone-overlay" data-surface={surface} data-state={closing?'closing':'open'} onClick={()=>setSurface(null)}><div ref={dialog} className={`clone-dialog ${['cart','menu','filter'].includes(surface)?'clone-drawer':''} ${surface==='cart'?'clone-cart-drawer glass-strong':''} ${surface==='image'?'clone-image-dialog':''}`} role="dialog" aria-modal="true" aria-label={surface==='cart'?'Shopping cart':undefined} aria-labelledby={surface==='cart'?undefined:'clone-dialog-title'} onClick={e=>e.stopPropagation()}><div className="clone-dialog-heading"><h2 id="clone-dialog-title">{surface==='image'?imageTitle:modalTitle}{surface==='cart'&&!!cart?.items.length&&<span className="clone-cart-heading-count">({cart.items.reduce((total,item)=>total+item.quantity,0)})</span>}</h2>{surface==='image'&&imageReport&&<a href={imageReport} target="_blank" rel="noopener noreferrer">View on lab website</a>}<button className="clone-close" aria-label={`Close ${surface}`} onClick={()=>setSurface(null)}><CloseIcon size={surface==='image'?14:16}/></button></div>
- {surface==='cart'&&<CartDrawerContent cart={cart} error={cartError} busy={busy} catalog={catalog} region={region} retry={()=>void loadCart()} close={()=>setSurface(null)} update={updateCart}/>}
+ {surface==='cart'&&<CartDrawerContent cart={cart} error={cartError} busy={busy} catalog={catalog} region={region} retry={()=>void loadCart()} close={()=>setSurface(null)} update={async(...args)=>{await updateCart(...args);}}/>}
  {surface==='menu'&&<nav className="clone-menu">{[['Shop','/collections/peptides'],['Lab Results','/certificates-of-analysis'],['Research','/peptide-research'],['Calculator','/peptide-calculator'],['About','/about'],['Account','/account']].map(([label,url])=><a key={url} href={href(url)}>{label}<span>›</span></a>)}</nav>}
  {surface==='coa'&&certificate&&<div className="clone-coa"><p>{certificate.productName} · {certificate.strength}</p><dl><dt>Lot code</dt><dd>{certificate.batch}</dd><dt>Laboratory</dt><dd>{certificate.laboratory}</dd><dt>HPLC purity</dt><dd>{certificate.purity||'See report'}</dd><dt>Measured content</dt><dd>{certificate.mass||'See report'}</dd></dl>{certificate.image&&<img src={certificate.image} alt={`${certificate.productName} certificate of analysis`}/>}<a className="clone-primary" href={href('/certificates-of-analysis/'+certificate.batch.toLowerCase())}>View full report</a>{certificate.image&&<a className="clone-secondary" href={certificate.image} download>Download certificate</a>}<a href={certificate.reportUrl} target="_blank" rel="noopener noreferrer">Verify with the laboratory ↗</a></div>}
  {surface==='image'&&<div className="clone-image-scroll"><img className="clone-expanded-image" src={expandedImage} alt={imageTitle}/></div>}
