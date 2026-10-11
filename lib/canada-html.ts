@@ -31,8 +31,7 @@ export function regionalizeHtml($:CheerioAPI):string {
     if(href.startsWith('https://www.eppixlabs.ca'))href=href.slice('https://www.eppixlabs.ca'.length)||'/';
     if(href.startsWith('/')&&!href.startsWith('//')&&!/^\/(reference|chemical|chain|_next)\//.test(href))$(el).attr(attr,storePath(href,'ca'));
   });
-  $('a[href^="mailto:hello@eppixlabs."]').attr('href','mailto:hello@eppixlabsshop.com');
   $('a[href="mailto:orders@eppix.ca"]').attr('href','/ca/payment-methods');
-  $('*').contents().each((_,el)=>{if(el.type==='text')el.data=el.data.replaceAll('hello@eppixlabs.ca','hello@eppixlabsshop.com').replaceAll('orders@eppix.ca','not available (payments are not configured)');});
+  $('*').contents().each((_,el)=>{if(el.type==='text')el.data=el.data.replaceAll('orders@eppix.ca','not available (payments are not configured)');});
   return $.html();
 }

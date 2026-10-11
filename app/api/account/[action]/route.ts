@@ -1,10 +1,13 @@
-import {currentUser,saveSubmission} from '@/lib/repository';
+import {currentUser} from '@/lib/repository';
+import {submitToTeam} from '@/lib/notifications';
+import {requestRegion} from '@/lib/stores';
 import {supabaseServer} from '@/lib/supabase';
 import {checkOrigin,digest,errorResponse,HttpError,jsonBody,rateLimit} from '@/lib/security';
 import {accountSettingsSchema,accountMessageSchema} from '@/lib/account-validation';
 
 export async function POST(request:Request,{params}:{params:Promise<{action:string}>}){try{
   checkOrigin(request);
+  const region=requestRegion(request);
   const user=await currentUser();if(!user)throw new HttpError(401,'Please sign in to manage your account.');
   const {action}=await params;
   if(!['settings','message'].includes(action))throw new HttpError(404,'Unknown account action.');
@@ -17,6 +20,5 @@ export async function POST(request:Request,{params}:{params:Promise<{action:stri
     return Response.json({saved:true,settings});
   }
   const {message}=accountMessageSchema.parse(raw);
-  await saveSubmission('support',digest(user.id+':account:'+message),{email:user.email,name:String(user.user_metadata.name||user.user_metadata.full_name||user.email),subject:'Account message',message,accountUserId:user.id});
-  return Response.json({saved:true,message:'Your message has been saved for support. Email notifications are not active yet.'});
+  return Response.json(await submitToTeam('support',digest(user.id+':account:'+message),{email:user.email,name:String(user.user_metadata.name||user.user_metadata.full_name||user.email),subject:'Account message',message,accountUserId:user.id,store:region},region));
 }catch(error){return errorResponse(error);}}

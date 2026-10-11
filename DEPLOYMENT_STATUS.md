@@ -55,3 +55,11 @@ Inspected the signed-in reference account dashboard in Chrome and captured six a
 Validation: production build, type checking, 32 unit tests, six account integration groups, nine email OTP checks, content/assets checks and all 291 canonical sitemap URLs passed locally. Browser checks verified address and preference persistence, saved messages, dashboard styling in both themes and sign-out. Temporary test accounts and support messages were removed.
 
 Existing checkout remains unavailable and creates no orders. Customer orders, staff reply/alert delivery and product-follow notifications still need their own backend integration. Deployment is authorized through the existing GitHub main branch and Vercel integration. Repeat production account verification with TEST_ORIGIN and NEXT_PUBLIC_SITE_URL set to https://www.eppixlabsshop.com; results are written to the ignored artifacts directory.
+
+## Business inbox routing - October 11, 2026
+
+Both stores now use `hello@eppixlabsshop.com` in contact links and policies. Support enquiries, authenticated account messages, affiliate applications, and newsletter preference submissions are saved before sending a staff notification to this inbox. Notifications identify the regional store and set Reply-To to the submitting visitor. Marketing campaigns and restock alerts remain inactive. Checkout still creates no orders, so order notification delivery depends on the future order/payment integration.
+
+Created a dedicated Resend sending credential restricted to the verified `eppixlabsshop.com` domain and saved it as a production-only secret named `RESEND_API_KEY` in Vercel. Supabase authentication SMTP and the Zoho receiving mailbox retain their existing configuration. See [EMAIL_NOTIFICATIONS.md](EMAIL_NOTIFICATIONS.md) for failure behavior and configuration.
+
+Validation passed: 70 unit tests, TypeScript and the production build. Local production API checks used real Supabase persistence and a mocked Resend transport to verify all three public forms and account messages in both regions, retry keys, outage fallback, honeypot handling, invalid regions/form kinds, and origin protection. Temporary accounts and submissions were removed. No real notification email was sent during these checks. Detailed results are in ignored `artifacts/notification-routing-report.json`.

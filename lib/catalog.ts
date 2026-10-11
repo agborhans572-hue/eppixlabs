@@ -5,6 +5,7 @@ import { load } from 'cheerio';
 import type { CapturedPage, Product, SearchResult, Certificate } from './types';
 import {storeRoute,storePath,type StoreRegion} from './stores';
 import {prepareCanadianCards,regionalizeHtml} from './canada-html';
+import {prepareContactEmail} from './contact-html';
 
 const contentRoot=(region:StoreRegion)=>path.join(process.cwd(),'reference',region==='ca'?'canada':'');
 const productCache=new Map<StoreRegion,{modified:number;products:Product[]}>();
@@ -135,5 +136,7 @@ export function prepareHtml(page:CapturedPage,region:StoreRegion='us'):string {
   if(page.route==='/certificates-of-analysis'){const rows=new Map<string,string>();for(const route of ['/certificates-of-analysis','/certificates-of-analysis?page=2','/certificates-of-analysis?page=3']){const source=readPage(route,region);if(!source)continue;const library=load(source.html);library('main tbody tr').each((_,el)=>{const row=library(el);const key=row.find('a[href^="/certificates-of-analysis/"]').first().attr('href')+'|'+row.find('a[href^="/products/"]').first().attr('href')+'|'+row.find('td span').first().text();rows.set(key,row.prop('outerHTML')||'');});}$.root().append($('<template data-certificate-rows></template>').html('<table><tbody>'+[...rows.values()].join('')+'</tbody></table>'));}
   try{const menu=load(readFileSync('reference/behavior/region-menu.html','utf8'),null,false);menu('[role="menuitem"]').each((index,el)=>{$.root().append($('<template data-region-flag="'+(index===0?'us':'ca')+'">'+(menu(el).find('svg').first().prop('outerHTML')||'')+'</template>'));});}catch{}
   if(page.route==='/peptide-calculator')for(const mode of ['serial','reverse']){try{const template=load(readFileSync('reference/behavior/calculator-'+mode+'.html','utf8'),null,false);$('main').append($('<template></template>').attr('data-calculator-mode',mode).html(template('section').html()||''));}catch{}}
-  return region==='ca'?regionalizeHtml($):$.html();
+  if(region==='ca')regionalizeHtml($);
+  prepareContactEmail($);
+  return $.html();
 }
