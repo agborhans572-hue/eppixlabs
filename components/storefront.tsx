@@ -270,7 +270,7 @@ export function Storefront({html,route,region='us',catalog,certificates,initialS
  {headerSearchTarget&&root.current&&createPortal(<HeaderSearch root={root.current} region={region}/>,headerSearchTarget)}
  {purchaseDetail&&purchaseProduct&&<StickyPurchaseBar detail={purchaseDetail} product={purchaseProduct} region={region} cartVials={cart?.vialCount||0} busy={busy} suppressed={!!surface&&!['search','filter','region'].includes(surface)} add={(variant,quantity)=>updateCart(variant.id,quantity,'add')}/>}
  {accountData&&accountTarget&&createPortal(<AccountControls section={accountTarget.dataset.accountControls!} initial={accountData} region={region}/>,accountTarget)}
- {checkoutTarget&&createPortal(<Checkout onPlaced={()=>void loadCart()}/>,checkoutTarget)}
+ {checkoutTarget&&createPortal(<Checkout onPlaced={()=>void loadCart()} onBackToCart={()=>setSurface('cart')}/>,checkoutTarget)}
  {ordersTarget&&region==='us'&&createPortal(<OrderHistory/>,ordersTarget)}
  {signupEmail&&root.current?.querySelector('main form[data-form="signup"]')?.parentElement&&createPortal(<SignupVerification region={region} email={signupEmail} onCancel={()=>{try{sessionStorage.removeItem('eppix-signup-email');}catch{}setSignupEmail('');}}/>,root.current.querySelector('main form[data-form="signup"]')!.parentElement!)}
  {notice&&<div className="clone-toast" role="status">{notice}<button aria-label="Dismiss notification" onClick={()=>setNotice('')}>×</button></div>}
