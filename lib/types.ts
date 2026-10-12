@@ -4,5 +4,5 @@ export interface Product { id:string; store?:'us'|'ca'; slug:string; name:string
 export interface CapturedPage { route:string; title:string; description:string; html:string; bodyClass:string; htmlClass:string; styles:string[]; source:string; capturedAt:string; records:Record<string,unknown>[]; }
 export interface CartItem { variantId:string; quantity:number; }
 export interface CartLine extends CartItem { product:string; slug:string; variant:string; image:string; priceCents:number; packSize:number; available:boolean; }
-export interface Cart { items:CartLine[]; currency:'USD'|'CAD'; region:'us'|'ca'; vialCount:number; subtotalCents:number; discountPercent:number; discountCents:number; totalCents:number; freeShipping:boolean; checkoutAvailable:false; }
+export interface Cart { items:CartLine[]; currency:'USD'|'CAD'; region:'us'|'ca'; vialCount:number; subtotalCents:number; discountPercent:number; discountCents:number; totalCents:number; freeShipping:boolean; checkoutAvailable:boolean; }
 export interface SearchResult { title:string; url:string; type:'Product'|'Certificate'|'Research'|'Page'; image?:string; subtitle?:string; }

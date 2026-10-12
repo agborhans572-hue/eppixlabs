@@ -10,6 +10,7 @@ import {AccountControls} from './account-controls';
 import {HeaderSearch} from './header-search';
 import {StickyPurchaseBar} from './sticky-purchase-bar';
 import {CartDrawerContent,CloseIcon} from './cart-drawer';
+import {Checkout,OrderHistory} from './checkout';
 import {useSurfaceMotion} from './surface-motion';
 import {updateVialSummary} from './product-discount';
 import {storePath,storeMoney,stores,type StoreRegion} from '@/lib/stores';
@@ -93,6 +94,8 @@ export function Storefront({html,route,region='us',catalog,certificates,initialS
  const liveQuery=useRef('');
  const [signupEmail,setSignupEmail]=useState('');
  const [accountTarget,setAccountTarget]=useState<HTMLElement|null>(null);
+ const [checkoutTarget,setCheckoutTarget]=useState<HTMLElement|null>(null),[ordersTarget,setOrdersTarget]=useState<HTMLElement|null>(null);
+ useEffect(()=>{setCheckoutTarget(root.current?.querySelector<HTMLElement>('[data-checkout]')||null);setOrdersTarget(root.current?.querySelector<HTMLElement>('[data-account-orders]')||null);},[route]);
  const [headerSearchTarget,setHeaderSearchTarget]=useState<HTMLElement|null>(null);
  const [purchaseDetail,setPurchaseDetail]=useState<HTMLElement|null>(null);
  useEffect(()=>{setPurchaseDetail(root.current?.querySelector<HTMLElement>('[data-product-detail]')||null);},[route,region]);
@@ -267,6 +270,8 @@ export function Storefront({html,route,region='us',catalog,certificates,initialS
  {headerSearchTarget&&root.current&&createPortal(<HeaderSearch root={root.current} region={region}/>,headerSearchTarget)}
  {purchaseDetail&&purchaseProduct&&<StickyPurchaseBar detail={purchaseDetail} product={purchaseProduct} region={region} cartVials={cart?.vialCount||0} busy={busy} suppressed={!!surface&&!['search','filter','region'].includes(surface)} add={(variant,quantity)=>updateCart(variant.id,quantity,'add')}/>}
  {accountData&&accountTarget&&createPortal(<AccountControls section={accountTarget.dataset.accountControls!} initial={accountData} region={region}/>,accountTarget)}
+ {checkoutTarget&&createPortal(<Checkout onPlaced={()=>void loadCart()}/>,checkoutTarget)}
+ {ordersTarget&&region==='us'&&createPortal(<OrderHistory/>,ordersTarget)}
  {signupEmail&&root.current?.querySelector('main form[data-form="signup"]')?.parentElement&&createPortal(<SignupVerification region={region} email={signupEmail} onCancel={()=>{try{sessionStorage.removeItem('eppix-signup-email');}catch{}setSignupEmail('');}}/>,root.current.querySelector('main form[data-form="signup"]')!.parentElement!)}
  {notice&&<div className="clone-toast" role="status">{notice}<button aria-label="Dismiss notification" onClick={()=>setNotice('')}>×</button></div>}
  {surface==='search'&&searchAnchor&&createPortal(<><div className="clone-search-panel glass-strong" role="region" aria-label="Search results">{query.length<1?<p>Search products, certificates, articles, or batch numbers.</p>:searching?<p role="status">Searching&hellip;</p>:results.length?(['Product','Certificate','Research','Page'] as const).map(type=>{const group=results.filter(r=>r.type===type);return group.length?<section key={type}><h2>{type==='Research'?'Research':type==='Page'?'Pages':type+'s'}</h2>{group.map(r=><a key={r.url} href={r.url}>{r.image?<img src={r.image} alt=""/>:<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">{r.type==='Certificate'?<><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></>:<><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/></>}</svg>}<span>{r.title}{r.subtitle&&<small>{r.subtitle}</small>}</span></a>)}</section>:null;}):<div className="clone-search-empty"><p>No results found</p><p>Try a different search term</p></div>}</div><button className="clone-search-clear" aria-label="Clear search" onClick={()=>{setQuery('');setSurface(null);root.current?.querySelector<HTMLInputElement>('[data-search=global]')?.focus();}}>×</button></>,searchAnchor)}

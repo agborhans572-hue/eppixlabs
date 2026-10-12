@@ -2,7 +2,7 @@ import {readFileSync} from 'node:fs';
 import {load} from 'cheerio';
 
 export const accountRoutes=['/account','/account/orders','/account/addresses','/account/messages','/account/alerts','/account/notifications'];
-export function renderAccount(route:string,user:{email?:string;user_metadata:Record<string,unknown>}):string {
+export function renderAccount(route:string,user:{email?:string;user_metadata:Record<string,unknown>},ordersEnabled=true):string {
   if(!accountRoutes.includes(route))throw Error('Unknown account section');
   const section=route==='/account'?'dashboard':route.split('/')[2];
   const $=load(readFileSync('reference/account/'+section+'.html','utf8'),null,false);
@@ -16,5 +16,6 @@ export function renderAccount(route:string,user:{email?:string;user_metadata:Rec
   $('nav a').each((_,el)=>{if($(el).attr('href')===route)$(el).attr('aria-current','page');});
   $('nav button').attr('data-action','logout').attr('type','button');
   if(['addresses','messages','notifications'].includes(section))$('[class="lg:col-span-3"]').empty().attr('data-account-controls',section);
+  if(section==='orders'&&ordersEnabled)$('[class="lg:col-span-3"]').empty().attr('data-account-orders','true');
   return $.html();
 }

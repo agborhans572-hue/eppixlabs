@@ -11,5 +11,5 @@ export function priceCart(items:CartItem[],catalog:Product[],region:StoreRegion=
   });
   const vialCount=lines.reduce((n,l)=>n+l.quantity*l.packSize,0),subtotalCents=lines.reduce((n,l)=>n+l.quantity*l.priceCents,0);
   const discountPercent=vialCount>=10?20:vialCount>=5?10:vialCount>=3?5:0,discountCents=Math.round(subtotalCents*discountPercent/100);
-  return {items:lines,currency:stores[region].currency,region,vialCount,subtotalCents,discountPercent,discountCents,totalCents:subtotalCents-discountCents,freeShipping:subtotalCents-discountCents>20000,checkoutAvailable:false};
+  return {items:lines,currency:stores[region].currency,region,vialCount,subtotalCents,discountPercent,discountCents,totalCents:subtotalCents-discountCents,freeShipping:subtotalCents-discountCents>20000,checkoutAvailable:region==='us'&&lines.length>0&&lines.every(line=>line.available)};
 }

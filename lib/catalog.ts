@@ -6,6 +6,7 @@ import type { CapturedPage, Product, SearchResult, Certificate } from './types';
 import {storeRoute,storePath,type StoreRegion} from './stores';
 import {prepareCanadianCards,regionalizeHtml} from './canada-html';
 import {prepareContactEmail} from './contact-html';
+import {preparePaymentHtml} from './payment-html';
 
 const contentRoot=(region:StoreRegion)=>path.join(process.cwd(),'reference',region==='ca'?'canada':'');
 const productCache=new Map<StoreRegion,{modified:number;products:Product[]}>();
@@ -138,5 +139,6 @@ export function prepareHtml(page:CapturedPage,region:StoreRegion='us'):string {
   if(page.route==='/peptide-calculator')for(const mode of ['serial','reverse']){try{const template=load(readFileSync('reference/behavior/calculator-'+mode+'.html','utf8'),null,false);$('main').append($('<template></template>').attr('data-calculator-mode',mode).html(template('section').html()||''));}catch{}}
   if(region==='ca')regionalizeHtml($);
   prepareContactEmail($);
+  if(region==='us')preparePaymentHtml($,page.route);
   return $.html();
 }
