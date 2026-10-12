@@ -115,7 +115,6 @@ export function prepareHtml(page:CapturedPage,region:StoreRegion='us'):string {
     else if(text==='Expand'||(!text&&b.find('img').length)) b.attr('data-action','expand-image');
     else if(b.attr('aria-expanded')!==undefined && !b.closest('header').length) b.attr('data-action','accordion');
   });
-  if(region==='ca'&&page.route==='/payment-methods'){$('main').html('<section class="max-w-[960px] mx-auto px-4 sm:px-6 py-12"><h1 class="text-3xl font-semibold text-foreground">Payment Methods</h1><p class="mt-4 text-foreground-secondary">Canadian prices are displayed in CAD. Payments are not configured yet, so checkout is unavailable and no order can be placed.</p><div class="grid sm:grid-cols-2 gap-5 mt-8"><section class="glass rounded-card p-6"><h2 class="text-xl font-semibold">Interac e-Transfer</h2><p class="mt-3 text-foreground-secondary">This payment option is not active. No recipient address or transfer instructions are available.</p></section><section class="glass rounded-card p-6"><h2 class="text-xl font-semibold">Cards and digital wallets</h2><p class="mt-3 text-foreground-secondary">This payment option is not active. Payment details cannot be submitted.</p></section></div><a class="clone-secondary mt-8" href="/support">Contact Support</a></section>');}
   $('input[placeholder^="Search products"]').attr('data-search','global').attr('autocomplete','off');
   $('[data-action="accordion"]').each((_,el)=>{const button=$(el);if(button.attr('aria-expanded')==='false')button.closest('h2,h3').next().children().first().attr('inert','');});
   $('form').each((i,el)=>{
@@ -139,6 +138,6 @@ export function prepareHtml(page:CapturedPage,region:StoreRegion='us'):string {
   if(page.route==='/peptide-calculator')for(const mode of ['serial','reverse']){try{const template=load(readFileSync('reference/behavior/calculator-'+mode+'.html','utf8'),null,false);$('main').append($('<template></template>').attr('data-calculator-mode',mode).html(template('section').html()||''));}catch{}}
   if(region==='ca')regionalizeHtml($);
   prepareContactEmail($);
-  if(region==='us')preparePaymentHtml($,page.route);
+  preparePaymentHtml($,page.route,region);
   return $.html();
 }

@@ -40,10 +40,10 @@ export default async function Page({params,searchParams}:Props){
   if(region==='ca'&&route.startsWith('/collections/'))page=canadianCollection(page,query);
   let html=prepareHtml({...page,route},region);
   if(route==='/checkout'){
-    const $=load(html,null,false);$('main').html(region==='us'?'<div data-checkout></div>':'<section class="clone-account"><h1>Checkout is unavailable</h1><p>Payments have not been configured. Your cart is saved; no order has been placed.</p><a class="clone-primary" href="'+storePath('/collections/peptides',region)+'">Continue Shopping</a></section>');html=$.html();
+    const $=load(html,null,false);$('main').html('<div data-checkout></div>');html=$.html();
   }
   if(user){
-    const $=load(html,null,false);$('main').replaceWith(renderAccount(route,user,region==='us'));const account=$('header a[href$="/login"]'),name=String(user.user_metadata.name||user.user_metadata.full_name||user.email||'A');
+    const $=load(html,null,false);$('main').replaceWith(renderAccount(route,user));const account=$('header a[href$="/login"]'),name=String(user.user_metadata.name||user.user_metadata.full_name||user.email||'A');
     account.attr('href',storePath('/account',region)).attr('aria-label','Your account').addClass('relative').empty().append($('<span class="account-avatar" aria-hidden="true"></span>').text(name.trim().charAt(0).toUpperCase()),'<span class="account-online" aria-hidden="true"></span>');html=region==='ca'?regionalizeHtml($):$.html();
   }
   return <>{region==='ca'&&page.styles.map(href=><link key={href} rel="stylesheet" href={href}/>)}<Storefront key={pathname} html={html} route={route} region={region} accountData={accountData} catalog={products(region)} certificates={certificates(region)} initialStrength={typeof query.strength==='string'?query.strength:undefined} initialCoa={typeof query.coa==='string'?query.coa:undefined} initialQuery={typeof query.q==='string'?query.q:undefined}/></>;

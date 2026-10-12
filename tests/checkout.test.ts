@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {checkoutQuote,checkoutSchema,publicReceipt,requireCheckoutQuote,type StoredOrder} from '../lib/checkout';
+import {checkoutQuote,checkoutSchema,canadianCheckoutSchema,publicReceipt,requireCheckoutQuote,type StoredOrder} from '../lib/checkout';
 import {orderEmails,notifyOrder} from '../lib/order-mail';
 import {businessEmail} from '../lib/contact';
 import type {Product} from '../lib/types';
@@ -42,4 +42,24 @@ test('email delivery uses stable retry keys and reports independent provider fai
 });
 test('storefront payment copy agrees with the manual checkout and removes card acceptance claims',()=>{
   const html=prepareHtml(readPage('/')!);assert.match(html,/Card payments are currently unavailable/);assert.match(html,/Which payment methods can I choose/);assert.doesNotMatch(html,/processed on a hosted checkout page|We accept Visa, Mastercard/);
+});
+test('Canadian addresses accept every province and normalize postal codes without accepting US addresses',()=>{
+  const billing={line1:'123 Test St',city:'Ottawa',state:'Ontario',postalCode:'k1a0b1'};
+  const result=canadianCheckoutSchema.parse({...input,billing});assert.equal(result.billing.postalCode,'K1A 0B1');
+  for(const patch of [{postalCode:'00000'},{postalCode:'D1A 1A1'},{state:'Texas'},{state:'Unknown'}])assert.equal(canadianCheckoutSchema.safeParse({...input,billing:{...billing,...patch}}).success,false);
+  assert.equal(checkoutSchema.safeParse({...input,billing}).success,false);
+});
+test('Canadian checkout prices its regional variants in CAD and emails Canadian address and currency',()=>{
+  const ca=JSON.parse(readFileSync('reference/canada/catalog.json','utf8')) as Product[],variant=ca.flatMap(p=>p.comingSoon?[]:p.variants).find(v=>v.available&&v.packSize===1)!;
+  const quote=checkoutQuote([{variantId:variant.id,quantity:1}],ca,'ca');assert.equal(quote.cart.currency,'CAD');assert.equal(quote.cart.region,'ca');assert.equal(quote.cart.checkoutAvailable,true);
+  assert.throws(()=>checkoutQuote([{variantId:variant.id,quantity:1}],ca,'us'));
+  const orderInput=canadianCheckoutSchema.parse({...input,quoteId:quote.quoteId,billing:{line1:'Test address',city:'Ottawa',state:'Ontario',postalCode:'K1A 0B1'}});
+  const emails=orderEmails({...order,input:orderInput,quote});assert.match(emails.customer.text,/Canada/);assert.match(emails.customer.text,/CAD/);assert.doesNotMatch(emails.customer.text,/USD|United States/);assert.match(emails.team.text,/Store: Canada/);
+});
+test('Canadian payment pages expose active manual choices without old transfer discounts or disabled checkout copy',()=>{
+  for(const route of ['/','/payment-methods','/shipping','/terms']){
+    const html=prepareHtml(readPage(route,'ca')!,'ca');assert.doesNotMatch(html,/payments are not configured|checkout is unavailable|Visa, Mastercard, (?:Amex|American Express)|Pay by E-Transfer and save an extra 5%|up to 25% when paying|orders@eppix\.ca/i);
+    if(route==='/payment-methods'){assert.match(html,/PayPal, Apple Pay, crypto, or Zelle/);assert.match(html,/quoted in CAD/);assert.match(html,/eligible US bank accounts/);assert.match(html,/href="\/ca\/collections\/peptides"/);}
+    if(route==='/terms')assert.doesNotMatch(html,/Accepted cards:|Inventory reserved for 60 minutes|Discount applied automatically at checkout/);
+  }
 });

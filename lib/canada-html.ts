@@ -1,6 +1,7 @@
 import type {CheerioAPI} from 'cheerio';
 import {storePath} from './stores';
 import {products} from './catalog';
+import {businessEmail} from './contact';
 
 /** Canadian cards use articles and native strength selects, unlike US flip cards. */
 export function prepareCanadianCards($:CheerioAPI){
@@ -32,6 +33,6 @@ export function regionalizeHtml($:CheerioAPI):string {
     if(href.startsWith('/')&&!href.startsWith('//')&&!/^\/(reference|chemical|chain|_next)\//.test(href))$(el).attr(attr,storePath(href,'ca'));
   });
   $('a[href="mailto:orders@eppix.ca"]').attr('href','/ca/payment-methods');
-  $('*').contents().each((_,el)=>{if(el.type==='text')el.data=el.data.replaceAll('orders@eppix.ca','not available (payments are not configured)');});
+  $('*').contents().each((_,el)=>{if(el.type==='text')el.data=el.data.replaceAll('orders@eppix.ca',businessEmail);});
   return $.html();
 }

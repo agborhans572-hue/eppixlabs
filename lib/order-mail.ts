@@ -1,12 +1,13 @@
 import {businessEmail} from './contact';
 import type {StoredOrder} from './checkout';
 import {paymentMethods} from './checkout-options';
-import {storeMoney} from './stores';
+import {storeMoney,stores} from './stores';
 
 export function orderEmails(order:StoredOrder){
   const {input,quote}=order;
-  const address=(a:typeof input.billing)=>[a.line1,a.line2,a.city+', '+a.state+' '+a.postalCode,'United States'].filter(Boolean).join('\n');
-  const summary=[...quote.cart.items.map(i=>`${i.quantity} × ${i.product} — ${i.variant}: ${storeMoney(i.quantity*i.priceCents,'us')}`),`Subtotal: ${storeMoney(quote.cart.subtotalCents,'us')}`,`Mix & Match discount: ${storeMoney(quote.cart.discountCents,'us')}`,`Shipping: ${storeMoney(quote.shippingCents,'us')}`,`Sales tax: ${storeMoney(quote.taxCents,'us')}`,`Total: ${storeMoney(quote.totalCents,'us')} USD`].join('\n');
+  const region=quote.cart.region,currency=quote.cart.currency,money=(cents:number)=>storeMoney(cents,region);
+  const address=(a:typeof input.billing)=>[a.line1,a.line2,a.city+', '+a.state+' '+a.postalCode,stores[region].name].filter(Boolean).join('\n');
+  const summary=[`Store: ${stores[region].name}`, ...quote.cart.items.map(i=>`${i.quantity} × ${i.product} — ${i.variant}: ${money(i.quantity*i.priceCents)}`),`Subtotal: ${money(quote.cart.subtotalCents)}`,`Mix & Match discount: ${money(quote.cart.discountCents)}`,`Shipping: ${money(quote.shippingCents)}`,region==='ca'?'Sales tax: confirmed by our team in the payment email':`Sales tax: ${money(quote.taxCents)}`,`${region==='ca'?'Estimated total':'Total'}: ${money(quote.totalCents)} ${currency}`].join('\n');
   const common={from:`Eppix Labs <${businessEmail}>`,reply_to:businessEmail};
   return {
     customer:{...common,to:[order.email],subject:`Order ${order.number} received — awaiting payment`,text:[`Thank you, ${input.firstName}. Your order has been received.`,`Order number: ${order.number}`,`Payment preference: ${paymentMethods[order.paymentMethod]}`,'','CHECK YOUR EMAIL FOR PAYMENT DETAILS',`Our team will send a separate email from ${businessEmail} with instructions for your selected payment method. Check your inbox and spam folder. No payment has been taken. Your order is awaiting payment and will be processed after payment and availability are confirmed. Apple Pay instructions, if selected, will include a compatible payment link from our team. Do not send card details by email.`,'',summary,'','Shipping address:',address(input.shipping||input.billing),'',`Questions? Reply to this email and include order ${order.number}.`].join('\n')},

@@ -32,7 +32,7 @@ test('US and Canada carts cannot mix identities, currencies or discounts',()=>{
   assert.equal(cartKey('user:123','us'),'user:123');assert.equal(cartKey('user:123','ca'),'user:123:ca');
   assert.notEqual(cartKey('guest:123','ca'),cartKey('guest:123','us'));
   const cart=priceCart([{variantId:v.id,quantity:3}],ca,'ca');
-  assert.equal(cart.currency,'CAD');assert.equal(cart.region,'ca');assert.equal(cart.subtotalCents,20997);assert.equal(cart.discountPercent,5);assert.equal(cart.checkoutAvailable,false);
+  assert.equal(cart.currency,'CAD');assert.equal(cart.region,'ca');assert.equal(cart.subtotalCents,20997);assert.equal(cart.discountPercent,5);assert.equal(cart.checkoutAvailable,true);
   assert.throws(()=>priceCart([{variantId:v.id,quantity:1}],[...us,...ca],'us'));
   assert.throws(()=>priceCart([{variantId:us[0].variants[0].id,quantity:1}],[...us,...ca],'ca'));
 });
