@@ -1,6 +1,7 @@
 import type {CheerioAPI} from 'cheerio';
 import {storePath,type StoreRegion} from './stores';
 export function preparePaymentHtml($:CheerioAPI,route:string,region:StoreRegion='us'){
+  if(route==='/')return;
   if(region==='ca'&&route==='/terms'){
     const heading=$('main h2').filter((_,el)=>$(el).text().trim()==='Payments & Billing').first(),block=heading.parent().parent();
     if(heading.length&&block.find('h2').length===1){

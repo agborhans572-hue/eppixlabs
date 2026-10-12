@@ -40,8 +40,8 @@ test('email delivery uses stable retry keys and reports independent provider fai
   await notifyOrder(order,'test-secret',provider);assert.equal(new Headers(calls[0].headers).get('Idempotency-Key'),new Headers(calls[2].headers).get('Idempotency-Key'));
   assert.deepEqual(await notifyOrder(order,''),{customerEmail:'unavailable',teamEmail:'unavailable'});
 });
-test('storefront payment copy agrees with the manual checkout and removes card acceptance claims',()=>{
-  const html=prepareHtml(readPage('/')!);assert.match(html,/Card payments are currently unavailable/);assert.match(html,/Which payment methods can I choose/);assert.doesNotMatch(html,/processed on a hosted checkout page|We accept Visa, Mastercard/);
+test('homepages retain their original payment presentation',()=>{
+  for(const region of ['us','ca'] as const){const html=prepareHtml(readPage('/',region)!,region);assert.doesNotMatch(html,/Card payments (?:are currently )?unavailable/i);assert.match(html,/Visa, Mastercard/);}
 });
 test('Canadian addresses accept every province and normalize postal codes without accepting US addresses',()=>{
   const billing={line1:'123 Test St',city:'Ottawa',state:'Ontario',postalCode:'k1a0b1'};
@@ -57,7 +57,7 @@ test('Canadian checkout prices its regional variants in CAD and emails Canadian 
   const emails=orderEmails({...order,input:orderInput,quote});assert.match(emails.customer.text,/Canada/);assert.match(emails.customer.text,/CAD/);assert.doesNotMatch(emails.customer.text,/USD|United States/);assert.match(emails.team.text,/Store: Canada/);
 });
 test('Canadian payment pages expose active manual choices without old transfer discounts or disabled checkout copy',()=>{
-  for(const route of ['/','/payment-methods','/shipping','/terms']){
+  for(const route of ['/payment-methods','/shipping','/terms']){
     const html=prepareHtml(readPage(route,'ca')!,'ca');assert.doesNotMatch(html,/payments are not configured|checkout is unavailable|Visa, Mastercard, (?:Amex|American Express)|Pay by E-Transfer and save an extra 5%|up to 25% when paying|orders@eppix\.ca/i);
     if(route==='/payment-methods'){assert.match(html,/PayPal, Apple Pay, crypto, or Zelle/);assert.match(html,/quoted in CAD/);assert.match(html,/eligible US bank accounts/);assert.match(html,/href="\/ca\/collections\/peptides"/);}
     if(route==='/terms')assert.doesNotMatch(html,/Accepted cards:|Inventory reserved for 60 minutes|Discount applied automatically at checkout/);
