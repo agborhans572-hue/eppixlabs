@@ -1,7 +1,6 @@
 import type {CheerioAPI} from 'cheerio';
 import {storePath,type StoreRegion} from './stores';
 export function preparePaymentHtml($:CheerioAPI,route:string,region:StoreRegion='us'){
-  if(route==='/')return;
   if(region==='ca'&&route==='/terms'){
     const heading=$('main h2').filter((_,el)=>$(el).text().trim()==='Payments & Billing').first(),block=heading.parent().parent();
     if(heading.length&&block.find('h2').length===1){
@@ -10,8 +9,10 @@ export function preparePaymentHtml($:CheerioAPI,route:string,region:StoreRegion=
     }
   }
   $('*').contents().each((_,node)=>{if(node.type==='text'){
+    node.data=node.data.replace(/up to 25%/gi,match=>match[0]==='U'?'Up to 20%':'up to 20%');
     if(/^\s*We accept Visa, Mastercard/.test(node.data))node.data='PayPal, Apple Pay, crypto, and Zelle. Card payments are currently unavailable.';
     if(/^\s*Visa, Mastercard, Amex, Apple Pay, Google Pay\s*$/.test(node.data))node.data='PayPal, Apple Pay, crypto, and Zelle · Payment details by email';
+    if(/^\s*Visa, Mastercard, Amex, Interac e-Transfer\s*$/.test(node.data))node.data='PayPal, Apple Pay, crypto, and Zelle · Payment details by email';
     if(/^\s*Visa, Mastercard, American Express, Apple Pay and Google Pay, processed/.test(node.data))node.data='Choose PayPal, Apple Pay, crypto, or Zelle at checkout. Card payments are currently unavailable. Place your order, then check your email for payment instructions from our team. No payment is collected on the checkout page.';
     if(/^\s*Which cards and digital wallets/.test(node.data))node.data='Which payment methods can I choose?';
     if(region==='ca'){

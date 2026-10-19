@@ -11,14 +11,12 @@ import {canadianCollection} from '@/lib/canada-collections';
 import {supabaseAdmin} from '@/lib/supabase';
 import {accountRoutes,renderAccount} from '@/lib/account-render';
 import {readAccountSettings,type AccountData} from '@/lib/account-validation';
+import {pageSeo,structuredData,serializeJsonLd} from '@/lib/seo';
 export const dynamic='force-dynamic';
 type Props={params:Promise<{path?:string[]}>;searchParams:Promise<Record<string,string|string[]|undefined>>};
-export async function generateMetadata({params}:Props):Promise<Metadata>{
-  const {path}=await params,pathname='/'+(path||[]).join('/'),{route,region}=storeRoute(pathname),p=readPage(route,region);
-  const languages:Record<string,string>={};
-  if(readPage(route,'us'))languages['en-US']=storePath(route,'us');
-  if(readPage(route,'ca'))languages['en-CA']=storePath(route,'ca');
-  return {title:accountRoutes.includes(route)?'My Account | Eppix Labs':p?.title||'Eppix Labs',description:p?.description,alternates:p?{canonical:storePath(route,region),languages}:undefined,robots:isNonIndexablePath(pathname)?{index:false,follow:true}:undefined};
+export async function generateMetadata({params,searchParams}:Props):Promise<Metadata>{
+  const {path}=await params,pathname='/'+(path||[]).join('/'),{route,region}=storeRoute(pathname),p=readPage(route,region)||((route==='/checkout'||accountRoutes.includes(route))?readPage('/login',region):null);
+  return pageSeo(route,region,p,await searchParams);
 }
 export default async function Page({params,searchParams}:Props){
   const {path}=await params,pathname='/'+(path||[]).join('/'),{route,region}=storeRoute(pathname),query=await searchParams,state=new URLSearchParams();
@@ -46,5 +44,5 @@ export default async function Page({params,searchParams}:Props){
     const $=load(html,null,false);$('main').replaceWith(renderAccount(route,user));const account=$('header a[href$="/login"]'),name=String(user.user_metadata.name||user.user_metadata.full_name||user.email||'A');
     account.attr('href',storePath('/account',region)).attr('aria-label','Your account').addClass('relative').empty().append($('<span class="account-avatar" aria-hidden="true"></span>').text(name.trim().charAt(0).toUpperCase()),'<span class="account-online" aria-hidden="true"></span>');html=region==='ca'?regionalizeHtml($):$.html();
   }
-  return <>{region==='ca'&&page.styles.map(href=><link key={href} rel="stylesheet" href={href}/>)}<Storefront key={pathname} html={html} route={route} region={region} accountData={accountData} catalog={products(region)} certificates={certificates(region)} initialStrength={typeof query.strength==='string'?query.strength:undefined} initialCoa={typeof query.coa==='string'?query.coa:undefined} initialQuery={typeof query.q==='string'?query.q:undefined}/></>;
+  return <>{region==='ca'&&page.styles.map(href=><link key={href} rel="stylesheet" href={href}/>)}{!isNonIndexablePath(pathname)&&<script type="application/ld+json" dangerouslySetInnerHTML={{__html:serializeJsonLd(structuredData(route,region,page,html,query))}}/>}<Storefront key={pathname} html={html} route={route} region={region} accountData={accountData} catalog={products(region)} certificates={certificates(region)} initialStrength={typeof query.strength==='string'?query.strength:undefined} initialCoa={typeof query.coa==='string'?query.coa:undefined} initialQuery={typeof query.q==='string'?query.q:undefined}/></>;
 }

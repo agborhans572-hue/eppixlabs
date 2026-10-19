@@ -12,6 +12,7 @@ import {StickyPurchaseBar} from './sticky-purchase-bar';
 import {CartDrawerContent,CloseIcon} from './cart-drawer';
 import {Checkout,OrderHistory} from './checkout';
 import {useSurfaceMotion} from './surface-motion';
+import {trackCommerce} from '@/lib/analytics';
 import {updateVialSummary} from './product-discount';
 import {storePath,storeMoney,stores,type StoreRegion} from '@/lib/stores';
 import type {AccountData} from '@/lib/account-validation';
@@ -89,6 +90,8 @@ export function Storefront({html,route,region='us',catalog,certificates,initialS
  const {surface,setSurface,closing}=useSurfaceMotion<Surface>();
  const [cart,setCart]=useState<Cart|null>(null),[cartError,setCartError]=useState(''),[busy,setBusy]=useState(false),[notice,setNotice]=useState('');
  const previousCartCount=useRef<number|null>(null);
+ const trackedProduct=useRef('');
+ useEffect(()=>{const product=catalog.find(p=>route==='/products/'+p.slug);const key=region+route;if(product&&trackedProduct.current!==key){trackedProduct.current=key;trackCommerce('view_item',{region,currency:stores[region].currency,item_id:product.slug});}},[route,region,catalog]);
  const [query,setQuery]=useState(''),[results,setResults]=useState<SearchResult[]>([]),[searching,setSearching]=useState(false),[certificate,setCertificate]=useState<Certificate|null>(null),[expandedImage,setExpandedImage]=useState(''),[imageTitle,setImageTitle]=useState('Image'),[imageReport,setImageReport]=useState('');
  const [filters,setFilters]=useState({...defaultFilters,categories:({'/collections/intranasal-sprays':'Intranasal Sprays','/collections/peptide-vials':'Peptides','/collections/capsules':'Capsules','/collections/bioregulators':'Bioregulators','/collections/aminos':'Aminos','/collections/cosmetics':'Cosmetics'} as Record<string,string>)[route]?[({'/collections/peptide-vials':'Peptides','/collections/capsules':'Capsules','/collections/bioregulators':'Bioregulators','/collections/aminos':'Aminos','/collections/cosmetics':'Cosmetics'} as Record<string,string>)[route]]:[]}),[anchor,setAnchor]=useState<HTMLElement|null>(null);
  const liveQuery=useRef('');
@@ -109,7 +112,7 @@ export function Storefront({html,route,region='us',catalog,certificates,initialS
  useEffect(()=>{if(route==='/signup'){try{const pending=sessionStorage.getItem('eppix-signup-email');if(pending)setSignupEmail(pending);}catch{}}},[route]);
  useEffect(()=>{const form=root.current?.querySelector<HTMLFormElement>('main form[data-form="signup"]');if(form)form.hidden=!!signupEmail;},[signupEmail]);
  async function loadCart(){setCartError('');try{setCart(await api('/api/cart'));}catch(e){setCartError((e as Error).message);}}
- async function updateCart(variantId:string,quantity:number,operation:'add'|'set'|'remove'){setBusy(true);try{setCart(await api('/api/cart',{variantId,quantity,operation}));setCartError('');setSurface('cart');return true;}catch(e){setNotice((e as Error).message);return false;}finally{setBusy(false);}}
+ async function updateCart(variantId:string,quantity:number,operation:'add'|'set'|'remove'){setBusy(true);try{setCart(await api('/api/cart',{variantId,quantity,operation}));if(operation==='add'){const product=catalog.find(p=>p.variants.some(v=>v.id===variantId)),variant=product?.variants.find(v=>v.id===variantId);trackCommerce('add_to_cart',{region,currency:stores[region].currency,item_id:product?.slug||variantId,quantity,value:(variant?.priceCents||0)*quantity/100});}setCartError('');setSurface('cart');return true;}catch(e){setNotice((e as Error).message);return false;}finally{setBusy(false);}}
  useEffect(()=>{void loadCart();},[]);
  useEffect(()=>{if(!notice)return;const timeout=setTimeout(()=>setNotice(''),6000);return()=>clearTimeout(timeout);},[notice]);
  useEffect(()=>{if(surface!=='diagram'||!dialog.current)return;return installDiagramMagnifiers(dialog.current,3,180);},[surface,expandedImage]);

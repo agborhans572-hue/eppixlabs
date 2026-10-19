@@ -7,6 +7,7 @@ import {storeRoute,storePath,type StoreRegion} from './stores';
 import {prepareCanadianCards,regionalizeHtml} from './canada-html';
 import {prepareContactEmail} from './contact-html';
 import {preparePaymentHtml} from './payment-html';
+import {prepareSeoHtml} from './seo-html';
 
 const contentRoot=(region:StoreRegion)=>path.join(process.cwd(),'reference',region==='ca'?'canada':'');
 const productCache=new Map<StoreRegion,{modified:number;products:Product[]}>();
@@ -139,5 +140,6 @@ export function prepareHtml(page:CapturedPage,region:StoreRegion='us'):string {
   if(region==='ca')regionalizeHtml($);
   prepareContactEmail($);
   preparePaymentHtml($,page.route,region);
+  prepareSeoHtml($,page.route,region,regionalProducts);
   return $.html();
 }

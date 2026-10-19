@@ -40,8 +40,8 @@ test('email delivery uses stable retry keys and reports independent provider fai
   await notifyOrder(order,'test-secret',provider);assert.equal(new Headers(calls[0].headers).get('Idempotency-Key'),new Headers(calls[2].headers).get('Idempotency-Key'));
   assert.deepEqual(await notifyOrder(order,''),{customerEmail:'unavailable',teamEmail:'unavailable'});
 });
-test('homepages retain their original payment presentation',()=>{
-  for(const region of ['us','ca'] as const){const html=prepareHtml(readPage('/',region)!,region);assert.doesNotMatch(html,/Card payments (?:are currently )?unavailable/i);assert.match(html,/Visa, Mastercard/);}
+test('homepages describe the same payment process as checkout',()=>{
+  for(const region of ['us','ca'] as const){const html=prepareHtml(readPage('/',region)!,region);assert.match(html,/Payment details by email/);assert.doesNotMatch(html,/Visa, Mastercard/);}
 });
 test('Canadian addresses accept every province and normalize postal codes without accepting US addresses',()=>{
   const billing={line1:'123 Test St',city:'Ottawa',state:'Ontario',postalCode:'k1a0b1'};
