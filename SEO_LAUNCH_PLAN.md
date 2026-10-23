@@ -2,6 +2,31 @@
 
 Period: **19 October–18 November 2026**. US and Canada have equal implementation priority. This is a measurable launch plan, not a promise of rankings or revenue.
 
+## 23 October follow-up: prepare for November sales
+
+This follow-up builds on the earlier release. The Search Console numbers below remain the **19 October snapshot**; they have not been refreshed during this code change.
+
+- Product summaries and search descriptions now use each regional catalog's actual strengths. Product comparison tables expose single-unit prices, listing availability and reports matched to the exact strength. A missing match prompts a support request; historical reports are not presented as a guarantee of the lot to be fulfilled.
+- The ten priority pages are Retatrutide, Tirzepatide, Ipamorelin, Thymosin Alpha-1 and BPC-157 in each market. Their procurement notes address specific comparison mistakes. Homepage and catalog links expose these pages; related research articles and certificate pages lead back to the appropriate regional product.
+- Existing `/research-peptides-usa`, `/ca/research-peptides-canada` and both `/peptide-coa-verification` routes now contain original ordering/report checklists and an example drawn from the regional BPC-157 catalog. These replace the captured content at those URLs. Other captured articles still need editorial review; this is not a complete originality audit.
+- Homepage introductions and catalog counts are generated from the regional data. Report metadata identifies individual lot codes. Topic hubs no longer claim to be articles. Collection ItemList markup describes only visible product cards, including the correct Canadian pagination.
+- The sitemap includes canonical catalog/report pagination and product images. Invalid pagination is noindex. No artificial modification dates, reviews or sales figures are added.
+- `audit:seo` now audits prepared storefront HTML and computed metadata, with captured titles retained for comparison in the report. `verify:seo` checks all ten priority pages plus guides and crawl states against a running production build.
+- The release check found the installed Next.js 16.4.0 affected by the [14 October security advisory](https://nextjs.org/blog/nextjs-security-update-october-14-2026). The dependency and lockfile are patched to 16.4.1; installation's audit reports zero vulnerabilities.
+
+| Dates | Work after publication | Evidence to record |
+| --- | --- | --- |
+| 24–31 October | Publish and verify this release. Inspect the ten priority product URLs and four guide URLs in Search Console; request indexing where needed. Check one real order and email/payment handoff with the owner. | Release date, selected canonical, index status, received notifications and payment instructions |
+| 1–7 November | Compare query/page/country reports with the earlier snapshot. Fix valuable URLs still excluded; review whether searchers reach the matching regional product. | Relevant impressions, clicks, CTR and landing pages, separated by US/Canada |
+| 8–14 November | Improve the pages receiving qualified visits using actual buyer questions. Investigate cart and unpaid-order drop-offs; follow up on awaiting-payment orders. | Product visits, available cart/checkout events, submitted orders, confirmed paid orders |
+| 15–30 November | Allocate effort to pages producing qualified enquiries and paid orders. Update genuine stock/report details and refine the payment process where buyers drop off. | Paid revenue and fulfilled orders, separately from unpaid submissions |
+
+Validate catalog prices, stock and assigned lots against business records. The new comparisons use the same captured regional catalog as the storefront; checkout still revalidates against Supabase. Changing database prices alone does not refresh this captured catalog. No new live Search Console access, analytics account, advertising spend, customer outreach or deployment is implied by these local source changes.
+
+The content and linking work follows [Google's originality guidance](https://developers.google.com/search/docs/fundamentals/creating-helpful-content) and [ecommerce navigation guidance](https://developers.google.com/search/docs/specialty/ecommerce/help-google-understand-your-ecommerce-site-structure). Pagination retains [self-referencing canonical URLs](https://developers.google.com/search/docs/specialty/ecommerce/pagination-and-incremental-page-loading).
+
+Local validation on 23 October: Next.js 16.4.1 production build and TypeScript passed; all 92 unit tests passed; 32 production HTTP page/state checks passed, including equality between visible and structured offer prices/status. The prepared-content audit covered 536 captured records with no duplicate titles, missing descriptions or missing main headings in either region. All 562 sitemap URLs passed HTTP status, canonical and indexability checks; sitemap GET/HEAD, robots discovery and private-page noindex checks also passed. The sitemap includes six pagination URLs and 133 image entries. No browser surface was connected for a fresh visual review. These results describe the local release; production publication and Search Console recrawling remain separate steps.
+
 ## What the live accounts actually show
 
 Read from the owner's [Search Console property](https://search.google.com/search-console?resource_id=sc-domain%3Aeppixlabsshop.com) on 19 October:
@@ -101,6 +126,6 @@ npm.cmd run verify:sitemap
 npm.cmd run audit:seo
 ```
 
-`audit:seo` inspects the reference content; runtime verification checks the enhancements served by the app. Reports are written under ignored `artifacts/`. After deployment use the production `TEST_ORIGIN` and set `EXPECTED_SITE_ORIGIN=https://www.eppixlabsshop.com`. Regenerate `reference/image-dimensions.json` with `node scripts/build-image-dimensions.mjs` when new local images are added.
+`audit:seo` inspects prepared storefront HTML and computed metadata; runtime verification checks the enhancements served by the app. Reports are written under ignored `artifacts/`. After deployment use the production `TEST_ORIGIN` and set `EXPECTED_SITE_ORIGIN=https://www.eppixlabsshop.com`. Regenerate `reference/image-dimensions.json` with `node scripts/build-image-dimensions.mjs` when new local images are added.
 
 Additional implementation references: [Google ecommerce site structure](https://developers.google.com/search/docs/specialty/ecommerce/help-google-understand-your-ecommerce-site-structure), [Product markup](https://developers.google.com/search/docs/appearance/structured-data/product), [structured-data policies](https://developers.google.com/search/docs/appearance/structured-data/sd-policies), and the installed Next.js 16.4 metadata, sitemap and JSON-LD guides under `node_modules/next/dist/docs/`.

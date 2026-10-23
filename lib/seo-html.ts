@@ -3,6 +3,7 @@ import type {Product} from './types';
 import {stores,storePath,type StoreRegion} from './stores';
 import imageDimensions from '../reference/image-dimensions.json';
 import {businessIdentity} from './business';
+import {prepareProcurementHtml} from './procurement-html';
 
 const dimensions:Record<string,{width:number;height:number}>=imageDimensions;
 
@@ -60,6 +61,7 @@ export function prepareSeoHtml($:CheerioAPI,route:string,region:StoreRegion,cata
     for(const item of [...catalog].sort((a,b)=>a.name.localeCompare(b.name)))section.find('ul').append($('<li></li>').append($('<a></a>').attr('href',href('/products/'+item.slug)).text(item.name)));
     main.append(section);
   }
+  prepareProcurementHtml($,route,region,catalog);
   // Reserve the real aspect ratio; never guess report or product dimensions.
   $('img').each((_,element)=>{
     const img=$(element),src=(img.attr('src')||'').split('?')[0],size=dimensions[src];

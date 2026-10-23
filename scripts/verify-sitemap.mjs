@@ -33,10 +33,10 @@ await Promise.all(Array.from({length:4},async()=>{
   while(cursor<urls.length){
     const url=new URL(urls[cursor++]);
     assert.equal(url.origin,sitemapOrigin);
-    assert.equal(url.search,'');
+    if(url.search)assert.match(url.search,/^\?page=[23]$/);
     assert.equal(url.hash,'');
     assert.ok(!disallowed.some(path=>url.pathname.startsWith(path)),url.pathname+' is blocked by robots.txt');
-    const page=await fetch(origin+url.pathname,{redirect:'manual',signal:AbortSignal.timeout(60000)});
+    const page=await fetch(origin+url.pathname+url.search,{redirect:'manual',signal:AbortSignal.timeout(60000)});
     assert.equal(page.status,200,url.pathname);
     assert.doesNotMatch(page.headers.get('x-robots-tag')||'',/noindex|\bnone\b/i,url.pathname+' is blocked by X-Robots-Tag');
     const document=load(await page.text());
